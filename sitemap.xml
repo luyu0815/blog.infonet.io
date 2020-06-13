@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.infonet.io/2020/06/13/USB-Type-C%E8%AE%BE%E5%A4%87%E6%98%AF%E5%90%A6%E9%9C%80%E8%A6%81CC%E9%80%BB%E8%BE%91%E8%8A%AF%E7%89%87/</loc>
+    
+    <lastmod>2020-06-13T13:32:52.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.infonet.io/2020/05/05/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/</loc>
     
     <lastmod>2020-05-05T00:19:15.000Z</lastmod>
@@ -121,14 +128,14 @@
   </url>
   
   <url>
-    <loc>http://blog.infonet.io/2019/02/22/Linux-%E5%8F%AF%E8%A7%86%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</loc>
+    <loc>http://blog.infonet.io/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.infonet.io/2019/03/20/Linux-%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/</loc>
+    <loc>http://blog.infonet.io/2019/02/22/Linux-%E5%8F%AF%E8%A7%86%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
     
@@ -142,14 +149,14 @@
   </url>
   
   <url>
-    <loc>http://blog.infonet.io/2019/11/13/RS485%E7%AE%80%E4%BB%8B/</loc>
+    <loc>http://blog.infonet.io/2019/03/29/STM32-IO-%E5%8F%A3%E7%94%B5%E6%B0%94%E7%89%B9%E6%80%A7/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.infonet.io/2019/03/29/STM32-IO-%E5%8F%A3%E7%94%B5%E6%B0%94%E7%89%B9%E6%80%A7/</loc>
+    <loc>http://blog.infonet.io/2019/11/13/RS485%E7%AE%80%E4%BB%8B/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
     
@@ -163,14 +170,14 @@
   </url>
   
   <url>
-    <loc>http://blog.infonet.io/2019/09/22/Windows-shell/</loc>
+    <loc>http://blog.infonet.io/2019/03/11/Windows-and-office-kms/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.infonet.io/2019/03/11/Windows-and-office-kms/</loc>
+    <loc>http://blog.infonet.io/2019/09/22/Windows-shell/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
     
@@ -219,13 +226,6 @@
   </url>
   
   <url>
-    <loc>http://blog.infonet.io/2019/05/01/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E6%9C%8D%E5%8A%A1%E5%99%A8-CuteHttpFileServer-chfs/</loc>
-    
-    <lastmod>2020-03-20T16:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.infonet.io/2019/03/09/%E6%B6%88%E9%99%A4%E5%85%B1%E6%A8%A1%E5%B9%B2%E6%89%B0%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
@@ -233,14 +233,14 @@
   </url>
   
   <url>
-    <loc>http://blog.infonet.io/2019/10/10/%E8%BD%A6%E7%89%8C%E5%8F%B7%E7%A0%81%E5%90%AB%E4%B9%89/</loc>
+    <loc>http://blog.infonet.io/2019/05/01/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E6%9C%8D%E5%8A%A1%E5%99%A8-CuteHttpFileServer-chfs/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.infonet.io/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</loc>
+    <loc>http://blog.infonet.io/2019/03/20/Linux-%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
     
@@ -248,6 +248,13 @@
   
   <url>
     <loc>http://blog.infonet.io/2019/02/26/KiCad-%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90-BOM-%E6%8F%92%E4%BB%B6%E8%B7%AF%E5%BE%84/</loc>
+    
+    <lastmod>2020-03-20T16:00:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.infonet.io/2019/10/10/%E8%BD%A6%E7%89%8C%E5%8F%B7%E7%A0%81%E5%90%AB%E4%B9%89/</loc>
     
     <lastmod>2020-03-20T16:00:00.000Z</lastmod>
     

@@ -55,30 +55,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2019年深圳百公里前行</title>
-    <url>/2019/03/23/2019%E5%B9%B4%E6%B7%B1%E5%9C%B3%E7%99%BE%E5%85%AC%E9%87%8C%E5%89%8D%E8%A1%8C/</url>
-    <content><![CDATA[<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><p>我们今年还是走的磨坊 2016 年的徒步路线，此路线是非常金典的，路线经过南山 -&gt; 福田 -&gt; 罗湖 -&gt; 龙岗 -&gt; 盐田。<br>沿途风景有深圳湾、红树林、市内公园、笔架山公园、东湖公园、梧桐山、大梅沙…等。<br>废话不多说了，先上路线图吧。<br><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-map.jpg" alt="2019-100km-map"></p>
-<a id="more"></a>
-
-<h1 id="2-前行"><a href="#2-前行" class="headerlink" title="2. 前行"></a>2. 前行</h1><h2 id="0KM，深圳湾公园集合出发"><a href="#0KM，深圳湾公园集合出发" class="headerlink" title="0KM，深圳湾公园集合出发"></a>0KM，深圳湾公园集合出发</h2><p>2019年3月16日早上10点，深圳湾公园集合出发。今天的天气很不错，不热也不冷，非常适合徒步。（为了这活动还专门请了两天假，哈哈）</p>
-<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-1.jpg" alt="2019-100km-1"></p>
-<p><em>拍了这张图，然后我发到朋友圈，很多朋友都说我长胖了，其实只是胖了一点，这个是拍照角度有问题，目前体重在 62-65KG 之间浮动。哈哈。</em></p>
-<h2 id="15KM，上沙附近吃午饭"><a href="#15KM，上沙附近吃午饭" class="headerlink" title="15KM，上沙附近吃午饭"></a>15KM，上沙附近吃午饭</h2><p>中途休息，这次先用的 KEEP 这个垃圾轨迹记录软件，刚开始还挺好的，走着走着软件交互就没有反应了。然后换了个软件叫#两步路(户外助手)#，这个软件感觉还是挺好用的，还可以导入路线轨迹。</p>
-<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-2.jpg" alt="2019-100km-2"></p>
-<h2 id="35KM，东湖公园打卡"><a href="#35KM，东湖公园打卡" class="headerlink" title="35KM，东湖公园打卡"></a>35KM，东湖公园打卡</h2><p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-3.jpg" alt="2019-100km-3"></p>
-<h2 id="48KM，梧桐山脚下打卡"><a href="#48KM，梧桐山脚下打卡" class="headerlink" title="48KM，梧桐山脚下打卡"></a>48KM，梧桐山脚下打卡</h2><p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-4.jpg" alt="2019-100km-4"></p>
-<h2 id="65KM，盐田港打卡"><a href="#65KM，盐田港打卡" class="headerlink" title="65KM，盐田港打卡"></a>65KM，盐田港打卡</h2><p>凌晨5点的盐田港</p>
-<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-5.jpg" alt="2019-100km-5"></p>
-<h2 id="71KM，大梅沙滨海公园打卡"><a href="#71KM，大梅沙滨海公园打卡" class="headerlink" title="71KM，大梅沙滨海公园打卡"></a>71KM，大梅沙滨海公园打卡</h2><p>2019年3月17日早上7点20时的大梅沙公园</p>
-<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-6.jpg" alt="2019-100km-6"></p>
-<p>今年的状态不好，脚受伤了，实在前进不了了，在永和大王吃了油条豆浆早餐，回家明年再战！</p>
-<h1 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h1><p>深圳百公算上今年的一共参加3次，2016年（15KM）、2018年（大概75KM）、2019年（大概71KM）。<br>今年的百公里还没有去年走的多，2018 年至 2019 年平时基本上没怎么运动，这次大动作之后身体有些不适，如脚疼，腰酸。<br>生命在于运动，以后要加强锻炼。</p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git 基础命令</title>
     <url>/2019/03/26/Git-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
     <content><![CDATA[<h1 id="1-基础命令"><a href="#1-基础命令" class="headerlink" title="1. 基础命令"></a>1. 基础命令</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen (git 生成 ssh 公钥：id_rsa.pub)</span><br><span class="line">$ git config --global user.name <span class="string">"xxx"</span></span><br><span class="line">$ git config --global user.email <span class="string">"xxx@xxx.xxx"</span></span><br><span class="line">$ git config --system --list</span><br><span class="line">$ git config --global --list</span><br><span class="line">$ git config --<span class="built_in">local</span>  --list</span><br><span class="line">$ git add .</span><br><span class="line">$ git status  (查看缓存)</span><br><span class="line">$ git commit -m <span class="string">"xxx"</span>  (commit 备注)</span><br><span class="line">$ git commit --amend  (修改上次 commit 备注信息)</span><br><span class="line">$ git reset --hard</span><br><span class="line">$ git reset --hard HEAD~5</span><br><span class="line">$ git clean -dxf  (清理不是 git 管理得文件)</span><br><span class="line">$ git checkout &lt;file&gt;  (丢弃 file 在工作区得修改)</span><br><span class="line">$ git remote add origin &lt;url&gt;  (添加远程仓库)</span><br><span class="line">$ git push -u origin master  (首次推送至远程仓库)</span><br><span class="line">$ git pull &lt;name&gt;  (从指定远程仓库拉取)</span><br><span class="line">$ git branch  (查看分支)</span><br><span class="line">$ git checkout -b &lt;name&gt;  (创建并切换分支)</span><br><span class="line">$ git merge &lt;name&gt;  (合并某分支到当前分支)</span><br><span class="line">$ git branch -d &lt;name&gt;  (删除分支)</span><br><span class="line">$ git pull = $ git fetch + $ git merge  (从远程拉取)</span><br><span class="line">$ git stash -&gt; $ git stash pop (将当前修改存到暂存区 -&gt; 将之前得修改从暂存区恢复)</span><br><span class="line">$ git submodule update --init --recursive  (拉取目录中其他 git 管理的文件)</span><br><span class="line">$ git config --list</span><br><span class="line">$ git config --global core.editor <span class="string">"vim"</span></span><br><span class="line">$ git config --global alias.co checkout</span><br><span class="line">$ git config --global alias.br branch</span><br><span class="line">$ git config --global alias.ci commit</span><br><span class="line">$ git config --global alias.st status</span><br></pre></td></tr></table></figure>
@@ -102,6 +78,69 @@
 ]]></content>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 基础命令</title>
+    <url>/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="1-常用命令"><a href="#1-常用命令" class="headerlink" title="1. 常用命令"></a>1. 常用命令</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h1 id="2-详解"><a href="#2-详解" class="headerlink" title="2. 详解"></a>2. 详解</h1><h2 id="1-新建一篇文章"><a href="#1-新建一篇文章" class="headerlink" title="1. 新建一篇文章"></a>1. 新建一篇文章</h2><p>新建一篇文章,如果没有设置 layout,默认使用 _config.yml 中的 default_layout参数代替。<br>如果 title 中有空格，请使用引号括起来。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">参数</td>
+<td align="center">描述</td>
+</tr>
+<tr>
+<td align="center">-p, –path</td>
+<td align="center">自定义新文章的路径</td>
+</tr>
+<tr>
+<td align="center">-r, –replace</td>
+<td align="center">如果存在同名文章，将其替换</td>
+</tr>
+<tr>
+<td align="center">-s, –slug</td>
+<td align="center">文章的 Slug，作为新文章的文件名和发布后的 URL</td>
+</tr>
+</tbody></table>
+<h2 id="2-生成静态文件"><a href="#2-生成静态文件" class="headerlink" title="2. 生成静态文件"></a>2. 生成静态文件</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo genrate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-启动服务器"><a href="#3-启动服务器" class="headerlink" title="3. 启动服务器"></a>3. 启动服务器</h2><p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-部署网站"><a href="#4-部署网站" class="headerlink" title="4. 部署网站"></a>4. 部署网站</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">参数</td>
+<td align="center">描述</td>
+</tr>
+<tr>
+<td align="center">-g, –generate</td>
+<td align="center">部署之前预先生成静态文件</td>
+</tr>
+</tbody></table>
+<h2 id="5-清楚缓存文件"><a href="#5-清楚缓存文件" class="headerlink" title="5. 清楚缓存文件"></a>5. 清楚缓存文件</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -139,21 +178,18 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux 命令及脚本</title>
-    <url>/2019/03/20/Linux-%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/</url>
-    <content><![CDATA[<p>本篇文章记录 Linux 相关的命令及脚本，以便查看备份。</p>
-<h1 id="1-修改硬盘名称"><a href="#1-修改硬盘名称" class="headerlink" title="1. 修改硬盘名称"></a>1. 修改硬盘名称</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ e2label /dev/sda2 <span class="string">"name"</span></span><br></pre></td></tr></table></figure>
+    <title>Hexo使用总结</title>
+    <url>/2020/03/24/Hexo%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h1 id="1-开启站点地图"><a href="#1-开启站点地图" class="headerlink" title="1. 开启站点地图"></a>1. 开启站点地图</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 开启站点地图，需要安装 hexo-generator-sitemap 扩展包</span></span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
 
-<h1 id="2-Linux-一键安装-SSR"><a href="#2-Linux-一键安装-SSR" class="headerlink" title="2. Linux 一键安装 SSR"></a>2. Linux 一键安装 SSR</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ wget -q -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/install.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
-<p>脚本是开源的，开源地址：<a href="https://github.com/FunctionClub/SSR-Bash-Python" target="_blank" rel="noopener">https://github.com/FunctionClub/SSR-Bash-Python</a></p>
-<h1 id="3-Linux-一键安装-v2ray"><a href="#3-Linux-一键安装-v2ray" class="headerlink" title="3. Linux 一键安装 v2ray"></a>3. Linux 一键安装 v2ray</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ bash &lt;(curl -s -L https://233blog.com/v2ray.sh)</span><br></pre></td></tr></table></figure>
-<p>脚本是开源的，开源地址：<a href="https://github.com/233boy/v2ray" target="_blank" rel="noopener">https://github.com/233boy/v2ray</a></p>
-<h1 id="4-查看-Linux-版本内核信息等"><a href="#4-查看-Linux-版本内核信息等" class="headerlink" title="4. 查看 Linux 版本内核信息等"></a>4. 查看 Linux 版本内核信息等</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ uname -a</span><br></pre></td></tr></table></figure>
+<h1 id="2-开启本地搜索"><a href="#2-开启本地搜索" class="headerlink" title="2. 开启本地搜索"></a>2. 开启本地搜索</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 开启本地搜索，需要安装 hexo-generator-searchdb 扩展包</span></span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
 
-<a id="more"></a>
+<h1 id="3-部署到服务器"><a href="#3-部署到服务器" class="headerlink" title="3. 部署到服务器"></a>3. 部署到服务器</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署到服务器，需要安装 npm install hexo-deployer-git --save 扩展包</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-查看-Hexo-运行所需要的依赖"><a href="#4-查看-Hexo-运行所需要的依赖" class="headerlink" title="4. 查看 Hexo 运行所需要的依赖"></a>4. 查看 Hexo 运行所需要的依赖</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm ls --depth 0</span><br><span class="line"><span class="comment"># 如果还想展开一层看看这些模块各自又依赖了哪些模块，那就运行下面的命令</span></span><br><span class="line">npm ls --depth 1</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
-        <tag>Linux</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -174,6 +210,19 @@
 </li>
 <li><p><strong>VCAP 脚问题</strong><br>有些 MCU 芯片有 VCAP 脚，这类脚往往需要接上适当的电容，如果无视了它的话，也可能导致整个芯片的功能异常。</p>
 </li>
+</ul>
+]]></content>
+      <tags>
+        <tag>STM32</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>STM32 IO 口电气特性</title>
+    <url>/2019/03/29/STM32-IO-%E5%8F%A3%E7%94%B5%E6%B0%94%E7%89%B9%E6%80%A7/</url>
+    <content><![CDATA[<h1 id="1-规格书中内容"><a href="#1-规格书中内容" class="headerlink" title="1. 规格书中内容"></a>1. 规格书中内容</h1><p><strong>从 STM32F103C8T6 规格书上整理如下表</strong><br>在 Excel 里面重新整理了格式，显示图片较小可以放大观看<br><img src="https://file.infonet.io/blog-files/STM32/IO-static-characteristics.png" alt="IO-static-characteristics"></p>
+<h1 id="2-一般计算值"><a href="#2-一般计算值" class="headerlink" title="2. 一般计算值"></a>2. 一般计算值</h1><p><strong>当 VDD = 3.3V, VSS = 0V 时，各个参数值如下表</strong><br>一般按照 VIL Max = 1.1V, VIH Min = 2.2V 计算就不会有错，准确点的请看下表<br><img src="https://file.infonet.io/blog-files/STM32/IO-static-characteristics-value.png" alt="IO-static-characteristics-value"></p>
+<h1 id="3-整理的-Excel-文件"><a href="#3-整理的-Excel-文件" class="headerlink" title="3. 整理的 Excel 文件"></a>3. 整理的 Excel 文件</h1><ul>
+<li><a href="https://file.infonet.io/blog-files/STM32/IO-static-characteristics.xlsx" target="_blank" rel="noopener">IO-static-characteristics.xlsx</a></li>
 </ul>
 ]]></content>
       <tags>
@@ -258,19 +307,6 @@
 ]]></content>
       <tags>
         <tag>RS485</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>STM32 IO 口电气特性</title>
-    <url>/2019/03/29/STM32-IO-%E5%8F%A3%E7%94%B5%E6%B0%94%E7%89%B9%E6%80%A7/</url>
-    <content><![CDATA[<h1 id="1-规格书中内容"><a href="#1-规格书中内容" class="headerlink" title="1. 规格书中内容"></a>1. 规格书中内容</h1><p><strong>从 STM32F103C8T6 规格书上整理如下表</strong><br>在 Excel 里面重新整理了格式，显示图片较小可以放大观看<br><img src="https://file.infonet.io/blog-files/STM32/IO-static-characteristics.png" alt="IO-static-characteristics"></p>
-<h1 id="2-一般计算值"><a href="#2-一般计算值" class="headerlink" title="2. 一般计算值"></a>2. 一般计算值</h1><p><strong>当 VDD = 3.3V, VSS = 0V 时，各个参数值如下表</strong><br>一般按照 VIL Max = 1.1V, VIH Min = 2.2V 计算就不会有错，准确点的请看下表<br><img src="https://file.infonet.io/blog-files/STM32/IO-static-characteristics-value.png" alt="IO-static-characteristics-value"></p>
-<h1 id="3-整理的-Excel-文件"><a href="#3-整理的-Excel-文件" class="headerlink" title="3. 整理的 Excel 文件"></a>3. 整理的 Excel 文件</h1><ul>
-<li><a href="https://file.infonet.io/blog-files/STM32/IO-static-characteristics.xlsx" target="_blank" rel="noopener">IO-static-characteristics.xlsx</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>STM32</tag>
       </tags>
   </entry>
   <entry>
@@ -443,6 +479,77 @@
       </tags>
   </entry>
   <entry>
+    <title>USB-Type-C设备是否需要CC逻辑芯片</title>
+    <url>/2020/06/13/USB-Type-C%E8%AE%BE%E5%A4%87%E6%98%AF%E5%90%A6%E9%9C%80%E8%A6%81CC%E9%80%BB%E8%BE%91%E8%8A%AF%E7%89%87/</url>
+    <content><![CDATA[<h1 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h1><ol>
+<li><p>DFP(Downstream Facing Port)</p>
+<p>下行端口，可以理解为Host，DFP提供VBUS，也可以提供数据。典型的DFP设备是电源适配器，因为它永远都只是提供电源。</p>
+</li>
+<li><p>UFP(Upstream Facing Port)</p>
+<p>上行端口，可以理解为Device，UFP从VBUS中取电，并可提供数据。典型设备是U盘，移动硬盘，因为它们永远都是被读取数据和从VBUS取电，当然不排除未来可能出现可以作为主机的U盘。</p>
+</li>
+<li><p>DRP(Dual Role Port)</p>
+<p>双角色端口，DRP既可以做DFP(Host)，也可以做UFP(Device)，也可以在DFP与UFP间动态切换。典型的DRP设备是电脑(电脑可以作为USB的主机，也可以作为被充电的设备（苹果新推出的MAC Book Air）)，具OTG功能的手机(手机可以作为被充电和被读数据的设备，也可以作为主机为其他设备提供电源或者读取U盘数据)，移动电源(放电和充电可通过一个USB Type-C，即此口可以放电也可以充电)。</p>
+</li>
+</ol>
+<a id="more"></a>
+
+<ol start="4">
+<li><p>CC（Configuration Channel）</p>
+<p>配置通道，这是USB Type-C里新增的关键通道，它的作用有检测USB连接，检测正反插，USB设备间数据与VBUS的连接建立与管理等。</p>
+</li>
+<li><p>USB PD(USB Power Delivery)</p>
+<p>PD是一种通信协议，它是一种新的电源和通讯连接方式，它允许USB设备间传输最高至100W（20V/5A）的功率，同时它可以改变端口的属性，也可以使端口在DFP与UFP之间切换，它还可以与电缆通信，获取电缆的属性。</p>
+</li>
+<li><p>Electronically Marked Cable</p>
+<p>封装有E-Marker芯片的USB Type-C有源电缆，DFP和UFP利用PD协议可以读取该电缆的属性：电源传输能力，数据传输能力，ID等信息。所有全功能的Type-C电缆都应该封装有E-Marker，但USB2.0 Type-C电缆可以不封装E-Marker。</p>
+</li>
+</ol>
+<h1 id="2-USB-Type-C设备DFP-to-UFP配置流程与VBUS管理有如下主要流程："><a href="#2-USB-Type-C设备DFP-to-UFP配置流程与VBUS管理有如下主要流程：" class="headerlink" title="2. USB Type-C设备DFP-to-UFP配置流程与VBUS管理有如下主要流程："></a>2. USB Type-C设备DFP-to-UFP配置流程与VBUS管理有如下主要流程：</h1><ol>
+<li><p>设备连接与分开检测</p>
+<p>DFP需要检测到CC管脚上有某个电压时，判断UFP设备已插入或拔出，来提供和管理VBUS。当没有UFP设备插入时，必须关闭VBUS。因此所有的DFP设备需要CC逻辑检测与控制芯片。</p>
+</li>
+<li><p>插入方向检测</p>
+<p>如图1，虽然USB Type-C插座和插头的两排管脚上下对称，USB数据信号都有两组重复的通道，但主控芯片通常只有一组TX/RX和D+/-通道。由于USB2.0的数据率最高只有480Mbps, 可以不考虑信号走线的阻抗连续性而得到较好地数据传输质量，因此USB2.0的D+/-信号可以不被MUX控制而直接从主控芯片一分二连接至USB Type-C插座的两组D+/-管脚上。但USB3.0或者USB3.1的数据率高达5Gbps或者10Gbps，如果信号线还是被简单地一分二的话，不连续的信号线阻抗将严重破坏数据传输质量，因此必须由MUX切换来保证信号路径阻抗的一致性，以确保信号传输质量。下图中右侧所示的MUX从TX1/RX1和TX2/RX2中选择一路连接至主控芯片，而这个MUX就必须被CC Logic控制。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/%E5%9B%BE1.USB-Type-C%E6%95%B0%E6%8D%AE%E8%B5%B0%E7%BA%BF%E9%80%BB%E8%BE%91%E6%A8%A1%E5%9E%8B.jpg" alt="图1.USB-Type-C数据走线逻辑模型"></p>
+<p>但必须注意的是在USB3.0/USB3.1的应用中，有一种情况也可以不需要MUX，即不需要方向检测，如图2所示，不管是正插还是反插，左侧主机都可以根据CC管脚上的状态来切换MUX来连通USB3.0/USB3.1信号。此场景发生在右侧设备永远是UFP的情况下，比如U盘，移动硬盘等。</p>
+<p>因此，在USB2.0应用中，无需考虑方向检测问题，但USB3.0或者USB3.1应用中，必须考虑方向检测问题。USB3.0/USB3.1应用中，除UFP设备以外的所有设备都需要CC逻辑检测与控制芯片。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/%E5%9B%BE2.USB-Type-C%E7%9B%B4%E6%8E%A5%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E8%B5%B0%E7%BA%BF%E9%80%BB%E8%BE%91%E6%A8%A1%E5%9E%8B.jpg" alt="图2.USB-Type-C直接连接数据走线逻辑模型"></p>
+</li>
+<li><p>建立DFP-to-UFP和VBUS管理与检测</p>
+<p>DRP在待机模式下每50ms在DFP和UFP间切换一次。当切换至DFP时，CC管脚上必须有一个上拉至VBUS的电阻Rp或者输出一个电流源，当切换至UFP时，CC管脚上必须有一个下拉至GND的电阻Rd。此切换动作必须由CC Logic芯片来完成。当DFP检测到UFP插入之后才可以输出VBUS，当UFP拔出以后必须关闭VBUS。此动作必须由CC Logic芯片来完成。</p>
+</li>
+<li><p>USB Type-C VBUS电流检测与使用</p>
+<p>USB Type-C中新增了电流检测与使用功能，新增三种电流模式：默认的USB电源模式(500mA/900mA)，1.5A，3.0A。三种电流模式由CC管脚来传输和检测，对于需要广播电流输出能力的DFP而言，需要通过不同值的CC上拉电阻Rp来实现；对于UFP而言，需要检测CC管脚上的电压值来获取对方DFP的电流输出能力。</p>
+</li>
+<li><p>USB PD通信</p>
+<p>USB PD看似只是电源传输与管理的协议，实际上它可改变端口角色，可与有源电缆通讯，允许DFP成为受电设备等诸多高级功能，因此支持PD的设备必须采用CC Logic芯片。</p>
+</li>
+<li><p>发现与配置扩展其他外设(Audio，Debug)</p>
+<p>USB Type-C支持语音附件以及Debug模式，USB Type-C接口的耳机如果只作为UFP且因为其功耗较小而无需检测DFP的供电能力时，无需CC Logic芯片。</p>
+</li>
+</ol>
+<h1 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h1><p>综上，所有的DFP(如电源适配器)，所有的DRP(如电脑，手机，平板，移动电源), 所有需要检测DFP电流输出能力的UFP，所有支持PD的设备，都需要CC逻辑检测与端口控制芯片。换句话说，只有因为功耗较低而不需要检测电流能力的UFP(U盘，耳机，鼠标等)才不需要CC逻辑检测端口控制芯片。</p>
+<h1 id="4-版权"><a href="#4-版权" class="headerlink" title="4. 版权"></a>4. 版权</h1><p>本文摘自电子工程世界：<a href="http://news.eeworld.com.cn/xfdz/2015/0323/article_40868.html" target="_blank" rel="noopener">http://news.eeworld.com.cn/xfdz/2015/0323/article_40868.html</a></p>
+<p>如有侵权烦请联系博主删除。</p>
+]]></content>
+      <tags>
+        <tag>USB</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Windows10 + office 激活工具下载</title>
+    <url>/2019/03/11/Windows-and-office-kms/</url>
+    <content><![CDATA[<h1 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h1><ul>
+<li>解压后管理员运行 <strong>KMSELDI.exe</strong></li>
+<li><a href="https://file.infonet.io/blog-files/Win10/KMSpico-Portable.7z" target="_blank" rel="noopener">KMSpico-Portable.7z</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>KMS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows shell babun</title>
     <url>/2019/09/22/Windows-shell/</url>
     <content><![CDATA[<h1 id="Babun-a-windows-shell-you-will-love"><a href="#Babun-a-windows-shell-you-will-love" class="headerlink" title="Babun - a windows shell you will love!"></a><a href="https://babun.github.io/" target="_blank" rel="noopener">Babun - a windows shell you will love!</a></h1><h2 id="解决中文乱码问题"><a href="#解决中文乱码问题" class="headerlink" title="解决中文乱码问题"></a>解决中文乱码问题</h2><p>中文显示将变成英文</p>
@@ -458,18 +565,6 @@
 ]]></content>
       <tags>
         <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows10 + office 激活工具下载</title>
-    <url>/2019/03/11/Windows-and-office-kms/</url>
-    <content><![CDATA[<h1 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h1><ul>
-<li>解压后管理员运行 <strong>KMSELDI.exe</strong></li>
-<li><a href="https://file.infonet.io/blog-files/Win10/KMSpico-Portable.7z" target="_blank" rel="noopener">KMSpico-Portable.7z</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>KMS</tag>
       </tags>
   </entry>
   <entry>
@@ -710,8 +805,8 @@
 <p>我个人是非常喜欢博客文章以文件的形式储存，可以本地编辑器打开编辑，更直观。不太喜欢基于数据库存储的。<br>现在是刚开始玩博客的阶段，看到新鲜的事物都想去折腾一番。（笑…）<br>若后续文章数量达到几百篇的时候，Hexo 生成 Html 静态文件效率没有提高，也会有可能再转去 Typecho。</p>
 ]]></content>
       <tags>
-        <tag>Typecho</tag>
         <tag>Hexo</tag>
+        <tag>Typecho</tag>
       </tags>
   </entry>
   <entry>
@@ -819,79 +914,18 @@
       </tags>
   </entry>
   <entry>
-    <title>搭建个人图床服务器EasyImages2.0</title>
-    <url>/2020/03/21/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1%E5%99%A8EasyImages2-0/</url>
-    <content><![CDATA[<blockquote>
-<p>项目地址：<a href="https://github.com/icret/EasyImages2.0" target="_blank" rel="noopener">https://github.com/icret/EasyImages2.0</a><br>推荐使用 <a href="https://bt.cn/download/linux.html" target="_blank" rel="noopener"><strong>BT 面板</strong></a> 搭建，简单方便。<br>由于我的 VPS 已经搭建了其他网站，为了不影响其他站点，所以我们采用手工搭建。</p>
-</blockquote>
-<h1 id="1-步骤"><a href="#1-步骤" class="headerlink" title="1. 步骤"></a>1. 步骤</h1><h2 id="1-准备好-VPS-和-域名，并安装-PHP7-2-和-Nginx"><a href="#1-准备好-VPS-和-域名，并安装-PHP7-2-和-Nginx" class="headerlink" title="1. 准备好 VPS 和 域名，并安装 PHP7.2 和 Nginx"></a>1. 准备好 VPS 和 域名，并安装 PHP7.2 和 Nginx</h2><ol>
-<li>以 <strong>eg.infonet.io</strong> 为例，以下请将 eg.infonet.io 更新为自己的域名。</li>
-<li>详细步骤省略…</li>
-</ol>
-<h2 id="2-从-Github-下载-EasyImages2-0-源码"><a href="#2-从-Github-下载-EasyImages2-0-源码" class="headerlink" title="2. 从 Github 下载 EasyImages2.0 源码"></a>2. 从 Github 下载 <a href="https://github.com/icret/EasyImages2.0" target="_blank" rel="noopener"><strong>EasyImages2.0</strong></a> 源码</h2><ol>
-<li><p>创建网站目录：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /var/www/</span><br><span class="line">$ mkdir eg.infonet.io</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>从 Github 克隆项目：<a href="https://github.com/icret/EasyImages2.0" target="_blank" rel="noopener">https://github.com/icret/EasyImages2.0</a></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> eg.infonet.io</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/icret/EasyImages2.0.git</span><br><span class="line">$ ls</span><br><span class="line">EasyImages2.0</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-</li>
-</ol>
-<h2 id="3-配置网站-Nginx"><a href="#3-配置网站-Nginx" class="headerlink" title="3. 配置网站 Nginx"></a>3. 配置网站 Nginx</h2><ol>
-<li><p>进入到配置文件路径：<strong>/etc/nginx/conf.d/</strong></p>
-</li>
-<li><p>新建配置文件 <strong>eg.infonet.io.conf</strong> 内容如下：</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line"></span><br><span class="line"><span class="code">        listen 80;</span></span><br><span class="line"><span class="code">        listen [::]:80;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        server_name eg.infonet.io;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        root /var/www/eg.infonet.io/EasyImages2.0;</span></span><br><span class="line"><span class="code">        index index.php;</span></span><br><span class="line"><span class="code">        autoindex off;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        location / &#123;</span></span><br><span class="line"><span class="code">                try_files $uri $uri/ =404;</span></span><br><span class="line"><span class="code">        &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        location ~ \.php$ &#123;</span></span><br><span class="line"><span class="code">                include /etc/nginx/fastcgi_params;</span></span><br><span class="line"><span class="code">                fastcgi_pass 127.0.0.1:9000;</span></span><br><span class="line"><span class="code">                fastcgi_index index.php;</span></span><br><span class="line"><span class="code">                fastcgi_param SCRIPT_FILENAME /var/www/eg.infonet.io/EasyImages2.0/$fastcgi_script_name;</span></span><br><span class="line"><span class="code">        &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        location ~ /\.ht &#123;</span></span><br><span class="line"><span class="code">                deny all;</span></span><br><span class="line"><span class="code">        &#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="4-检查服务器是否支持本程序"><a href="#4-检查服务器是否支持本程序" class="headerlink" title="4. 检查服务器是否支持本程序"></a>4. 检查服务器是否支持本程序</h2><ol>
-<li><p>网页打开：<a href="http://eg.infonet.io/check.php" target="_blank" rel="noopener">http://eg.infonet.io/check.php</a></p>
-<p><img src="https://img.infonet.io/i/2020/03/08/nvylxa.png" alt="EasyImage-check.php"></p>
-</li>
-<li><p>如图可知 GD 库、zip、mbstring 扩展未安装。</p>
-</li>
-<li><p>安装扩展：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ apt install php7.2-gd</span><br><span class="line">$ apt install php7.2-mbstring</span><br><span class="line">$ apt install php7.2-zip</span><br></pre></td></tr></table></figure>
-
-</li>
-</ol>
-<h2 id="5-设置目录权限"><a href="#5-设置目录权限" class="headerlink" title="5. 设置目录权限"></a>5. 设置目录权限</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ chmod -R 777 /var/www/eg.infonet.io/i/*</span><br></pre></td></tr></table></figure>
-
-<h2 id="6-更改图床配置"><a href="#6-更改图床配置" class="headerlink" title="6. 更改图床配置"></a>6. 更改图床配置</h2><ol>
-<li>更改服务器配置文件：/var/www/eg.infonet.io/EasyImages2.0/config.php</li>
-</ol>
-<h1 id="2-注意事项"><a href="#2-注意事项" class="headerlink" title="2. 注意事项"></a>2. 注意事项</h1><ol>
-<li>不能开启水印，否则会提示上传失败，但是进入后台查看同一张图片在服务器中会存储 <strong>4</strong> 份。</li>
-<li>我的服务器是 512M 内存，当上传图片超过 <strong>1M</strong> 时会上传失败。</li>
-</ol>
-<blockquote>
-<p>参考链接：<a href="https://wizardforcel.gitbooks.io/nginx-doc/content/Text/6.3_nginx_ubuntu.html" target="_blank" rel="noopener">https://wizardforcel.gitbooks.io/nginx-doc/content/Text/6.3_nginx_ubuntu.html</a></p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>图床</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文件共享服务器: CuteHttpFileServer/chfs</title>
-    <url>/2019/05/01/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E6%9C%8D%E5%8A%A1%E5%99%A8-CuteHttpFileServer-chfs/</url>
-    <content><![CDATA[<p>介绍一个轻便、简洁、易用、免费的、HTTP协议的文件共享服务器：<strong><a href="http://iscute.cn/chfs" target="_blank" rel="noopener">CuteHttpFileServer/chfs</a></strong></p>
-<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><ul>
-<li>单个文件，整个软件只有一个可执行程序，无配置文件等其他文件</li>
-<li>跨平台运行，支持主流平台：Windows, Linux, Mac</li>
-<li>界面简洁，简单易用</li>
-<li>支持扫码下载和手机端访问，手机与电脑之间共享文件非常方便</li>
-<li>支持账户权限控制和地址过滤</li>
-<li>支持快速分享文字片段</li>
-<li>支持webdav协议</li>
+    <title>消除共模干扰的方法</title>
+    <url>/2019/03/09/%E6%B6%88%E9%99%A4%E5%85%B1%E6%A8%A1%E5%B9%B2%E6%89%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<ul>
+<li>采用屏蔽双绞线并有效接地</li>
+<li>强电场的地方还要考虑采用镀锌管屏蔽</li>
+<li>布线时远离高压线，更不能将高压电源线和信号线捆在一起走线</li>
+<li>不要和电控锁共用同一个电源</li>
+<li>采用线性稳压电源或高品质的开关电源(纹波干扰小于50mV)</li>
 </ul>
-<h1 id="2-下载和使用"><a href="#2-下载和使用" class="headerlink" title="2. 下载和使用"></a>2. 下载和使用</h1><p>请移步到 CuteHttpFileServer 官网：<strong><a href="http://iscute.cn/chfs" target="_blank" rel="noopener">http://iscute.cn/chfs</a></strong></p>
 ]]></content>
       <tags>
-        <tag>文件共享</tag>
+        <tag>电子</tag>
       </tags>
   </entry>
   <entry>
@@ -978,47 +1012,79 @@
       </tags>
   </entry>
   <entry>
-    <title>消除共模干扰的方法</title>
-    <url>/2019/03/09/%E6%B6%88%E9%99%A4%E5%85%B1%E6%A8%A1%E5%B9%B2%E6%89%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<ul>
-<li>采用屏蔽双绞线并有效接地</li>
-<li>强电场的地方还要考虑采用镀锌管屏蔽</li>
-<li>布线时远离高压线，更不能将高压电源线和信号线捆在一起走线</li>
-<li>不要和电控锁共用同一个电源</li>
-<li>采用线性稳压电源或高品质的开关电源(纹波干扰小于50mV)</li>
+    <title>文件共享服务器: CuteHttpFileServer/chfs</title>
+    <url>/2019/05/01/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E6%9C%8D%E5%8A%A1%E5%99%A8-CuteHttpFileServer-chfs/</url>
+    <content><![CDATA[<p>介绍一个轻便、简洁、易用、免费的、HTTP协议的文件共享服务器：<strong><a href="http://iscute.cn/chfs" target="_blank" rel="noopener">CuteHttpFileServer/chfs</a></strong></p>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><ul>
+<li>单个文件，整个软件只有一个可执行程序，无配置文件等其他文件</li>
+<li>跨平台运行，支持主流平台：Windows, Linux, Mac</li>
+<li>界面简洁，简单易用</li>
+<li>支持扫码下载和手机端访问，手机与电脑之间共享文件非常方便</li>
+<li>支持账户权限控制和地址过滤</li>
+<li>支持快速分享文字片段</li>
+<li>支持webdav协议</li>
 </ul>
+<h1 id="2-下载和使用"><a href="#2-下载和使用" class="headerlink" title="2. 下载和使用"></a>2. 下载和使用</h1><p>请移步到 CuteHttpFileServer 官网：<strong><a href="http://iscute.cn/chfs" target="_blank" rel="noopener">http://iscute.cn/chfs</a></strong></p>
 ]]></content>
       <tags>
-        <tag>电子</tag>
+        <tag>文件共享</tag>
       </tags>
   </entry>
   <entry>
-    <title>车牌号码含义</title>
-    <url>/2019/10/10/%E8%BD%A6%E7%89%8C%E5%8F%B7%E7%A0%81%E5%90%AB%E4%B9%89/</url>
-    <content><![CDATA[<h1 id="广东省（粤）"><a href="#广东省（粤）" class="headerlink" title="广东省（粤）"></a>广东省（粤）</h1><p>粤A 广州，粤B 深圳，粤C 珠海，粤D 汕头，粤E 佛山，粤F 韶关，粤G 湛江，粤H 肇庆，粤J 江门，粤K 茂名，粤L 惠州，粤M 梅州，粤N 汕尾，粤P 河源，粤Q 阳江，粤R 清远，粤S 东莞，粤T 中山，粤U 潮州，粤V 揭阳，粤W 云浮，粤X 顺德，粤Y 南海，粤Z 港澳进入内地车辆</p>
+    <title>搭建个人图床服务器EasyImages2.0</title>
+    <url>/2020/03/21/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%9B%BE%E5%BA%8A%E6%9C%8D%E5%8A%A1%E5%99%A8EasyImages2-0/</url>
+    <content><![CDATA[<blockquote>
+<p>项目地址：<a href="https://github.com/icret/EasyImages2.0" target="_blank" rel="noopener">https://github.com/icret/EasyImages2.0</a><br>推荐使用 <a href="https://bt.cn/download/linux.html" target="_blank" rel="noopener"><strong>BT 面板</strong></a> 搭建，简单方便。<br>由于我的 VPS 已经搭建了其他网站，为了不影响其他站点，所以我们采用手工搭建。</p>
+</blockquote>
+<h1 id="1-步骤"><a href="#1-步骤" class="headerlink" title="1. 步骤"></a>1. 步骤</h1><h2 id="1-准备好-VPS-和-域名，并安装-PHP7-2-和-Nginx"><a href="#1-准备好-VPS-和-域名，并安装-PHP7-2-和-Nginx" class="headerlink" title="1. 准备好 VPS 和 域名，并安装 PHP7.2 和 Nginx"></a>1. 准备好 VPS 和 域名，并安装 PHP7.2 和 Nginx</h2><ol>
+<li>以 <strong>eg.infonet.io</strong> 为例，以下请将 eg.infonet.io 更新为自己的域名。</li>
+<li>详细步骤省略…</li>
+</ol>
+<h2 id="2-从-Github-下载-EasyImages2-0-源码"><a href="#2-从-Github-下载-EasyImages2-0-源码" class="headerlink" title="2. 从 Github 下载 EasyImages2.0 源码"></a>2. 从 Github 下载 <a href="https://github.com/icret/EasyImages2.0" target="_blank" rel="noopener"><strong>EasyImages2.0</strong></a> 源码</h2><ol>
+<li><p>创建网站目录：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /var/www/</span><br><span class="line">$ mkdir eg.infonet.io</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>从 Github 克隆项目：<a href="https://github.com/icret/EasyImages2.0" target="_blank" rel="noopener">https://github.com/icret/EasyImages2.0</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> eg.infonet.io</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/icret/EasyImages2.0.git</span><br><span class="line">$ ls</span><br><span class="line">EasyImages2.0</span><br></pre></td></tr></table></figure>
+
 <a id="more"></a>
 
-<h1 id="湖北省（鄂）"><a href="#湖北省（鄂）" class="headerlink" title="湖北省（鄂）"></a>湖北省（鄂）</h1><p>鄂A 武汉，鄂B 黄石，鄂C 十堰，鄂D 沙市，鄂E 宜昌，鄂F 襄樊，鄂G 鄂州，鄂H 荆门，鄂J 黄岗，鄂K 孝感，鄂L 咸宁，鄂M 荆州，鄂N 郧阳，鄂P 宜昌，鄂Q 鄂西州</p>
-<h1 id="黑龙江省（黑）"><a href="#黑龙江省（黑）" class="headerlink" title="黑龙江省（黑）"></a>黑龙江省（黑）</h1><p>黑A 哈尔滨，黑B 齐齐哈尔，黑C 牡丹江，黑D 佳木斯，黑D 佳木斯， 黑F 伊春，黑G 鸡西， 黑H 鹤岗， 黑J 双鸭山，黑K 七台河，黑M 绥化， 黑N 黑河，黑L 松花江行署，黑P 大兴安岭地区，黑R 农恳系统</p>
-<h1 id="河南省（豫）"><a href="#河南省（豫）" class="headerlink" title="河南省（豫）"></a>河南省（豫）</h1><p>豫A 郑州，豫B 开封，豫C 洛阳，豫D 平顶山，豫E 安阳，豫F 鹤壁，豫G 新乡，豫H 焦作，豫J 濮阳，豫K 许昌，豫L 漯河，豫M 三门峡，豫N 商丘，豫P 周口，豫Q 驻马店，豫R 南阳，豫S 信阳，豫U 济源</p>
-<h1 id="浙江省（浙）"><a href="#浙江省（浙）" class="headerlink" title="浙江省（浙）"></a>浙江省（浙）</h1><p>浙A 杭州，浙B 宁波，浙C 温州，浙D 绍兴，浙E 湖州，浙F 嘉兴，浙G 金华，浙H 衢州，浙J 台州，浙K 丽水，浙L 舟山</p>
-<h1 id="江苏省（苏）"><a href="#江苏省（苏）" class="headerlink" title="江苏省（苏）"></a>江苏省（苏）</h1><p>苏A 南京，苏B 无锡，苏C 徐州，苏D 常州，苏E 苏州，苏F 南通，苏G 连云港，苏H 淮安，苏J 盐城，苏K 扬州，苏L 镇江，苏M 泰州，苏N 宿迁</p>
-<h1 id="山东省（鲁）"><a href="#山东省（鲁）" class="headerlink" title="山东省（鲁）"></a>山东省（鲁）</h1><p>鲁A 济南，鲁B 青岛，鲁C 淄博，鲁D 枣庄，鲁E 东营，鲁F 烟台，鲁G 潍坊，鲁H 济宁，鲁J 泰安，鲁K 威海，鲁L 日照，鲁M 莱芜，鲁N 德州，鲁P 聊城，鲁Q 临沂，鲁R 菏泽，鲁U 青岛开发区</p>
-<h1 id="安徽省（皖）"><a href="#安徽省（皖）" class="headerlink" title="安徽省（皖）"></a>安徽省（皖）</h1><p>皖A 合肥，皖B 芜湖，皖C 蚌埠，皖D 淮南，皖E 马鞍山，皖F 淮北，皖G 铜陵，皖E 安庆，皖J 黄山，皖K 阜阳，皖L 宿州，皖M 滁州，皖N 六安，皖P 宣城，皖Q 巢湖，皖R 池州，皖S 亳州</p>
-<h1 id="福建省（闽）"><a href="#福建省（闽）" class="headerlink" title="福建省（闽）"></a>福建省（闽）</h1><p>闽A 福州，闽B 莆田，闽C 泉州，闽D 厦门，闽E 漳州，闽F 龙岩，闽G 三明，闽H 南平，闽J 宁德，闽K 省直机关</p>
-<h1 id="广西壮族（桂）"><a href="#广西壮族（桂）" class="headerlink" title="广西壮族（桂）"></a>广西壮族（桂）</h1><p>桂A 南宁，桂B 柳州，桂C 桂林，桂D 梧州，桂E 北海，桂F 南宁，桂G 柳州，桂H 桂林，桂J 贺州(属梧州)，桂K 玉林，桂M 河池，桂L 百色，桂N 钦州，桂P 防城</p>
-<h1 id="甘肃省（甘）"><a href="#甘肃省（甘）" class="headerlink" title="甘肃省（甘）"></a>甘肃省（甘）</h1><p>甘A 兰州，甘B 嘉峪关，甘C 金昌，甘D 白银，甘E 天水，甘F 酒泉，甘G 张掖，甘H 武威，甘J 定西，甘K 陇南，甘L 平凉，甘M 庆阳，甘N 临夏回族，甘P 甘南藏族</p>
-<h1 id="山西省（晋）"><a href="#山西省（晋）" class="headerlink" title="山西省（晋）"></a>山西省（晋）</h1><p>晋A 太原，晋B 大同，晋C 阳泉，晋D 长治，晋E 晋城，晋F 朔州，晋H 忻州，晋J 吕梁，晋K 晋中，晋L 临汾，晋M 运城</p>
-<h1 id="内蒙古（蒙）"><a href="#内蒙古（蒙）" class="headerlink" title="内蒙古（蒙）"></a>内蒙古（蒙）</h1><p>蒙A 呼和浩特，蒙B 包头，蒙C 乌海，蒙D 赤峰，蒙E 呼伦贝尔盟，蒙F 兴安盟，蒙G 锡林郭勒盟，蒙H 乌兰察布盟，蒙J 伊克昭盟，蒙K 巴彦淖尔盟，蒙L 阿拉善盟</p>
-<h1 id="陕西省（陕）"><a href="#陕西省（陕）" class="headerlink" title="陕西省（陕）"></a>陕西省（陕）</h1><p>陕A 西安，陕B 铜川，陕C 宝鸡，陕D 威阳，陕E 渭南，陕F 汉中，陕G 安康，陕H 商洛，陕J 延安，陕K 榆林，陕U 省直机关</p>
-<h1 id="吉林省（吉）"><a href="#吉林省（吉）" class="headerlink" title="吉林省（吉）"></a>吉林省（吉）</h1><p>吉A 长春，吉B 吉林，吉C 四平，吉D 辽源，吉E 通化，吉F 白山，吉G 白城，吉H 延边朝鲜族</p>
-<h1 id="贵州省（贵）"><a href="#贵州省（贵）" class="headerlink" title="贵州省（贵）"></a>贵州省（贵）</h1><p>贵A 贵阳，贵B 六盘水，贵C 遵义，贵D 铜仁，贵E 黔西南州，贵F 毕节，贵G 安顺，贵H 黔东南州，贵J 黔南州</p>
-<h1 id="青海省（青）"><a href="#青海省（青）" class="headerlink" title="青海省（青）"></a>青海省（青）</h1><p>青A 西宁，青B 海东，青C 海北，青D 黄南，青E 海南州，青F 果洛州，青G 玉树州，青H 海西州</p>
-<h1 id="西藏（藏）"><a href="#西藏（藏）" class="headerlink" title="西藏（藏）"></a>西藏（藏）</h1><p>藏A 拉萨，藏B 昌都，藏C 山南，藏D <strong>**</strong>，藏E ****，藏F 阿里，藏G 林芝</p>
-<h1 id="四川省（川）"><a href="#四川省（川）" class="headerlink" title="四川省（川）"></a>四川省（川）</h1><p>川A 成都，川B 绵阳，川C 自贡，川D 攀枝花，川E 泸州，川F 德阳，川H 广元，川J 遂宁，川K 内江，川L 乐山，川Q 宜宾，川R 南充，川S 达县，川T 雅安，川U 阿坝藏族，川V ****藏族，川W 凉山彝族，川Z 眉山</p>
+</li>
+</ol>
+<h2 id="3-配置网站-Nginx"><a href="#3-配置网站-Nginx" class="headerlink" title="3. 配置网站 Nginx"></a>3. 配置网站 Nginx</h2><ol>
+<li><p>进入到配置文件路径：<strong>/etc/nginx/conf.d/</strong></p>
+</li>
+<li><p>新建配置文件 <strong>eg.infonet.io.conf</strong> 内容如下：</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">server &#123;</span><br><span class="line"></span><br><span class="line"><span class="code">        listen 80;</span></span><br><span class="line"><span class="code">        listen [::]:80;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        server_name eg.infonet.io;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        root /var/www/eg.infonet.io/EasyImages2.0;</span></span><br><span class="line"><span class="code">        index index.php;</span></span><br><span class="line"><span class="code">        autoindex off;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        location / &#123;</span></span><br><span class="line"><span class="code">                try_files $uri $uri/ =404;</span></span><br><span class="line"><span class="code">        &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        location ~ \.php$ &#123;</span></span><br><span class="line"><span class="code">                include /etc/nginx/fastcgi_params;</span></span><br><span class="line"><span class="code">                fastcgi_pass 127.0.0.1:9000;</span></span><br><span class="line"><span class="code">                fastcgi_index index.php;</span></span><br><span class="line"><span class="code">                fastcgi_param SCRIPT_FILENAME /var/www/eg.infonet.io/EasyImages2.0/$fastcgi_script_name;</span></span><br><span class="line"><span class="code">        &#125;</span></span><br><span class="line"></span><br><span class="line"><span class="code">        location ~ /\.ht &#123;</span></span><br><span class="line"><span class="code">                deny all;</span></span><br><span class="line"><span class="code">        &#125;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="4-检查服务器是否支持本程序"><a href="#4-检查服务器是否支持本程序" class="headerlink" title="4. 检查服务器是否支持本程序"></a>4. 检查服务器是否支持本程序</h2><ol>
+<li><p>网页打开：<a href="http://eg.infonet.io/check.php" target="_blank" rel="noopener">http://eg.infonet.io/check.php</a></p>
+<p><img src="https://img.infonet.io/i/2020/03/08/nvylxa.png" alt="EasyImage-check.php"></p>
+</li>
+<li><p>如图可知 GD 库、zip、mbstring 扩展未安装。</p>
+</li>
+<li><p>安装扩展：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ apt install php7.2-gd</span><br><span class="line">$ apt install php7.2-mbstring</span><br><span class="line">$ apt install php7.2-zip</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+<h2 id="5-设置目录权限"><a href="#5-设置目录权限" class="headerlink" title="5. 设置目录权限"></a>5. 设置目录权限</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ chmod -R 777 /var/www/eg.infonet.io/i/*</span><br></pre></td></tr></table></figure>
+
+<h2 id="6-更改图床配置"><a href="#6-更改图床配置" class="headerlink" title="6. 更改图床配置"></a>6. 更改图床配置</h2><ol>
+<li>更改服务器配置文件：/var/www/eg.infonet.io/EasyImages2.0/config.php</li>
+</ol>
+<h1 id="2-注意事项"><a href="#2-注意事项" class="headerlink" title="2. 注意事项"></a>2. 注意事项</h1><ol>
+<li>不能开启水印，否则会提示上传失败，但是进入后台查看同一张图片在服务器中会存储 <strong>4</strong> 份。</li>
+<li>我的服务器是 512M 内存，当上传图片超过 <strong>1M</strong> 时会上传失败。</li>
+</ol>
+<blockquote>
+<p>参考链接：<a href="https://wizardforcel.gitbooks.io/nginx-doc/content/Text/6.3_nginx_ubuntu.html" target="_blank" rel="noopener">https://wizardforcel.gitbooks.io/nginx-doc/content/Text/6.3_nginx_ubuntu.html</a></p>
+</blockquote>
 ]]></content>
       <tags>
-        <tag>车牌</tag>
+        <tag>图床</tag>
       </tags>
   </entry>
   <entry>
@@ -1281,75 +1347,21 @@
       </tags>
   </entry>
   <entry>
-    <title>频率与周期对应关系</title>
-    <url>/2020/05/05/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/</url>
-    <content><![CDATA[<p><img src="https://file.infonet.io/blog-files/Elec/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB.png" alt="频率与周期对应关系"></p>
-]]></content>
-      <tags>
-        <tag>周期频率</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo 基础命令</title>
-    <url>/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="1-常用命令"><a href="#1-常用命令" class="headerlink" title="1. 常用命令"></a>1. 常用命令</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+    <title>Linux 命令及脚本</title>
+    <url>/2019/03/20/Linux-%E5%91%BD%E4%BB%A4%E5%8F%8A%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[<p>本篇文章记录 Linux 相关的命令及脚本，以便查看备份。</p>
+<h1 id="1-修改硬盘名称"><a href="#1-修改硬盘名称" class="headerlink" title="1. 修改硬盘名称"></a>1. 修改硬盘名称</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ e2label /dev/sda2 <span class="string">"name"</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="2-Linux-一键安装-SSR"><a href="#2-Linux-一键安装-SSR" class="headerlink" title="2. Linux 一键安装 SSR"></a>2. Linux 一键安装 SSR</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ wget -q -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/install.sh &amp;&amp; bash install.sh</span><br></pre></td></tr></table></figure>
+<p>脚本是开源的，开源地址：<a href="https://github.com/FunctionClub/SSR-Bash-Python" target="_blank" rel="noopener">https://github.com/FunctionClub/SSR-Bash-Python</a></p>
+<h1 id="3-Linux-一键安装-v2ray"><a href="#3-Linux-一键安装-v2ray" class="headerlink" title="3. Linux 一键安装 v2ray"></a>3. Linux 一键安装 v2ray</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ bash &lt;(curl -s -L https://233blog.com/v2ray.sh)</span><br></pre></td></tr></table></figure>
+<p>脚本是开源的，开源地址：<a href="https://github.com/233boy/v2ray" target="_blank" rel="noopener">https://github.com/233boy/v2ray</a></p>
+<h1 id="4-查看-Linux-版本内核信息等"><a href="#4-查看-Linux-版本内核信息等" class="headerlink" title="4. 查看 Linux 版本内核信息等"></a>4. 查看 Linux 版本内核信息等</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ uname -a</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
-
-<h1 id="2-详解"><a href="#2-详解" class="headerlink" title="2. 详解"></a>2. 详解</h1><h2 id="1-新建一篇文章"><a href="#1-新建一篇文章" class="headerlink" title="1. 新建一篇文章"></a>1. 新建一篇文章</h2><p>新建一篇文章,如果没有设置 layout,默认使用 _config.yml 中的 default_layout参数代替。<br>如果 title 中有空格，请使用引号括起来。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">参数</td>
-<td align="center">描述</td>
-</tr>
-<tr>
-<td align="center">-p, –path</td>
-<td align="center">自定义新文章的路径</td>
-</tr>
-<tr>
-<td align="center">-r, –replace</td>
-<td align="center">如果存在同名文章，将其替换</td>
-</tr>
-<tr>
-<td align="center">-s, –slug</td>
-<td align="center">文章的 Slug，作为新文章的文件名和发布后的 URL</td>
-</tr>
-</tbody></table>
-<h2 id="2-生成静态文件"><a href="#2-生成静态文件" class="headerlink" title="2. 生成静态文件"></a>2. 生成静态文件</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo genrate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-启动服务器"><a href="#3-启动服务器" class="headerlink" title="3. 启动服务器"></a>3. 启动服务器</h2><p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-部署网站"><a href="#4-部署网站" class="headerlink" title="4. 部署网站"></a>4. 部署网站</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">参数</td>
-<td align="center">描述</td>
-</tr>
-<tr>
-<td align="center">-g, –generate</td>
-<td align="center">部署之前预先生成静态文件</td>
-</tr>
-</tbody></table>
-<h2 id="5-清楚缓存文件"><a href="#5-清楚缓存文件" class="headerlink" title="5. 清楚缓存文件"></a>5. 清楚缓存文件</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1372,18 +1384,65 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo使用总结</title>
-    <url>/2020/03/24/Hexo%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h1 id="1-开启站点地图"><a href="#1-开启站点地图" class="headerlink" title="1. 开启站点地图"></a>1. 开启站点地图</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 开启站点地图，需要安装 hexo-generator-sitemap 扩展包</span></span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+    <title>2019年深圳百公里前行</title>
+    <url>/2019/03/23/2019%E5%B9%B4%E6%B7%B1%E5%9C%B3%E7%99%BE%E5%85%AC%E9%87%8C%E5%89%8D%E8%A1%8C/</url>
+    <content><![CDATA[<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><p>我们今年还是走的磨坊 2016 年的徒步路线，此路线是非常金典的，路线经过南山 -&gt; 福田 -&gt; 罗湖 -&gt; 龙岗 -&gt; 盐田。<br>沿途风景有深圳湾、红树林、市内公园、笔架山公园、东湖公园、梧桐山、大梅沙…等。<br>废话不多说了，先上路线图吧。<br><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-map.jpg" alt="2019-100km-map"></p>
+<a id="more"></a>
 
-<h1 id="2-开启本地搜索"><a href="#2-开启本地搜索" class="headerlink" title="2. 开启本地搜索"></a>2. 开启本地搜索</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 开启本地搜索，需要安装 hexo-generator-searchdb 扩展包</span></span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
-
-<h1 id="3-部署到服务器"><a href="#3-部署到服务器" class="headerlink" title="3. 部署到服务器"></a>3. 部署到服务器</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 部署到服务器，需要安装 npm install hexo-deployer-git --save 扩展包</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-查看-Hexo-运行所需要的依赖"><a href="#4-查看-Hexo-运行所需要的依赖" class="headerlink" title="4. 查看 Hexo 运行所需要的依赖"></a>4. 查看 Hexo 运行所需要的依赖</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm ls --depth 0</span><br><span class="line"><span class="comment"># 如果还想展开一层看看这些模块各自又依赖了哪些模块，那就运行下面的命令</span></span><br><span class="line">npm ls --depth 1</span><br></pre></td></tr></table></figure>
+<h1 id="2-前行"><a href="#2-前行" class="headerlink" title="2. 前行"></a>2. 前行</h1><h2 id="0KM，深圳湾公园集合出发"><a href="#0KM，深圳湾公园集合出发" class="headerlink" title="0KM，深圳湾公园集合出发"></a>0KM，深圳湾公园集合出发</h2><p>2019年3月16日早上10点，深圳湾公园集合出发。今天的天气很不错，不热也不冷，非常适合徒步。（为了这活动还专门请了两天假，哈哈）</p>
+<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-1.jpg" alt="2019-100km-1"></p>
+<p><em>拍了这张图，然后我发到朋友圈，很多朋友都说我长胖了，其实只是胖了一点，这个是拍照角度有问题，目前体重在 62-65KG 之间浮动。哈哈。</em></p>
+<h2 id="15KM，上沙附近吃午饭"><a href="#15KM，上沙附近吃午饭" class="headerlink" title="15KM，上沙附近吃午饭"></a>15KM，上沙附近吃午饭</h2><p>中途休息，这次先用的 KEEP 这个垃圾轨迹记录软件，刚开始还挺好的，走着走着软件交互就没有反应了。然后换了个软件叫#两步路(户外助手)#，这个软件感觉还是挺好用的，还可以导入路线轨迹。</p>
+<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-2.jpg" alt="2019-100km-2"></p>
+<h2 id="35KM，东湖公园打卡"><a href="#35KM，东湖公园打卡" class="headerlink" title="35KM，东湖公园打卡"></a>35KM，东湖公园打卡</h2><p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-3.jpg" alt="2019-100km-3"></p>
+<h2 id="48KM，梧桐山脚下打卡"><a href="#48KM，梧桐山脚下打卡" class="headerlink" title="48KM，梧桐山脚下打卡"></a>48KM，梧桐山脚下打卡</h2><p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-4.jpg" alt="2019-100km-4"></p>
+<h2 id="65KM，盐田港打卡"><a href="#65KM，盐田港打卡" class="headerlink" title="65KM，盐田港打卡"></a>65KM，盐田港打卡</h2><p>凌晨5点的盐田港</p>
+<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-5.jpg" alt="2019-100km-5"></p>
+<h2 id="71KM，大梅沙滨海公园打卡"><a href="#71KM，大梅沙滨海公园打卡" class="headerlink" title="71KM，大梅沙滨海公园打卡"></a>71KM，大梅沙滨海公园打卡</h2><p>2019年3月17日早上7点20时的大梅沙公园</p>
+<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-6.jpg" alt="2019-100km-6"></p>
+<p>今年的状态不好，脚受伤了，实在前进不了了，在永和大王吃了油条豆浆早餐，回家明年再战！</p>
+<h1 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h1><p>深圳百公算上今年的一共参加3次，2016年（15KM）、2018年（大概75KM）、2019年（大概71KM）。<br>今年的百公里还没有去年走的多，2018 年至 2019 年平时基本上没怎么运动，这次大动作之后身体有些不适，如脚疼，腰酸。<br>生命在于运动，以后要加强锻炼。</p>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>车牌号码含义</title>
+    <url>/2019/10/10/%E8%BD%A6%E7%89%8C%E5%8F%B7%E7%A0%81%E5%90%AB%E4%B9%89/</url>
+    <content><![CDATA[<h1 id="广东省（粤）"><a href="#广东省（粤）" class="headerlink" title="广东省（粤）"></a>广东省（粤）</h1><p>粤A 广州，粤B 深圳，粤C 珠海，粤D 汕头，粤E 佛山，粤F 韶关，粤G 湛江，粤H 肇庆，粤J 江门，粤K 茂名，粤L 惠州，粤M 梅州，粤N 汕尾，粤P 河源，粤Q 阳江，粤R 清远，粤S 东莞，粤T 中山，粤U 潮州，粤V 揭阳，粤W 云浮，粤X 顺德，粤Y 南海，粤Z 港澳进入内地车辆</p>
+<a id="more"></a>
+
+<h1 id="湖北省（鄂）"><a href="#湖北省（鄂）" class="headerlink" title="湖北省（鄂）"></a>湖北省（鄂）</h1><p>鄂A 武汉，鄂B 黄石，鄂C 十堰，鄂D 沙市，鄂E 宜昌，鄂F 襄樊，鄂G 鄂州，鄂H 荆门，鄂J 黄岗，鄂K 孝感，鄂L 咸宁，鄂M 荆州，鄂N 郧阳，鄂P 宜昌，鄂Q 鄂西州</p>
+<h1 id="黑龙江省（黑）"><a href="#黑龙江省（黑）" class="headerlink" title="黑龙江省（黑）"></a>黑龙江省（黑）</h1><p>黑A 哈尔滨，黑B 齐齐哈尔，黑C 牡丹江，黑D 佳木斯，黑D 佳木斯， 黑F 伊春，黑G 鸡西， 黑H 鹤岗， 黑J 双鸭山，黑K 七台河，黑M 绥化， 黑N 黑河，黑L 松花江行署，黑P 大兴安岭地区，黑R 农恳系统</p>
+<h1 id="河南省（豫）"><a href="#河南省（豫）" class="headerlink" title="河南省（豫）"></a>河南省（豫）</h1><p>豫A 郑州，豫B 开封，豫C 洛阳，豫D 平顶山，豫E 安阳，豫F 鹤壁，豫G 新乡，豫H 焦作，豫J 濮阳，豫K 许昌，豫L 漯河，豫M 三门峡，豫N 商丘，豫P 周口，豫Q 驻马店，豫R 南阳，豫S 信阳，豫U 济源</p>
+<h1 id="浙江省（浙）"><a href="#浙江省（浙）" class="headerlink" title="浙江省（浙）"></a>浙江省（浙）</h1><p>浙A 杭州，浙B 宁波，浙C 温州，浙D 绍兴，浙E 湖州，浙F 嘉兴，浙G 金华，浙H 衢州，浙J 台州，浙K 丽水，浙L 舟山</p>
+<h1 id="江苏省（苏）"><a href="#江苏省（苏）" class="headerlink" title="江苏省（苏）"></a>江苏省（苏）</h1><p>苏A 南京，苏B 无锡，苏C 徐州，苏D 常州，苏E 苏州，苏F 南通，苏G 连云港，苏H 淮安，苏J 盐城，苏K 扬州，苏L 镇江，苏M 泰州，苏N 宿迁</p>
+<h1 id="山东省（鲁）"><a href="#山东省（鲁）" class="headerlink" title="山东省（鲁）"></a>山东省（鲁）</h1><p>鲁A 济南，鲁B 青岛，鲁C 淄博，鲁D 枣庄，鲁E 东营，鲁F 烟台，鲁G 潍坊，鲁H 济宁，鲁J 泰安，鲁K 威海，鲁L 日照，鲁M 莱芜，鲁N 德州，鲁P 聊城，鲁Q 临沂，鲁R 菏泽，鲁U 青岛开发区</p>
+<h1 id="安徽省（皖）"><a href="#安徽省（皖）" class="headerlink" title="安徽省（皖）"></a>安徽省（皖）</h1><p>皖A 合肥，皖B 芜湖，皖C 蚌埠，皖D 淮南，皖E 马鞍山，皖F 淮北，皖G 铜陵，皖E 安庆，皖J 黄山，皖K 阜阳，皖L 宿州，皖M 滁州，皖N 六安，皖P 宣城，皖Q 巢湖，皖R 池州，皖S 亳州</p>
+<h1 id="福建省（闽）"><a href="#福建省（闽）" class="headerlink" title="福建省（闽）"></a>福建省（闽）</h1><p>闽A 福州，闽B 莆田，闽C 泉州，闽D 厦门，闽E 漳州，闽F 龙岩，闽G 三明，闽H 南平，闽J 宁德，闽K 省直机关</p>
+<h1 id="广西壮族（桂）"><a href="#广西壮族（桂）" class="headerlink" title="广西壮族（桂）"></a>广西壮族（桂）</h1><p>桂A 南宁，桂B 柳州，桂C 桂林，桂D 梧州，桂E 北海，桂F 南宁，桂G 柳州，桂H 桂林，桂J 贺州(属梧州)，桂K 玉林，桂M 河池，桂L 百色，桂N 钦州，桂P 防城</p>
+<h1 id="甘肃省（甘）"><a href="#甘肃省（甘）" class="headerlink" title="甘肃省（甘）"></a>甘肃省（甘）</h1><p>甘A 兰州，甘B 嘉峪关，甘C 金昌，甘D 白银，甘E 天水，甘F 酒泉，甘G 张掖，甘H 武威，甘J 定西，甘K 陇南，甘L 平凉，甘M 庆阳，甘N 临夏回族，甘P 甘南藏族</p>
+<h1 id="山西省（晋）"><a href="#山西省（晋）" class="headerlink" title="山西省（晋）"></a>山西省（晋）</h1><p>晋A 太原，晋B 大同，晋C 阳泉，晋D 长治，晋E 晋城，晋F 朔州，晋H 忻州，晋J 吕梁，晋K 晋中，晋L 临汾，晋M 运城</p>
+<h1 id="内蒙古（蒙）"><a href="#内蒙古（蒙）" class="headerlink" title="内蒙古（蒙）"></a>内蒙古（蒙）</h1><p>蒙A 呼和浩特，蒙B 包头，蒙C 乌海，蒙D 赤峰，蒙E 呼伦贝尔盟，蒙F 兴安盟，蒙G 锡林郭勒盟，蒙H 乌兰察布盟，蒙J 伊克昭盟，蒙K 巴彦淖尔盟，蒙L 阿拉善盟</p>
+<h1 id="陕西省（陕）"><a href="#陕西省（陕）" class="headerlink" title="陕西省（陕）"></a>陕西省（陕）</h1><p>陕A 西安，陕B 铜川，陕C 宝鸡，陕D 威阳，陕E 渭南，陕F 汉中，陕G 安康，陕H 商洛，陕J 延安，陕K 榆林，陕U 省直机关</p>
+<h1 id="吉林省（吉）"><a href="#吉林省（吉）" class="headerlink" title="吉林省（吉）"></a>吉林省（吉）</h1><p>吉A 长春，吉B 吉林，吉C 四平，吉D 辽源，吉E 通化，吉F 白山，吉G 白城，吉H 延边朝鲜族</p>
+<h1 id="贵州省（贵）"><a href="#贵州省（贵）" class="headerlink" title="贵州省（贵）"></a>贵州省（贵）</h1><p>贵A 贵阳，贵B 六盘水，贵C 遵义，贵D 铜仁，贵E 黔西南州，贵F 毕节，贵G 安顺，贵H 黔东南州，贵J 黔南州</p>
+<h1 id="青海省（青）"><a href="#青海省（青）" class="headerlink" title="青海省（青）"></a>青海省（青）</h1><p>青A 西宁，青B 海东，青C 海北，青D 黄南，青E 海南州，青F 果洛州，青G 玉树州，青H 海西州</p>
+<h1 id="西藏（藏）"><a href="#西藏（藏）" class="headerlink" title="西藏（藏）"></a>西藏（藏）</h1><p>藏A 拉萨，藏B 昌都，藏C 山南，藏D <strong>**</strong>，藏E ****，藏F 阿里，藏G 林芝</p>
+<h1 id="四川省（川）"><a href="#四川省（川）" class="headerlink" title="四川省（川）"></a>四川省（川）</h1><p>川A 成都，川B 绵阳，川C 自贡，川D 攀枝花，川E 泸州，川F 德阳，川H 广元，川J 遂宁，川K 内江，川L 乐山，川Q 宜宾，川R 南充，川S 达县，川T 雅安，川U 阿坝藏族，川V ****藏族，川W 凉山彝族，川Z 眉山</p>
+]]></content>
+      <tags>
+        <tag>车牌</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>频率与周期对应关系</title>
+    <url>/2020/05/05/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/</url>
+    <content><![CDATA[<p><img src="https://file.infonet.io/blog-files/Elec/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB.png" alt="频率与周期对应关系"></p>
+]]></content>
+      <tags>
+        <tag>周期频率</tag>
       </tags>
   </entry>
 </search>
