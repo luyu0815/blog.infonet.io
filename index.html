@@ -187,7 +187,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2020/06/13/USB-Type-C%E8%AE%BE%E5%A4%87%E6%98%AF%E5%90%A6%E9%9C%80%E8%A6%81CC%E9%80%BB%E8%BE%91%E8%8A%AF%E7%89%87/">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2020/06/13/USB-Type-C%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -201,7 +201,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/06/13/USB-Type-C%E8%AE%BE%E5%A4%87%E6%98%AF%E5%90%A6%E9%9C%80%E8%A6%81CC%E9%80%BB%E8%BE%91%E8%8A%AF%E7%89%87/" class="post-title-link" itemprop="url">USB-Type-C设备是否需要CC逻辑芯片</a>
+            <a href="/2020/06/13/USB-Type-C%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/" class="post-title-link" itemprop="url">USB-Type-C详细介绍</a>
         </h2>
 
         <div class="post-meta">
@@ -225,20 +225,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h1><ol>
-<li><p>DFP(Downstream Facing Port)</p>
-<p>下行端口，可以理解为Host，DFP提供VBUS，也可以提供数据。典型的DFP设备是电源适配器，因为它永远都只是提供电源。</p>
-</li>
-<li><p>UFP(Upstream Facing Port)</p>
-<p>上行端口，可以理解为Device，UFP从VBUS中取电，并可提供数据。典型设备是U盘，移动硬盘，因为它们永远都是被读取数据和从VBUS取电，当然不排除未来可能出现可以作为主机的U盘。</p>
-</li>
-<li><p>DRP(Dual Role Port)</p>
-<p>双角色端口，DRP既可以做DFP(Host)，也可以做UFP(Device)，也可以在DFP与UFP间动态切换。典型的DRP设备是电脑(电脑可以作为USB的主机，也可以作为被充电的设备（苹果新推出的MAC Book Air）)，具OTG功能的手机(手机可以作为被充电和被读数据的设备，也可以作为主机为其他设备提供电源或者读取U盘数据)，移动电源(放电和充电可通过一个USB Type-C，即此口可以放电也可以充电)。</p>
-</li>
-</ol>
+          <h1 id="1-USB-Type-C接口包括"><a href="#1-USB-Type-C接口包括" class="headerlink" title="1. USB-Type-C接口包括"></a>1. USB-Type-C接口包括</h1><ul>
+<li>支持DisplayPort, PCIe等alternate mode的两组Superspeed USB线路(RX1/TX1和RX2/TX2)</li>
+<li>用于Alternate Mode的两条Sideband Use(SBU)线路</li>
+<li>用于Hi-Speed USB 2.0的Dp和Dn线路</li>
+<li>用于总线供电的VBUS线路</li>
+<li>用于为线缆控制器供电的VCONN 线路(只位于Type-C插头接口上)</li>
+<li>用于PD通信的配置信道(CC)。</li>
+</ul>
+<h1 id="2-插头反转"><a href="#2-插头反转" class="headerlink" title="2. 插头反转"></a>2. 插头反转</h1><p>Type-C插座可处理线缆插头的任意方向。USB-Type-C插座完全对称。所有的供电、接地和信号引脚两边对称，从而让USB-Type-C插头能够在Type-C接口中任意翻转。</p>
+<ul>
+<li>GND、USB 2.0和VBUS 信号保持连接。USB 2.0信号被复制到Type-C插座的上下两层，以保持任意方向的连接。</li>
+<li>插头上的VCONN 或CC引脚可以连接插座中的任意一个配置信道引脚-CC1或CC2 (取决于插入方向)。</li>
+<li>两条Superspeed线路的其中一条保持正确连接，USB-Type-C 插座必须使用SuperSpeed mux合理地进行连接</li>
+</ul>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E6%AD%A3%E5%8F%8D%E6%8F%92.png" alt="USB-Type-C正反插"></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/06/13/USB-Type-C%E8%AE%BE%E5%A4%87%E6%98%AF%E5%90%A6%E9%9C%80%E8%A6%81CC%E9%80%BB%E8%BE%91%E8%8A%AF%E7%89%87/#more" rel="contents">
+              <a class="btn" href="/2020/06/13/USB-Type-C%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
