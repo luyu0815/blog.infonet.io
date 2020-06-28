@@ -55,66 +55,29 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo 基础命令</title>
-    <url>/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="1-常用命令"><a href="#1-常用命令" class="headerlink" title="1. 常用命令"></a>1. 常用命令</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+    <title>Git 基础命令</title>
+    <url>/2019/03/26/Git-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="1-基础命令"><a href="#1-基础命令" class="headerlink" title="1. 基础命令"></a>1. 基础命令</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen (git 生成 ssh 公钥：id_rsa.pub)</span><br><span class="line">$ git config --global user.name <span class="string">"xxx"</span></span><br><span class="line">$ git config --global user.email <span class="string">"xxx@xxx.xxx"</span></span><br><span class="line">$ git config --system --list</span><br><span class="line">$ git config --global --list</span><br><span class="line">$ git config --<span class="built_in">local</span>  --list</span><br><span class="line">$ git add .</span><br><span class="line">$ git status  (查看缓存)</span><br><span class="line">$ git commit -m <span class="string">"xxx"</span>  (commit 备注)</span><br><span class="line">$ git commit --amend  (修改上次 commit 备注信息)</span><br><span class="line">$ git reset --hard</span><br><span class="line">$ git reset --hard HEAD~5</span><br><span class="line">$ git clean -dxf  (清理不是 git 管理得文件)</span><br><span class="line">$ git checkout &lt;file&gt;  (丢弃 file 在工作区得修改)</span><br><span class="line">$ git remote add origin &lt;url&gt;  (添加远程仓库)</span><br><span class="line">$ git push -u origin master  (首次推送至远程仓库)</span><br><span class="line">$ git pull &lt;name&gt;  (从指定远程仓库拉取)</span><br><span class="line">$ git branch  (查看分支)</span><br><span class="line">$ git checkout -b &lt;name&gt;  (创建并切换分支)</span><br><span class="line">$ git merge &lt;name&gt;  (合并某分支到当前分支)</span><br><span class="line">$ git branch -d &lt;name&gt;  (删除分支)</span><br><span class="line">$ git pull = $ git fetch + $ git merge  (从远程拉取)</span><br><span class="line">$ git stash -&gt; $ git stash pop (将当前修改存到暂存区 -&gt; 将之前得修改从暂存区恢复)</span><br><span class="line">$ git submodule update --init --recursive  (拉取目录中其他 git 管理的文件)</span><br><span class="line">$ git config --list</span><br><span class="line">$ git config --global core.editor <span class="string">"vim"</span></span><br><span class="line">$ git config --global alias.co checkout</span><br><span class="line">$ git config --global alias.br branch</span><br><span class="line">$ git config --global alias.ci commit</span><br><span class="line">$ git config --global alias.st status</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
 
-<h1 id="2-详解"><a href="#2-详解" class="headerlink" title="2. 详解"></a>2. 详解</h1><h2 id="1-新建一篇文章"><a href="#1-新建一篇文章" class="headerlink" title="1. 新建一篇文章"></a>1. 新建一篇文章</h2><p>新建一篇文章,如果没有设置 layout,默认使用 _config.yml 中的 default_layout参数代替。<br>如果 title 中有空格，请使用引号括起来。</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h1 id="2-常见问题和解决方法"><a href="#2-常见问题和解决方法" class="headerlink" title="2. 常见问题和解决方法"></a>2. 常见问题和解决方法</h1><h2 id="1-分支拷贝"><a href="#1-分支拷贝" class="headerlink" title="1. 分支拷贝"></a>1. 分支拷贝</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># example:</span></span><br><span class="line"><span class="comment">#                             H---I---J topicB</span></span><br><span class="line"><span class="comment">#                            /</span></span><br><span class="line"><span class="comment">#                   E---F---G  topicA</span></span><br><span class="line"><span class="comment">#                  /</span></span><br><span class="line"><span class="comment">#     A---B---C---D  master</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># command:</span></span><br><span class="line">$ git rebase --onto master topicA topicB</span><br><span class="line"></span><br><span class="line"><span class="comment"># result:</span></span><br><span class="line"><span class="comment">#                  H'--I'--J'  topicB</span></span><br><span class="line"><span class="comment">#                 /</span></span><br><span class="line"><span class="comment">#                 | E---F---G  topicA</span></span><br><span class="line"><span class="comment">#                 |/</span></span><br><span class="line"><span class="comment">#     A---B---C---D  master</span></span><br></pre></td></tr></table></figure>
 
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">参数</td>
-<td align="center">描述</td>
-</tr>
-<tr>
-<td align="center">-p, –path</td>
-<td align="center">自定义新文章的路径</td>
-</tr>
-<tr>
-<td align="center">-r, –replace</td>
-<td align="center">如果存在同名文章，将其替换</td>
-</tr>
-<tr>
-<td align="center">-s, –slug</td>
-<td align="center">文章的 Slug，作为新文章的文件名和发布后的 URL</td>
-</tr>
-</tbody></table>
-<h2 id="2-生成静态文件"><a href="#2-生成静态文件" class="headerlink" title="2. 生成静态文件"></a>2. 生成静态文件</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo genrate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+<h2 id="2-Fatal-You-are-not-currently-on-a-branch"><a href="#2-Fatal-You-are-not-currently-on-a-branch" class="headerlink" title="2. Fatal: You are not currently on a branch"></a>2. Fatal: You are not currently on a branch</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b &lt;new branch&gt;</span><br><span class="line">$ git chechout master</span><br><span class="line">$ git merge &lt;new branch&gt;</span><br><span class="line">$ git branch -d &lt;new branch&gt;</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-启动服务器"><a href="#3-启动服务器" class="headerlink" title="3. 启动服务器"></a>3. 启动服务器</h2><p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<h2 id="3-远程提交比本地新"><a href="#3-远程提交比本地新" class="headerlink" title="3. 远程提交比本地新"></a>3. 远程提交比本地新</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># example:</span></span><br><span class="line"><span class="comment">#     o---remotes/origin/master</span></span><br><span class="line"><span class="comment">#     |</span></span><br><span class="line"><span class="comment">#     o---master</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># command:</span></span><br><span class="line">$ git reset --hard origin/master</span><br><span class="line">$ git revert HEAD</span><br><span class="line">$ git push</span><br><span class="line"></span><br><span class="line"><span class="comment"># result:</span></span><br><span class="line"><span class="comment">#     o---master</span></span><br><span class="line"><span class="comment">#     |</span></span><br><span class="line"><span class="comment">#     o---remotes/origin/master</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="4-部署网站"><a href="#4-部署网站" class="headerlink" title="4. 部署网站"></a>4. 部署网站</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<h2 id="4-修改-合并历史-commit-信息"><a href="#4-修改-合并历史-commit-信息" class="headerlink" title="4. 修改/合并历史 commit 信息"></a>4. 修改/合并历史 commit 信息</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase -i HEAD~3</span><br><span class="line">$ git commit --amend</span><br><span class="line">$ git rebase --<span class="built_in">continue</span></span><br></pre></td></tr></table></figure>
 
-<table>
-<thead>
-<tr>
-<th align="center"></th>
-<th align="center"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">参数</td>
-<td align="center">描述</td>
-</tr>
-<tr>
-<td align="center">-g, –generate</td>
-<td align="center">部署之前预先生成静态文件</td>
-</tr>
-</tbody></table>
-<h2 id="5-清楚缓存文件"><a href="#5-清楚缓存文件" class="headerlink" title="5. 清楚缓存文件"></a>5. 清楚缓存文件</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<h2 id="5-Windows-系统中-Git-文件差异比较工具为-Meld"><a href="#5-Windows-系统中-Git-文件差异比较工具为-Meld" class="headerlink" title="5. Windows 系统中 Git 文件差异比较工具为 Meld"></a>5. Windows 系统中 Git 文件差异比较工具为 <strong><a href="https://meldmerge.org/" target="_blank" rel="noopener">Meld</a></strong></h2><ul>
+<li>免费</li>
+<li>跨平台</li>
+</ul>
+<p>Meld 安装路径为：<strong>C:/meld/meld.exe</strong><br>对应修改的文件为：<strong>.gitconfig</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global merge.tool meld</span><br><span class="line">$ git config --global diff.tool meld</span><br><span class="line">$ git config --global mergetool.meld.path <span class="string">'/c/meld/meld.exe'</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -306,19 +269,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Typecho 博客搭建成功后写的第一篇文章</title>
-    <url>/2019/02/20/Typecho-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E5%90%8E%E5%86%99%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<ul>
-<li>这个是把博客搭建成功后写的第一篇文章，相关的玩法目前还在研究中。</li>
-<li>博客系统 VPS + <a href="bt.cn">BT</a> + <a href="http://typecho.org/" target="_blank" rel="noopener">Typecho</a> 一键搭建的，能力有限，先搭建起来再说，后续再慢慢学习更多的知识。</li>
-<li>搭建网站的目的是记录一些东西，自己记忆力不好写下来免得忘记了，同时也方便查找和分享。</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>Typecho</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SublimeText使用教程</title>
     <url>/2020/03/21/SublimeText%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<blockquote>
@@ -365,6 +315,19 @@
 ]]></content>
       <tags>
         <tag>SublimeText</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Typecho 博客搭建成功后写的第一篇文章</title>
+    <url>/2019/02/20/Typecho-%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F%E5%90%8E%E5%86%99%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<ul>
+<li>这个是把博客搭建成功后写的第一篇文章，相关的玩法目前还在研究中。</li>
+<li>博客系统 VPS + <a href="bt.cn">BT</a> + <a href="http://typecho.org/" target="_blank" rel="noopener">Typecho</a> 一键搭建的，能力有限，先搭建起来再说，后续再慢慢学习更多的知识。</li>
+<li>搭建网站的目的是记录一些东西，自己记忆力不好写下来免得忘记了，同时也方便查找和分享。</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Typecho</tag>
       </tags>
   </entry>
   <entry>
@@ -560,18 +523,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Windows10 + office 激活工具下载</title>
-    <url>/2019/03/11/Windows-and-office-kms/</url>
-    <content><![CDATA[<h1 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h1><ul>
-<li>解压后管理员运行 <strong>KMSELDI.exe</strong></li>
-<li><a href="https://file.infonet.io/blog-files/Win10/KMSpico-Portable.7z" target="_blank" rel="noopener">KMSpico-Portable.7z</a></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>KMS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>USB相关介绍</title>
     <url>/2020/03/21/USB%E7%9B%B8%E5%85%B3%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[<blockquote>
@@ -679,6 +630,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Windows10 + office 激活工具下载</title>
+    <url>/2019/03/11/Windows-and-office-kms/</url>
+    <content><![CDATA[<h1 id="食用方法"><a href="#食用方法" class="headerlink" title="食用方法"></a>食用方法</h1><ul>
+<li>解压后管理员运行 <strong>KMSELDI.exe</strong></li>
+<li><a href="https://file.infonet.io/blog-files/Win10/KMSpico-Portable.7z" target="_blank" rel="noopener">KMSpico-Portable.7z</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>KMS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows shell babun</title>
     <url>/2019/09/22/Windows-shell/</url>
     <content><![CDATA[<h1 id="Babun-a-windows-shell-you-will-love"><a href="#Babun-a-windows-shell-you-will-love" class="headerlink" title="Babun - a windows shell you will love!"></a><a href="https://babun.github.io/" target="_blank" rel="noopener">Babun - a windows shell you will love!</a></h1><h2 id="解决中文乱码问题"><a href="#解决中文乱码问题" class="headerlink" title="解决中文乱码问题"></a>解决中文乱码问题</h2><p>中文显示将变成英文</p>
@@ -691,23 +654,6 @@
 <li><p>重启 babun</p>
 </li>
 </ol>
-]]></content>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows10 关闭 defender 的方法</title>
-    <url>/2019/03/09/Windows10-%E5%85%B3%E9%97%AD-defender/</url>
-    <content><![CDATA[<h1 id="1-步骤"><a href="#1-步骤" class="headerlink" title="1. 步骤"></a>1. 步骤</h1><ol>
-<li>快捷键 <strong>WIN+R</strong> 打开运行工具</li>
-<li>输入 <strong>gpedit.msc</strong> 回车</li>
-<li>计算机配置 -&gt; 管理模板 -&gt; Windows 组件 -&gt; Windows Defender 防病毒程序 -&gt; 关闭 Windows Defender 防病毒程序</li>
-<li>双击进入选择已启用确定即可。</li>
-</ol>
-<a id="more"></a>
-
-<h1 id="2-配图"><a href="#2-配图" class="headerlink" title="2. 配图"></a>2. 配图</h1><p><img src="https://file.infonet.io/blog-files/Win10/win%2Br.png" alt="win+r"><br><img src="https://file.infonet.io/blog-files/Win10/windows10-defender.png" alt="windows10-defender"></p>
 ]]></content>
       <tags>
         <tag>Windows</tag>
@@ -735,6 +681,69 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo 基础命令</title>
+    <url>/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<h1 id="1-常用命令"><a href="#1-常用命令" class="headerlink" title="1. 常用命令"></a>1. 常用命令</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h1 id="2-详解"><a href="#2-详解" class="headerlink" title="2. 详解"></a>2. 详解</h1><h2 id="1-新建一篇文章"><a href="#1-新建一篇文章" class="headerlink" title="1. 新建一篇文章"></a>1. 新建一篇文章</h2><p>新建一篇文章,如果没有设置 layout,默认使用 _config.yml 中的 default_layout参数代替。<br>如果 title 中有空格，请使用引号括起来。</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">参数</td>
+<td align="center">描述</td>
+</tr>
+<tr>
+<td align="center">-p, –path</td>
+<td align="center">自定义新文章的路径</td>
+</tr>
+<tr>
+<td align="center">-r, –replace</td>
+<td align="center">如果存在同名文章，将其替换</td>
+</tr>
+<tr>
+<td align="center">-s, –slug</td>
+<td align="center">文章的 Slug，作为新文章的文件名和发布后的 URL</td>
+</tr>
+</tbody></table>
+<h2 id="2-生成静态文件"><a href="#2-生成静态文件" class="headerlink" title="2. 生成静态文件"></a>2. 生成静态文件</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo genrate</span><br><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-启动服务器"><a href="#3-启动服务器" class="headerlink" title="3. 启动服务器"></a>3. 启动服务器</h2><p>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-部署网站"><a href="#4-部署网站" class="headerlink" title="4. 部署网站"></a>4. 部署网站</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">参数</td>
+<td align="center">描述</td>
+</tr>
+<tr>
+<td align="center">-g, –generate</td>
+<td align="center">部署之前预先生成静态文件</td>
+</tr>
+</tbody></table>
+<h2 id="5-清楚缓存文件"><a href="#5-清楚缓存文件" class="headerlink" title="5. 清楚缓存文件"></a>5. 清楚缓存文件</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>从网络中获取原理图符号、PCB 封装、3D 库</title>
     <url>/2019/03/09/%E4%BB%8E%E7%BD%91%E7%BB%9C%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%8E%9F%E7%90%86%E5%9B%BE%E7%AC%A6%E5%8F%B7%E5%92%8C-PCB-%E5%B0%81%E8%A3%85/</url>
     <content><![CDATA[<h1 id="网址链接"><a href="#网址链接" class="headerlink" title="网址链接"></a>网址链接</h1><p>首先放两个网站出来，都可以从中搜索元器件型号，然后选择需要下载的文件。</p>
@@ -756,50 +765,20 @@
       </tags>
   </entry>
   <entry>
-    <title>卧室插座面板改造</title>
-    <url>/2019/03/13/%E5%8D%A7%E5%AE%A4%E6%8F%92%E5%BA%A7%E9%9D%A2%E6%9D%BF%E6%94%B9%E9%80%A0/</url>
-    <content><![CDATA[<h1 id="1-改造背景"><a href="#1-改造背景" class="headerlink" title="1. 改造背景"></a>1. 改造背景</h1><p>由于卧室里的摆设改变了一下，导致书桌附近的一个插座面板孔数不够（之前只有一个三孔一位的面板），就想到换一个位数多一些的面板。</p>
-<h1 id="2-改造知识点"><a href="#2-改造知识点" class="headerlink" title="2. 改造知识点"></a>2. 改造知识点</h1><p><strong>以下家庭用电 220V 为例，计算铜导线大约功率/载流值</strong><br>当然功率/载流还跟走线方式有关系，比如明装、暗装，暗装又可分钢管、PVC 管内走线。</p>
-<table>
-<thead>
-<tr>
-<th align="center">导线横截面积</th>
-<th align="center">功率/载流</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">0.75 平方毫米</td>
-<td align="center">1.5KW / 7A</td>
-</tr>
-<tr>
-<td align="center">1.0 平方毫米</td>
-<td align="center">2.2KW / 10A</td>
-</tr>
-<tr>
-<td align="center">1.5 平方毫米</td>
-<td align="center">3.0KW / 14A</td>
-</tr>
-<tr>
-<td align="center">2.5 平方毫米</td>
-<td align="center">4.8KW / 22A</td>
-</tr>
-<tr>
-<td align="center">4.0 平方毫米</td>
-<td align="center">6.6KW / 30A</td>
-</tr>
-</tbody></table>
-<p><strong>说明：上表格只能作为估算，不是特别准确。<em>室内走线比较容易记住的就是按照 1平方毫米载流 10A 去计算。</em></strong></p>
+    <title>Windows10 关闭 defender 的方法</title>
+    <url>/2019/03/09/Windows10-%E5%85%B3%E9%97%AD-defender/</url>
+    <content><![CDATA[<h1 id="1-步骤"><a href="#1-步骤" class="headerlink" title="1. 步骤"></a>1. 步骤</h1><ol>
+<li>快捷键 <strong>WIN+R</strong> 打开运行工具</li>
+<li>输入 <strong>gpedit.msc</strong> 回车</li>
+<li>计算机配置 -&gt; 管理模板 -&gt; Windows 组件 -&gt; Windows Defender 防病毒程序 -&gt; 关闭 Windows Defender 防病毒程序</li>
+<li>双击进入选择已启用确定即可。</li>
+</ol>
 <a id="more"></a>
 
-<h1 id="3-改造流程"><a href="#3-改造流程" class="headerlink" title="3. 改造流程"></a>3. 改造流程</h1><h2 id="如图为卧室的面板，需要更换多位数的，如下图红色框框内。"><a href="#如图为卧室的面板，需要更换多位数的，如下图红色框框内。" class="headerlink" title="如图为卧室的面板，需要更换多位数的，如下图红色框框内。"></a>如图为卧室的面板，需要更换多位数的，如下图红色框框内。</h2><p><img src="https://file.infonet.io/blog-files/life/socket-panel-old.jpg" alt="socket-panel-old"></p>
-<h2 id="购置需要更换的插座面板"><a href="#购置需要更换的插座面板" class="headerlink" title="购置需要更换的插座面板"></a>购置需要更换的插座面板</h2><p>如下为新购置的面板<br>图片右边是把面板固定在盒子（底座）的螺丝以及盖住螺丝孔的帽。<br>插座盒子就用旧的，是否通用要核对下。<br><img src="https://file.infonet.io/blog-files/life/socket-panel.png" alt="socket-panel"></p>
-<h2 id="面板接线"><a href="#面板接线" class="headerlink" title="面板接线"></a>面板接线</h2><p>如下为面板背面接线<br>遵循左零右火（从背面看就是左火右零；火线为红色，零线为蓝色），地线为黄绿线的规则。<br>（PS:我因手上没有黄绿线，在此用蓝线代替）<br><img src="https://file.infonet.io/blog-files/life/socket-panel-button.png" alt="socket-panel-button"></p>
-<h2 id="再制作一个电源指示灯"><a href="#再制作一个电源指示灯" class="headerlink" title="再制作一个电源指示灯"></a>再制作一个电源指示灯</h2><p>一个 LED 串接一个 150K 左右的电阻，接到零线和火线之间，接线的时候注意 LED 的正负极<br><img src="https://file.infonet.io/blog-files/life/socket-panel-led.jpg" alt="socket-panel-led"></p>
-<h2 id="将主线接到上上图箭头所指的位置"><a href="#将主线接到上上图箭头所指的位置" class="headerlink" title="将主线接到上上图箭头所指的位置"></a>将主线接到上上图箭头所指的位置</h2><p><img src="https://file.infonet.io/blog-files/life/socket-panel-in.jpg" alt="socket-panel-in"></p>
-<h2 id="最后效果图"><a href="#最后效果图" class="headerlink" title="最后效果图"></a>最后效果图</h2><p><img src="https://file.infonet.io/blog-files/life/socket-panel-new.jpg" alt="socket-panel-new"></p>
+<h1 id="2-配图"><a href="#2-配图" class="headerlink" title="2. 配图"></a>2. 配图</h1><p><img src="https://file.infonet.io/blog-files/Win10/win%2Br.png" alt="win+r"><br><img src="https://file.infonet.io/blog-files/Win10/windows10-defender.png" alt="windows10-defender"></p>
 ]]></content>
       <tags>
-        <tag>生活</tag>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -934,8 +913,8 @@
 <p>我个人是非常喜欢博客文章以文件的形式储存，可以本地编辑器打开编辑，更直观。不太喜欢基于数据库存储的。<br>现在是刚开始玩博客的阶段，看到新鲜的事物都想去折腾一番。（笑…）<br>若后续文章数量达到几百篇的时候，Hexo 生成 Html 静态文件效率没有提高，也会有可能再转去 Typecho。</p>
 ]]></content>
       <tags>
-        <tag>Hexo</tag>
         <tag>Typecho</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -950,6 +929,53 @@
 ]]></content>
       <tags>
         <tag>电阻</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>卧室插座面板改造</title>
+    <url>/2019/03/13/%E5%8D%A7%E5%AE%A4%E6%8F%92%E5%BA%A7%E9%9D%A2%E6%9D%BF%E6%94%B9%E9%80%A0/</url>
+    <content><![CDATA[<h1 id="1-改造背景"><a href="#1-改造背景" class="headerlink" title="1. 改造背景"></a>1. 改造背景</h1><p>由于卧室里的摆设改变了一下，导致书桌附近的一个插座面板孔数不够（之前只有一个三孔一位的面板），就想到换一个位数多一些的面板。</p>
+<h1 id="2-改造知识点"><a href="#2-改造知识点" class="headerlink" title="2. 改造知识点"></a>2. 改造知识点</h1><p><strong>以下家庭用电 220V 为例，计算铜导线大约功率/载流值</strong><br>当然功率/载流还跟走线方式有关系，比如明装、暗装，暗装又可分钢管、PVC 管内走线。</p>
+<table>
+<thead>
+<tr>
+<th align="center">导线横截面积</th>
+<th align="center">功率/载流</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">0.75 平方毫米</td>
+<td align="center">1.5KW / 7A</td>
+</tr>
+<tr>
+<td align="center">1.0 平方毫米</td>
+<td align="center">2.2KW / 10A</td>
+</tr>
+<tr>
+<td align="center">1.5 平方毫米</td>
+<td align="center">3.0KW / 14A</td>
+</tr>
+<tr>
+<td align="center">2.5 平方毫米</td>
+<td align="center">4.8KW / 22A</td>
+</tr>
+<tr>
+<td align="center">4.0 平方毫米</td>
+<td align="center">6.6KW / 30A</td>
+</tr>
+</tbody></table>
+<p><strong>说明：上表格只能作为估算，不是特别准确。<em>室内走线比较容易记住的就是按照 1平方毫米载流 10A 去计算。</em></strong></p>
+<a id="more"></a>
+
+<h1 id="3-改造流程"><a href="#3-改造流程" class="headerlink" title="3. 改造流程"></a>3. 改造流程</h1><h2 id="如图为卧室的面板，需要更换多位数的，如下图红色框框内。"><a href="#如图为卧室的面板，需要更换多位数的，如下图红色框框内。" class="headerlink" title="如图为卧室的面板，需要更换多位数的，如下图红色框框内。"></a>如图为卧室的面板，需要更换多位数的，如下图红色框框内。</h2><p><img src="https://file.infonet.io/blog-files/life/socket-panel-old.jpg" alt="socket-panel-old"></p>
+<h2 id="购置需要更换的插座面板"><a href="#购置需要更换的插座面板" class="headerlink" title="购置需要更换的插座面板"></a>购置需要更换的插座面板</h2><p>如下为新购置的面板<br>图片右边是把面板固定在盒子（底座）的螺丝以及盖住螺丝孔的帽。<br>插座盒子就用旧的，是否通用要核对下。<br><img src="https://file.infonet.io/blog-files/life/socket-panel.png" alt="socket-panel"></p>
+<h2 id="面板接线"><a href="#面板接线" class="headerlink" title="面板接线"></a>面板接线</h2><p>如下为面板背面接线<br>遵循左零右火（从背面看就是左火右零；火线为红色，零线为蓝色），地线为黄绿线的规则。<br>（PS:我因手上没有黄绿线，在此用蓝线代替）<br><img src="https://file.infonet.io/blog-files/life/socket-panel-button.png" alt="socket-panel-button"></p>
+<h2 id="再制作一个电源指示灯"><a href="#再制作一个电源指示灯" class="headerlink" title="再制作一个电源指示灯"></a>再制作一个电源指示灯</h2><p>一个 LED 串接一个 150K 左右的电阻，接到零线和火线之间，接线的时候注意 LED 的正负极<br><img src="https://file.infonet.io/blog-files/life/socket-panel-led.jpg" alt="socket-panel-led"></p>
+<h2 id="将主线接到上上图箭头所指的位置"><a href="#将主线接到上上图箭头所指的位置" class="headerlink" title="将主线接到上上图箭头所指的位置"></a>将主线接到上上图箭头所指的位置</h2><p><img src="https://file.infonet.io/blog-files/life/socket-panel-in.jpg" alt="socket-panel-in"></p>
+<h2 id="最后效果图"><a href="#最后效果图" class="headerlink" title="最后效果图"></a>最后效果图</h2><p><img src="https://file.infonet.io/blog-files/life/socket-panel-new.jpg" alt="socket-panel-new"></p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1043,29 +1069,190 @@
       </tags>
   </entry>
   <entry>
-    <title>Git 基础命令</title>
-    <url>/2019/03/26/Git-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<h1 id="1-基础命令"><a href="#1-基础命令" class="headerlink" title="1. 基础命令"></a>1. 基础命令</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ ssh-keygen (git 生成 ssh 公钥：id_rsa.pub)</span><br><span class="line">$ git config --global user.name <span class="string">"xxx"</span></span><br><span class="line">$ git config --global user.email <span class="string">"xxx@xxx.xxx"</span></span><br><span class="line">$ git config --system --list</span><br><span class="line">$ git config --global --list</span><br><span class="line">$ git config --<span class="built_in">local</span>  --list</span><br><span class="line">$ git add .</span><br><span class="line">$ git status  (查看缓存)</span><br><span class="line">$ git commit -m <span class="string">"xxx"</span>  (commit 备注)</span><br><span class="line">$ git commit --amend  (修改上次 commit 备注信息)</span><br><span class="line">$ git reset --hard</span><br><span class="line">$ git reset --hard HEAD~5</span><br><span class="line">$ git clean -dxf  (清理不是 git 管理得文件)</span><br><span class="line">$ git checkout &lt;file&gt;  (丢弃 file 在工作区得修改)</span><br><span class="line">$ git remote add origin &lt;url&gt;  (添加远程仓库)</span><br><span class="line">$ git push -u origin master  (首次推送至远程仓库)</span><br><span class="line">$ git pull &lt;name&gt;  (从指定远程仓库拉取)</span><br><span class="line">$ git branch  (查看分支)</span><br><span class="line">$ git checkout -b &lt;name&gt;  (创建并切换分支)</span><br><span class="line">$ git merge &lt;name&gt;  (合并某分支到当前分支)</span><br><span class="line">$ git branch -d &lt;name&gt;  (删除分支)</span><br><span class="line">$ git pull = $ git fetch + $ git merge  (从远程拉取)</span><br><span class="line">$ git stash -&gt; $ git stash pop (将当前修改存到暂存区 -&gt; 将之前得修改从暂存区恢复)</span><br><span class="line">$ git submodule update --init --recursive  (拉取目录中其他 git 管理的文件)</span><br><span class="line">$ git config --list</span><br><span class="line">$ git config --global core.editor <span class="string">"vim"</span></span><br><span class="line">$ git config --global alias.co checkout</span><br><span class="line">$ git config --global alias.br branch</span><br><span class="line">$ git config --global alias.ci commit</span><br><span class="line">$ git config --global alias.st status</span><br></pre></td></tr></table></figure>
+    <title>文件共享服务器: CuteHttpFileServer/chfs</title>
+    <url>/2019/05/01/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E6%9C%8D%E5%8A%A1%E5%99%A8-CuteHttpFileServer-chfs/</url>
+    <content><![CDATA[<p>介绍一个轻便、简洁、易用、免费的、HTTP协议的文件共享服务器：<strong><a href="http://iscute.cn/chfs" target="_blank" rel="noopener">CuteHttpFileServer/chfs</a></strong></p>
+<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><ul>
+<li>单个文件，整个软件只有一个可执行程序，无配置文件等其他文件</li>
+<li>跨平台运行，支持主流平台：Windows, Linux, Mac</li>
+<li>界面简洁，简单易用</li>
+<li>支持扫码下载和手机端访问，手机与电脑之间共享文件非常方便</li>
+<li>支持账户权限控制和地址过滤</li>
+<li>支持快速分享文字片段</li>
+<li>支持webdav协议</li>
+</ul>
+<h1 id="2-下载和使用"><a href="#2-下载和使用" class="headerlink" title="2. 下载和使用"></a>2. 下载和使用</h1><p>请移步到 CuteHttpFileServer 官网：<strong><a href="http://iscute.cn/chfs" target="_blank" rel="noopener">http://iscute.cn/chfs</a></strong></p>
+]]></content>
+      <tags>
+        <tag>文件共享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>消除共模干扰的方法</title>
+    <url>/2019/03/09/%E6%B6%88%E9%99%A4%E5%85%B1%E6%A8%A1%E5%B9%B2%E6%89%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[<ul>
+<li>采用屏蔽双绞线并有效接地</li>
+<li>强电场的地方还要考虑采用镀锌管屏蔽</li>
+<li>布线时远离高压线，更不能将高压电源线和信号线捆在一起走线</li>
+<li>不要和电控锁共用同一个电源</li>
+<li>采用线性稳压电源或高品质的开关电源(纹波干扰小于50mV)</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>电子</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>网站免费申请SSL证书</title>
+    <url>/2020/03/21/%E7%BD%91%E7%AB%99%E5%85%8D%E8%B4%B9%E7%94%B3%E8%AF%B7SSL%E8%AF%81%E4%B9%A6/</url>
+    <content><![CDATA[<blockquote>
+<p>以下用 <strong>Certbot+Nginx+Ubuntu18.04</strong> 为例：</p>
+</blockquote>
+<h1 id="1-简单总结"><a href="#1-简单总结" class="headerlink" title="1. 简单总结"></a>1. 简单总结</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下一次继续添加证书的时候就用如下命令：</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1. 自动运行</span></span><br><span class="line">$ sudo certbot --nginx</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 选择对应的网址。</span></span><br><span class="line">Which names would you like to activate HTTPS <span class="keyword">for</span>?</span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">1: infonet.io</span><br><span class="line">Select the appropriate numbers separated by commas and/or spaces, or leave input</span><br><span class="line">blank to select all options shown (Enter <span class="string">'c'</span> to cancel): 1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 请选择 2: 重定向。</span></span><br><span class="line">Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.</span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">1: No redirect - Make no further changes to the webserver configuration.</span><br><span class="line">2: Redirect - Make all requests redirect to secure HTTPS access. Choose this <span class="keyword">for</span></span><br><span class="line">new sites, or <span class="keyword">if</span> you<span class="string">'re confident your site works on HTTPS. You can undo this</span></span><br><span class="line"><span class="string">change by editing your web server'</span>s configuration.</span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">Select the appropriate number [1-2] <span class="keyword">then</span> [enter] (press <span class="string">'c'</span> to cancel): 2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 出现如下信息表示 SSL 证书配置成功。</span></span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">Congratulations! You have successfully enabled https://infonet.io</span><br></pre></td></tr></table></figure>
 
 <a id="more"></a>
 
-<h1 id="2-常见问题和解决方法"><a href="#2-常见问题和解决方法" class="headerlink" title="2. 常见问题和解决方法"></a>2. 常见问题和解决方法</h1><h2 id="1-分支拷贝"><a href="#1-分支拷贝" class="headerlink" title="1. 分支拷贝"></a>1. 分支拷贝</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># example:</span></span><br><span class="line"><span class="comment">#                             H---I---J topicB</span></span><br><span class="line"><span class="comment">#                            /</span></span><br><span class="line"><span class="comment">#                   E---F---G  topicA</span></span><br><span class="line"><span class="comment">#                  /</span></span><br><span class="line"><span class="comment">#     A---B---C---D  master</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># command:</span></span><br><span class="line">$ git rebase --onto master topicA topicB</span><br><span class="line"></span><br><span class="line"><span class="comment"># result:</span></span><br><span class="line"><span class="comment">#                  H'--I'--J'  topicB</span></span><br><span class="line"><span class="comment">#                 /</span></span><br><span class="line"><span class="comment">#                 | E---F---G  topicA</span></span><br><span class="line"><span class="comment">#                 |/</span></span><br><span class="line"><span class="comment">#     A---B---C---D  master</span></span><br></pre></td></tr></table></figure>
+<h1 id="2-详细讲解"><a href="#2-详细讲解" class="headerlink" title="2. 详细讲解"></a>2. 详细讲解</h1><h2 id="1-SSH-into-the-server"><a href="#1-SSH-into-the-server" class="headerlink" title="1. SSH into the server"></a>1. SSH into the server</h2><p>SSH into the server running your HTTP website as a user with sudo privileges.</p>
+<h2 id="2-Add-Certbot-PPA"><a href="#2-Add-Certbot-PPA" class="headerlink" title="2. Add Certbot PPA"></a>2. Add Certbot PPA</h2><p>You’ll need to add the Certbot PPA to your list of repositories. To do so, run the following commands on the command line on the machine:</p>
+   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install software-properties-common</span><br><span class="line">$ sudo add-apt-repository universe</span><br><span class="line">$ sudo add-apt-repository ppa:certbot/certbot</span><br><span class="line">$ sudo apt-get update</span><br></pre></td></tr></table></figure>
 
-<h2 id="2-Fatal-You-are-not-currently-on-a-branch"><a href="#2-Fatal-You-are-not-currently-on-a-branch" class="headerlink" title="2. Fatal: You are not currently on a branch"></a>2. Fatal: You are not currently on a branch</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b &lt;new branch&gt;</span><br><span class="line">$ git chechout master</span><br><span class="line">$ git merge &lt;new branch&gt;</span><br><span class="line">$ git branch -d &lt;new branch&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="3-Install-Certbot"><a href="#3-Install-Certbot" class="headerlink" title="3. Install Certbot"></a>3. Install Certbot</h2><p>Run this command on the command line on the machine to install Certbot.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install certbot python-certbot-nginx</span><br></pre></td></tr></table></figure>
 
-<h2 id="3-远程提交比本地新"><a href="#3-远程提交比本地新" class="headerlink" title="3. 远程提交比本地新"></a>3. 远程提交比本地新</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># example:</span></span><br><span class="line"><span class="comment">#     o---remotes/origin/master</span></span><br><span class="line"><span class="comment">#     |</span></span><br><span class="line"><span class="comment">#     o---master</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># command:</span></span><br><span class="line">$ git reset --hard origin/master</span><br><span class="line">$ git revert HEAD</span><br><span class="line">$ git push</span><br><span class="line"></span><br><span class="line"><span class="comment"># result:</span></span><br><span class="line"><span class="comment">#     o---master</span></span><br><span class="line"><span class="comment">#     |</span></span><br><span class="line"><span class="comment">#     o---remotes/origin/master</span></span><br></pre></td></tr></table></figure>
+<h2 id="4-Choose-how-you’d-like-to-run-Certbot"><a href="#4-Choose-how-you’d-like-to-run-Certbot" class="headerlink" title="4. Choose how you’d like to run Certbot"></a>4. Choose how you’d like to run Certbot</h2><ul>
+<li><p>Either get and install your certificates…</p>
+<p>Run this command to get a certificate and have Certbot edit your Nginx configuration automatically to serve it, turning on HTTPS access in a single step.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo certbot --nginx</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Or, just get a certificate</p>
+<p>If you’re feeling more conservative and would like to make the changes to your Nginx configuration by hand, run this command.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo certbot certonly --nginx</span><br></pre></td></tr></table></figure>
 
-<h2 id="4-修改-合并历史-commit-信息"><a href="#4-修改-合并历史-commit-信息" class="headerlink" title="4. 修改/合并历史 commit 信息"></a>4. 修改/合并历史 commit 信息</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git rebase -i HEAD~3</span><br><span class="line">$ git commit --amend</span><br><span class="line">$ git rebase --<span class="built_in">continue</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="5-Windows-系统中-Git-文件差异比较工具为-Meld"><a href="#5-Windows-系统中-Git-文件差异比较工具为-Meld" class="headerlink" title="5. Windows 系统中 Git 文件差异比较工具为 Meld"></a>5. Windows 系统中 Git 文件差异比较工具为 <strong><a href="https://meldmerge.org/" target="_blank" rel="noopener">Meld</a></strong></h2><ul>
-<li>免费</li>
-<li>跨平台</li>
+</li>
 </ul>
-<p>Meld 安装路径为：<strong>C:/meld/meld.exe</strong><br>对应修改的文件为：<strong>.gitconfig</strong></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global merge.tool meld</span><br><span class="line">$ git config --global diff.tool meld</span><br><span class="line">$ git config --global mergetool.meld.path <span class="string">'/c/meld/meld.exe'</span></span><br></pre></td></tr></table></figure>
+<h2 id="5-Test-automatic-renewal"><a href="#5-Test-automatic-renewal" class="headerlink" title="5. Test automatic renewal"></a>5. Test automatic renewal</h2><p>The Certbot packages on your system come with a cron job or systemd timer that will renew your certificates automatically before they expire. You will not need to run Certbot again, unless you change your configuration. You can test automatic renewal for your certificates by running this command:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo certbot renew --dry-run</span><br></pre></td></tr></table></figure>
+
+<p>The command to renew certbot is installed in one of the following locations:</p>
+<ul>
+<li><code>/etc/crontab/</code></li>
+<li><code>/etc/cron.*/*</code></li>
+<li><code>systemctl list-timers</code></li>
+</ul>
+<h2 id="6-Confirm-that-Certbot-worked"><a href="#6-Confirm-that-Certbot-worked" class="headerlink" title="6. Confirm that Certbot worked"></a>6. Confirm that Certbot worked</h2><p>To confirm that your site is set up properly, visit <code>https://yourwebsite.com/</code> in your browser and look for the lock icon in the URL bar. If you want to check that you have the top-of-the-line installation, you can head to <a href="https://www.ssllabs.com/ssltest/" target="_blank" rel="noopener">https://www.ssllabs.com/ssltest/</a>.</p>
+<blockquote>
+<p>参考链接：</p>
+<ol>
+<li>Certbot：<a href="https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx" target="_blank" rel="noopener">https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx</a></li>
+<li>重定向：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Redirections" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Redirections</a></li>
+</ol>
+</blockquote>
 ]]></content>
       <tags>
-        <tag>Git</tag>
+        <tag>SSL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>车牌号码含义</title>
+    <url>/2019/10/10/%E8%BD%A6%E7%89%8C%E5%8F%B7%E7%A0%81%E5%90%AB%E4%B9%89/</url>
+    <content><![CDATA[<h1 id="广东省（粤）"><a href="#广东省（粤）" class="headerlink" title="广东省（粤）"></a>广东省（粤）</h1><p>粤A 广州，粤B 深圳，粤C 珠海，粤D 汕头，粤E 佛山，粤F 韶关，粤G 湛江，粤H 肇庆，粤J 江门，粤K 茂名，粤L 惠州，粤M 梅州，粤N 汕尾，粤P 河源，粤Q 阳江，粤R 清远，粤S 东莞，粤T 中山，粤U 潮州，粤V 揭阳，粤W 云浮，粤X 顺德，粤Y 南海，粤Z 港澳进入内地车辆</p>
+<a id="more"></a>
+
+<h1 id="湖北省（鄂）"><a href="#湖北省（鄂）" class="headerlink" title="湖北省（鄂）"></a>湖北省（鄂）</h1><p>鄂A 武汉，鄂B 黄石，鄂C 十堰，鄂D 沙市，鄂E 宜昌，鄂F 襄樊，鄂G 鄂州，鄂H 荆门，鄂J 黄岗，鄂K 孝感，鄂L 咸宁，鄂M 荆州，鄂N 郧阳，鄂P 宜昌，鄂Q 鄂西州</p>
+<h1 id="黑龙江省（黑）"><a href="#黑龙江省（黑）" class="headerlink" title="黑龙江省（黑）"></a>黑龙江省（黑）</h1><p>黑A 哈尔滨，黑B 齐齐哈尔，黑C 牡丹江，黑D 佳木斯，黑D 佳木斯， 黑F 伊春，黑G 鸡西， 黑H 鹤岗， 黑J 双鸭山，黑K 七台河，黑M 绥化， 黑N 黑河，黑L 松花江行署，黑P 大兴安岭地区，黑R 农恳系统</p>
+<h1 id="河南省（豫）"><a href="#河南省（豫）" class="headerlink" title="河南省（豫）"></a>河南省（豫）</h1><p>豫A 郑州，豫B 开封，豫C 洛阳，豫D 平顶山，豫E 安阳，豫F 鹤壁，豫G 新乡，豫H 焦作，豫J 濮阳，豫K 许昌，豫L 漯河，豫M 三门峡，豫N 商丘，豫P 周口，豫Q 驻马店，豫R 南阳，豫S 信阳，豫U 济源</p>
+<h1 id="浙江省（浙）"><a href="#浙江省（浙）" class="headerlink" title="浙江省（浙）"></a>浙江省（浙）</h1><p>浙A 杭州，浙B 宁波，浙C 温州，浙D 绍兴，浙E 湖州，浙F 嘉兴，浙G 金华，浙H 衢州，浙J 台州，浙K 丽水，浙L 舟山</p>
+<h1 id="江苏省（苏）"><a href="#江苏省（苏）" class="headerlink" title="江苏省（苏）"></a>江苏省（苏）</h1><p>苏A 南京，苏B 无锡，苏C 徐州，苏D 常州，苏E 苏州，苏F 南通，苏G 连云港，苏H 淮安，苏J 盐城，苏K 扬州，苏L 镇江，苏M 泰州，苏N 宿迁</p>
+<h1 id="山东省（鲁）"><a href="#山东省（鲁）" class="headerlink" title="山东省（鲁）"></a>山东省（鲁）</h1><p>鲁A 济南，鲁B 青岛，鲁C 淄博，鲁D 枣庄，鲁E 东营，鲁F 烟台，鲁G 潍坊，鲁H 济宁，鲁J 泰安，鲁K 威海，鲁L 日照，鲁M 莱芜，鲁N 德州，鲁P 聊城，鲁Q 临沂，鲁R 菏泽，鲁U 青岛开发区</p>
+<h1 id="安徽省（皖）"><a href="#安徽省（皖）" class="headerlink" title="安徽省（皖）"></a>安徽省（皖）</h1><p>皖A 合肥，皖B 芜湖，皖C 蚌埠，皖D 淮南，皖E 马鞍山，皖F 淮北，皖G 铜陵，皖E 安庆，皖J 黄山，皖K 阜阳，皖L 宿州，皖M 滁州，皖N 六安，皖P 宣城，皖Q 巢湖，皖R 池州，皖S 亳州</p>
+<h1 id="福建省（闽）"><a href="#福建省（闽）" class="headerlink" title="福建省（闽）"></a>福建省（闽）</h1><p>闽A 福州，闽B 莆田，闽C 泉州，闽D 厦门，闽E 漳州，闽F 龙岩，闽G 三明，闽H 南平，闽J 宁德，闽K 省直机关</p>
+<h1 id="广西壮族（桂）"><a href="#广西壮族（桂）" class="headerlink" title="广西壮族（桂）"></a>广西壮族（桂）</h1><p>桂A 南宁，桂B 柳州，桂C 桂林，桂D 梧州，桂E 北海，桂F 南宁，桂G 柳州，桂H 桂林，桂J 贺州(属梧州)，桂K 玉林，桂M 河池，桂L 百色，桂N 钦州，桂P 防城</p>
+<h1 id="甘肃省（甘）"><a href="#甘肃省（甘）" class="headerlink" title="甘肃省（甘）"></a>甘肃省（甘）</h1><p>甘A 兰州，甘B 嘉峪关，甘C 金昌，甘D 白银，甘E 天水，甘F 酒泉，甘G 张掖，甘H 武威，甘J 定西，甘K 陇南，甘L 平凉，甘M 庆阳，甘N 临夏回族，甘P 甘南藏族</p>
+<h1 id="山西省（晋）"><a href="#山西省（晋）" class="headerlink" title="山西省（晋）"></a>山西省（晋）</h1><p>晋A 太原，晋B 大同，晋C 阳泉，晋D 长治，晋E 晋城，晋F 朔州，晋H 忻州，晋J 吕梁，晋K 晋中，晋L 临汾，晋M 运城</p>
+<h1 id="内蒙古（蒙）"><a href="#内蒙古（蒙）" class="headerlink" title="内蒙古（蒙）"></a>内蒙古（蒙）</h1><p>蒙A 呼和浩特，蒙B 包头，蒙C 乌海，蒙D 赤峰，蒙E 呼伦贝尔盟，蒙F 兴安盟，蒙G 锡林郭勒盟，蒙H 乌兰察布盟，蒙J 伊克昭盟，蒙K 巴彦淖尔盟，蒙L 阿拉善盟</p>
+<h1 id="陕西省（陕）"><a href="#陕西省（陕）" class="headerlink" title="陕西省（陕）"></a>陕西省（陕）</h1><p>陕A 西安，陕B 铜川，陕C 宝鸡，陕D 威阳，陕E 渭南，陕F 汉中，陕G 安康，陕H 商洛，陕J 延安，陕K 榆林，陕U 省直机关</p>
+<h1 id="吉林省（吉）"><a href="#吉林省（吉）" class="headerlink" title="吉林省（吉）"></a>吉林省（吉）</h1><p>吉A 长春，吉B 吉林，吉C 四平，吉D 辽源，吉E 通化，吉F 白山，吉G 白城，吉H 延边朝鲜族</p>
+<h1 id="贵州省（贵）"><a href="#贵州省（贵）" class="headerlink" title="贵州省（贵）"></a>贵州省（贵）</h1><p>贵A 贵阳，贵B 六盘水，贵C 遵义，贵D 铜仁，贵E 黔西南州，贵F 毕节，贵G 安顺，贵H 黔东南州，贵J 黔南州</p>
+<h1 id="青海省（青）"><a href="#青海省（青）" class="headerlink" title="青海省（青）"></a>青海省（青）</h1><p>青A 西宁，青B 海东，青C 海北，青D 黄南，青E 海南州，青F 果洛州，青G 玉树州，青H 海西州</p>
+<h1 id="西藏（藏）"><a href="#西藏（藏）" class="headerlink" title="西藏（藏）"></a>西藏（藏）</h1><p>藏A 拉萨，藏B 昌都，藏C 山南，藏D <strong>**</strong>，藏E ****，藏F 阿里，藏G 林芝</p>
+<h1 id="四川省（川）"><a href="#四川省（川）" class="headerlink" title="四川省（川）"></a>四川省（川）</h1><p>川A 成都，川B 绵阳，川C 自贡，川D 攀枝花，川E 泸州，川F 德阳，川H 广元，川J 遂宁，川K 内江，川L 乐山，川Q 宜宾，川R 南充，川S 达县，川T 雅安，川U 阿坝藏族，川V ****藏族，川W 凉山彝族，川Z 眉山</p>
+]]></content>
+      <tags>
+        <tag>车牌</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电子线路焊接助焊剂</title>
+    <url>/2020/03/25/%E7%94%B5%E5%AD%90%E7%BA%BF%E8%B7%AF%E7%84%8A%E6%8E%A5%E5%8A%A9%E7%84%8A%E5%89%82/</url>
+    <content><![CDATA[<h1 id="1-助焊剂-flux-分类"><a href="#1-助焊剂-flux-分类" class="headerlink" title="1. 助焊剂(flux)分类"></a>1. 助焊剂(flux)分类</h1><p><img src="https://file.infonet.io/blog-files/Elec/%E5%8A%A9%E7%84%8A%E5%89%82.png" alt="助焊剂(flux)"></p>
+<h1 id="2-助焊剂作用"><a href="#2-助焊剂作用" class="headerlink" title="2. 助焊剂作用"></a>2. 助焊剂作用</h1><ul>
+<li>在焊接工艺中能帮助和促进焊接过程</li>
+<li>清除焊料和被焊母材表面的氧化物，使金属表面达到必要的清洁度（去除氧化物）</li>
+<li>去除被焊接材质表面油污、增大焊接面积</li>
+<li>防止焊接时表面的再次氧化</li>
+<li>降低被焊接材质表面张力</li>
+<li>提高焊接性能</li>
+<li>辅助热传导</li>
+</ul>
+<a id="more"></a>
+
+<h1 id="3-常用助焊剂"><a href="#3-常用助焊剂" class="headerlink" title="3. 常用助焊剂"></a>3. 常用助焊剂</h1><h2 id="1-松香"><a href="#1-松香" class="headerlink" title="1. 松香"></a>1. 松香</h2><ul>
+<li>固体松树脂制作助焊剂的原材料。</li>
+</ul>
+<h2 id="2-RMA-223-助焊膏"><a href="#2-RMA-223-助焊膏" class="headerlink" title="2. RMA-223 助焊膏"></a>2. RMA-223 助焊膏</h2><ul>
+<li>中度活性之松香型助焊膏，广泛使用电路板的 SMD 返修工艺。</li>
+</ul>
+<h2 id="3-NC-559-助焊膏"><a href="#3-NC-559-助焊膏" class="headerlink" title="3. NC-559 助焊膏"></a>3. NC-559 助焊膏</h2><ul>
+<li>为免洗型助焊膏，残留物颜色非常淡，有极高之 SIR 值，建议用于 BGA、CSP 等球阵焊点返修及补球。</li>
+</ul>
+<h2 id="4-RMA-223-NC-559-对比图"><a href="#4-RMA-223-NC-559-对比图" class="headerlink" title="4. RMA-223 NC-559 对比图"></a>4. RMA-223 NC-559 对比图</h2><p><img src="https://file.infonet.io/blog-files/Elec/%E5%8A%A9%E7%84%8A%E5%89%82-223-559.png" alt="RMA-223 NC-559 对比图"></p>
+<blockquote>
+<p>参考文章：电路板的表面绝缘阻抗：SIR<br><a href="https://www.researchmfg.com/2010/11/sir-measurement-for-pcb-2/" target="_blank" rel="noopener">https://www.researchmfg.com/2010/11/sir-measurement-for-pcb-2/</a></p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>助焊剂</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>部署Hexo</title>
+    <url>/2020/03/21/%E9%83%A8%E7%BD%B2Hexo/</url>
+    <content><![CDATA[<blockquote>
+<p><strong>Linux 用户</strong></p>
+</blockquote>
+<h1 id="1-安装-Git"><a href="#1-安装-Git" class="headerlink" title="1. 安装 Git"></a>1. 安装 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></h1><blockquote>
+<p>此处省略。</p>
+</blockquote>
+<h1 id="2-安装-Node-js-和-npm"><a href="#2-安装-Node-js-和-npm" class="headerlink" title="2. 安装 Node.js 和 npm"></a>2. 安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> 和 <a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm</a></h1><blockquote>
+<p><strong>这里推荐从 <a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">nvm</a> 安装。</strong></p>
+</blockquote>
+<ol>
+<li><p>安装或者更新 nvm(v0.35.2):</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">$ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改环境变量：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 第一步：</span></span><br><span class="line">$ <span class="built_in">export</span> NVM_DIR=<span class="string">"<span class="variable">$([ -z "$&#123;XDG_CONFIG_HOME-&#125;" ] &amp;&amp; printf %s "$&#123;HOME&#125;/.nvm" || printf %s "$&#123;XDG_CONFIG_HOME&#125;/nvm")</span>"</span></span><br><span class="line"><span class="comment"># 第二步：</span></span><br><span class="line">[ -s <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> ] &amp;&amp; \. <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span>    <span class="comment"># This loads nvm</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>验证是否已经安装 nvm 输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">command</span> -v nvm</span><br><span class="line">nvm</span><br><span class="line"><span class="comment"># 若输出 nvm 代表安装成功。请注意 which nvm 将不起作用。Since nvm is a sourced shell function, not an executable binary.</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>安装 Node.js 和 npm</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ nvm install node</span><br><span class="line"><span class="comment"># 安装 Node.js 时会一起安装 npm.</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更多请查看 nvm GitHub 主页。</p>
+<p><a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">https://github.com/nvm-sh/nvm</a></p>
+</li>
+</ol>
+<h1 id="3-安装-Hexo"><a href="#3-安装-Hexo" class="headerlink" title="3. 安装 Hexo"></a>3. 安装 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-使用-Hexo"><a href="#4-使用-Hexo" class="headerlink" title="4. 使用 Hexo"></a>4. 使用 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;    <span class="comment"># 新建一篇文章</span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s    <span class="comment"># 生成静态文件并启动本地服务器</span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d    <span class="comment"># 生成静态文件并本地部署</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>更多请看 Hexo 基础命令章节或者请看官网教程: <a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>Hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -1081,6 +1268,30 @@
 ]]></content>
       <tags>
         <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2019年深圳百公里前行</title>
+    <url>/2019/03/23/2019%E5%B9%B4%E6%B7%B1%E5%9C%B3%E7%99%BE%E5%85%AC%E9%87%8C%E5%89%8D%E8%A1%8C/</url>
+    <content><![CDATA[<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><p>我们今年还是走的磨坊 2016 年的徒步路线，此路线是非常金典的，路线经过南山 -&gt; 福田 -&gt; 罗湖 -&gt; 龙岗 -&gt; 盐田。<br>沿途风景有深圳湾、红树林、市内公园、笔架山公园、东湖公园、梧桐山、大梅沙…等。<br>废话不多说了，先上路线图吧。<br><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-map.jpg" alt="2019-100km-map"></p>
+<a id="more"></a>
+
+<h1 id="2-前行"><a href="#2-前行" class="headerlink" title="2. 前行"></a>2. 前行</h1><h2 id="0KM，深圳湾公园集合出发"><a href="#0KM，深圳湾公园集合出发" class="headerlink" title="0KM，深圳湾公园集合出发"></a>0KM，深圳湾公园集合出发</h2><p>2019年3月16日早上10点，深圳湾公园集合出发。今天的天气很不错，不热也不冷，非常适合徒步。（为了这活动还专门请了两天假，哈哈）</p>
+<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-1.jpg" alt="2019-100km-1"></p>
+<p><em>拍了这张图，然后我发到朋友圈，很多朋友都说我长胖了，其实只是胖了一点，这个是拍照角度有问题，目前体重在 62-65KG 之间浮动。哈哈。</em></p>
+<h2 id="15KM，上沙附近吃午饭"><a href="#15KM，上沙附近吃午饭" class="headerlink" title="15KM，上沙附近吃午饭"></a>15KM，上沙附近吃午饭</h2><p>中途休息，这次先用的 KEEP 这个垃圾轨迹记录软件，刚开始还挺好的，走着走着软件交互就没有反应了。然后换了个软件叫#两步路(户外助手)#，这个软件感觉还是挺好用的，还可以导入路线轨迹。</p>
+<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-2.jpg" alt="2019-100km-2"></p>
+<h2 id="35KM，东湖公园打卡"><a href="#35KM，东湖公园打卡" class="headerlink" title="35KM，东湖公园打卡"></a>35KM，东湖公园打卡</h2><p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-3.jpg" alt="2019-100km-3"></p>
+<h2 id="48KM，梧桐山脚下打卡"><a href="#48KM，梧桐山脚下打卡" class="headerlink" title="48KM，梧桐山脚下打卡"></a>48KM，梧桐山脚下打卡</h2><p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-4.jpg" alt="2019-100km-4"></p>
+<h2 id="65KM，盐田港打卡"><a href="#65KM，盐田港打卡" class="headerlink" title="65KM，盐田港打卡"></a>65KM，盐田港打卡</h2><p>凌晨5点的盐田港</p>
+<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-5.jpg" alt="2019-100km-5"></p>
+<h2 id="71KM，大梅沙滨海公园打卡"><a href="#71KM，大梅沙滨海公园打卡" class="headerlink" title="71KM，大梅沙滨海公园打卡"></a>71KM，大梅沙滨海公园打卡</h2><p>2019年3月17日早上7点20时的大梅沙公园</p>
+<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-6.jpg" alt="2019-100km-6"></p>
+<p>今年的状态不好，脚受伤了，实在前进不了了，在永和大王吃了油条豆浆早餐，回家明年再战！</p>
+<h1 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h1><p>深圳百公算上今年的一共参加3次，2016年（15KM）、2018年（大概75KM）、2019年（大概71KM）。<br>今年的百公里还没有去年走的多，2018 年至 2019 年平时基本上没怎么运动，这次大动作之后身体有些不适，如脚疼，腰酸。<br>生命在于运动，以后要加强锻炼。</p>
+]]></content>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -1141,70 +1352,12 @@
       </tags>
   </entry>
   <entry>
-    <title>文件共享服务器: CuteHttpFileServer/chfs</title>
-    <url>/2019/05/01/%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E6%9C%8D%E5%8A%A1%E5%99%A8-CuteHttpFileServer-chfs/</url>
-    <content><![CDATA[<p>介绍一个轻便、简洁、易用、免费的、HTTP协议的文件共享服务器：<strong><a href="http://iscute.cn/chfs" target="_blank" rel="noopener">CuteHttpFileServer/chfs</a></strong></p>
-<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><ul>
-<li>单个文件，整个软件只有一个可执行程序，无配置文件等其他文件</li>
-<li>跨平台运行，支持主流平台：Windows, Linux, Mac</li>
-<li>界面简洁，简单易用</li>
-<li>支持扫码下载和手机端访问，手机与电脑之间共享文件非常方便</li>
-<li>支持账户权限控制和地址过滤</li>
-<li>支持快速分享文字片段</li>
-<li>支持webdav协议</li>
-</ul>
-<h1 id="2-下载和使用"><a href="#2-下载和使用" class="headerlink" title="2. 下载和使用"></a>2. 下载和使用</h1><p>请移步到 CuteHttpFileServer 官网：<strong><a href="http://iscute.cn/chfs" target="_blank" rel="noopener">http://iscute.cn/chfs</a></strong></p>
+    <title>频率与周期对应关系</title>
+    <url>/2020/05/05/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/</url>
+    <content><![CDATA[<p><img src="https://file.infonet.io/blog-files/Elec/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB.png" alt="频率与周期对应关系"></p>
 ]]></content>
       <tags>
-        <tag>文件共享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>消除共模干扰的方法</title>
-    <url>/2019/03/09/%E6%B6%88%E9%99%A4%E5%85%B1%E6%A8%A1%E5%B9%B2%E6%89%B0%E7%9A%84%E6%96%B9%E6%B3%95/</url>
-    <content><![CDATA[<ul>
-<li>采用屏蔽双绞线并有效接地</li>
-<li>强电场的地方还要考虑采用镀锌管屏蔽</li>
-<li>布线时远离高压线，更不能将高压电源线和信号线捆在一起走线</li>
-<li>不要和电控锁共用同一个电源</li>
-<li>采用线性稳压电源或高品质的开关电源(纹波干扰小于50mV)</li>
-</ul>
-]]></content>
-      <tags>
-        <tag>电子</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电子线路焊接助焊剂</title>
-    <url>/2020/03/25/%E7%94%B5%E5%AD%90%E7%BA%BF%E8%B7%AF%E7%84%8A%E6%8E%A5%E5%8A%A9%E7%84%8A%E5%89%82/</url>
-    <content><![CDATA[<h1 id="1-助焊剂-flux-分类"><a href="#1-助焊剂-flux-分类" class="headerlink" title="1. 助焊剂(flux)分类"></a>1. 助焊剂(flux)分类</h1><p><img src="https://file.infonet.io/blog-files/Elec/%E5%8A%A9%E7%84%8A%E5%89%82.png" alt="助焊剂(flux)"></p>
-<h1 id="2-助焊剂作用"><a href="#2-助焊剂作用" class="headerlink" title="2. 助焊剂作用"></a>2. 助焊剂作用</h1><ul>
-<li>在焊接工艺中能帮助和促进焊接过程</li>
-<li>清除焊料和被焊母材表面的氧化物，使金属表面达到必要的清洁度（去除氧化物）</li>
-<li>去除被焊接材质表面油污、增大焊接面积</li>
-<li>防止焊接时表面的再次氧化</li>
-<li>降低被焊接材质表面张力</li>
-<li>提高焊接性能</li>
-<li>辅助热传导</li>
-</ul>
-<a id="more"></a>
-
-<h1 id="3-常用助焊剂"><a href="#3-常用助焊剂" class="headerlink" title="3. 常用助焊剂"></a>3. 常用助焊剂</h1><h2 id="1-松香"><a href="#1-松香" class="headerlink" title="1. 松香"></a>1. 松香</h2><ul>
-<li>固体松树脂制作助焊剂的原材料。</li>
-</ul>
-<h2 id="2-RMA-223-助焊膏"><a href="#2-RMA-223-助焊膏" class="headerlink" title="2. RMA-223 助焊膏"></a>2. RMA-223 助焊膏</h2><ul>
-<li>中度活性之松香型助焊膏，广泛使用电路板的 SMD 返修工艺。</li>
-</ul>
-<h2 id="3-NC-559-助焊膏"><a href="#3-NC-559-助焊膏" class="headerlink" title="3. NC-559 助焊膏"></a>3. NC-559 助焊膏</h2><ul>
-<li>为免洗型助焊膏，残留物颜色非常淡，有极高之 SIR 值，建议用于 BGA、CSP 等球阵焊点返修及补球。</li>
-</ul>
-<h2 id="4-RMA-223-NC-559-对比图"><a href="#4-RMA-223-NC-559-对比图" class="headerlink" title="4. RMA-223 NC-559 对比图"></a>4. RMA-223 NC-559 对比图</h2><p><img src="https://file.infonet.io/blog-files/Elec/%E5%8A%A9%E7%84%8A%E5%89%82-223-559.png" alt="RMA-223 NC-559 对比图"></p>
-<blockquote>
-<p>参考文章：电路板的表面绝缘阻抗：SIR<br><a href="https://www.researchmfg.com/2010/11/sir-measurement-for-pcb-2/" target="_blank" rel="noopener">https://www.researchmfg.com/2010/11/sir-measurement-for-pcb-2/</a></p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>助焊剂</tag>
+        <tag>周期频率</tag>
       </tags>
   </entry>
   <entry>
@@ -1423,159 +1576,6 @@
 ]]></content>
       <tags>
         <tag>域名邮箱</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>网站免费申请SSL证书</title>
-    <url>/2020/03/21/%E7%BD%91%E7%AB%99%E5%85%8D%E8%B4%B9%E7%94%B3%E8%AF%B7SSL%E8%AF%81%E4%B9%A6/</url>
-    <content><![CDATA[<blockquote>
-<p>以下用 <strong>Certbot+Nginx+Ubuntu18.04</strong> 为例：</p>
-</blockquote>
-<h1 id="1-简单总结"><a href="#1-简单总结" class="headerlink" title="1. 简单总结"></a>1. 简单总结</h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下一次继续添加证书的时候就用如下命令：</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1. 自动运行</span></span><br><span class="line">$ sudo certbot --nginx</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 选择对应的网址。</span></span><br><span class="line">Which names would you like to activate HTTPS <span class="keyword">for</span>?</span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">1: infonet.io</span><br><span class="line">Select the appropriate numbers separated by commas and/or spaces, or leave input</span><br><span class="line">blank to select all options shown (Enter <span class="string">'c'</span> to cancel): 1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 请选择 2: 重定向。</span></span><br><span class="line">Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.</span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">1: No redirect - Make no further changes to the webserver configuration.</span><br><span class="line">2: Redirect - Make all requests redirect to secure HTTPS access. Choose this <span class="keyword">for</span></span><br><span class="line">new sites, or <span class="keyword">if</span> you<span class="string">'re confident your site works on HTTPS. You can undo this</span></span><br><span class="line"><span class="string">change by editing your web server'</span>s configuration.</span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">Select the appropriate number [1-2] <span class="keyword">then</span> [enter] (press <span class="string">'c'</span> to cancel): 2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 出现如下信息表示 SSL 证书配置成功。</span></span><br><span class="line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</span><br><span class="line">Congratulations! You have successfully enabled https://infonet.io</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h1 id="2-详细讲解"><a href="#2-详细讲解" class="headerlink" title="2. 详细讲解"></a>2. 详细讲解</h1><h2 id="1-SSH-into-the-server"><a href="#1-SSH-into-the-server" class="headerlink" title="1. SSH into the server"></a>1. SSH into the server</h2><p>SSH into the server running your HTTP website as a user with sudo privileges.</p>
-<h2 id="2-Add-Certbot-PPA"><a href="#2-Add-Certbot-PPA" class="headerlink" title="2. Add Certbot PPA"></a>2. Add Certbot PPA</h2><p>You’ll need to add the Certbot PPA to your list of repositories. To do so, run the following commands on the command line on the machine:</p>
-   <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install software-properties-common</span><br><span class="line">$ sudo add-apt-repository universe</span><br><span class="line">$ sudo add-apt-repository ppa:certbot/certbot</span><br><span class="line">$ sudo apt-get update</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-Install-Certbot"><a href="#3-Install-Certbot" class="headerlink" title="3. Install Certbot"></a>3. Install Certbot</h2><p>Run this command on the command line on the machine to install Certbot.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install certbot python-certbot-nginx</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-Choose-how-you’d-like-to-run-Certbot"><a href="#4-Choose-how-you’d-like-to-run-Certbot" class="headerlink" title="4. Choose how you’d like to run Certbot"></a>4. Choose how you’d like to run Certbot</h2><ul>
-<li><p>Either get and install your certificates…</p>
-<p>Run this command to get a certificate and have Certbot edit your Nginx configuration automatically to serve it, turning on HTTPS access in a single step.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo certbot --nginx</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Or, just get a certificate</p>
-<p>If you’re feeling more conservative and would like to make the changes to your Nginx configuration by hand, run this command.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo certbot certonly --nginx</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h2 id="5-Test-automatic-renewal"><a href="#5-Test-automatic-renewal" class="headerlink" title="5. Test automatic renewal"></a>5. Test automatic renewal</h2><p>The Certbot packages on your system come with a cron job or systemd timer that will renew your certificates automatically before they expire. You will not need to run Certbot again, unless you change your configuration. You can test automatic renewal for your certificates by running this command:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo certbot renew --dry-run</span><br></pre></td></tr></table></figure>
-
-<p>The command to renew certbot is installed in one of the following locations:</p>
-<ul>
-<li><code>/etc/crontab/</code></li>
-<li><code>/etc/cron.*/*</code></li>
-<li><code>systemctl list-timers</code></li>
-</ul>
-<h2 id="6-Confirm-that-Certbot-worked"><a href="#6-Confirm-that-Certbot-worked" class="headerlink" title="6. Confirm that Certbot worked"></a>6. Confirm that Certbot worked</h2><p>To confirm that your site is set up properly, visit <code>https://yourwebsite.com/</code> in your browser and look for the lock icon in the URL bar. If you want to check that you have the top-of-the-line installation, you can head to <a href="https://www.ssllabs.com/ssltest/" target="_blank" rel="noopener">https://www.ssllabs.com/ssltest/</a>.</p>
-<blockquote>
-<p>参考链接：</p>
-<ol>
-<li>Certbot：<a href="https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx" target="_blank" rel="noopener">https://certbot.eff.org/lets-encrypt/ubuntubionic-nginx</a></li>
-<li>重定向：<a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Redirections" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Redirections</a></li>
-</ol>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>SSL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>频率与周期对应关系</title>
-    <url>/2020/05/05/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/</url>
-    <content><![CDATA[<p><img src="https://file.infonet.io/blog-files/Elec/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB.png" alt="频率与周期对应关系"></p>
-]]></content>
-      <tags>
-        <tag>周期频率</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>车牌号码含义</title>
-    <url>/2019/10/10/%E8%BD%A6%E7%89%8C%E5%8F%B7%E7%A0%81%E5%90%AB%E4%B9%89/</url>
-    <content><![CDATA[<h1 id="广东省（粤）"><a href="#广东省（粤）" class="headerlink" title="广东省（粤）"></a>广东省（粤）</h1><p>粤A 广州，粤B 深圳，粤C 珠海，粤D 汕头，粤E 佛山，粤F 韶关，粤G 湛江，粤H 肇庆，粤J 江门，粤K 茂名，粤L 惠州，粤M 梅州，粤N 汕尾，粤P 河源，粤Q 阳江，粤R 清远，粤S 东莞，粤T 中山，粤U 潮州，粤V 揭阳，粤W 云浮，粤X 顺德，粤Y 南海，粤Z 港澳进入内地车辆</p>
-<a id="more"></a>
-
-<h1 id="湖北省（鄂）"><a href="#湖北省（鄂）" class="headerlink" title="湖北省（鄂）"></a>湖北省（鄂）</h1><p>鄂A 武汉，鄂B 黄石，鄂C 十堰，鄂D 沙市，鄂E 宜昌，鄂F 襄樊，鄂G 鄂州，鄂H 荆门，鄂J 黄岗，鄂K 孝感，鄂L 咸宁，鄂M 荆州，鄂N 郧阳，鄂P 宜昌，鄂Q 鄂西州</p>
-<h1 id="黑龙江省（黑）"><a href="#黑龙江省（黑）" class="headerlink" title="黑龙江省（黑）"></a>黑龙江省（黑）</h1><p>黑A 哈尔滨，黑B 齐齐哈尔，黑C 牡丹江，黑D 佳木斯，黑D 佳木斯， 黑F 伊春，黑G 鸡西， 黑H 鹤岗， 黑J 双鸭山，黑K 七台河，黑M 绥化， 黑N 黑河，黑L 松花江行署，黑P 大兴安岭地区，黑R 农恳系统</p>
-<h1 id="河南省（豫）"><a href="#河南省（豫）" class="headerlink" title="河南省（豫）"></a>河南省（豫）</h1><p>豫A 郑州，豫B 开封，豫C 洛阳，豫D 平顶山，豫E 安阳，豫F 鹤壁，豫G 新乡，豫H 焦作，豫J 濮阳，豫K 许昌，豫L 漯河，豫M 三门峡，豫N 商丘，豫P 周口，豫Q 驻马店，豫R 南阳，豫S 信阳，豫U 济源</p>
-<h1 id="浙江省（浙）"><a href="#浙江省（浙）" class="headerlink" title="浙江省（浙）"></a>浙江省（浙）</h1><p>浙A 杭州，浙B 宁波，浙C 温州，浙D 绍兴，浙E 湖州，浙F 嘉兴，浙G 金华，浙H 衢州，浙J 台州，浙K 丽水，浙L 舟山</p>
-<h1 id="江苏省（苏）"><a href="#江苏省（苏）" class="headerlink" title="江苏省（苏）"></a>江苏省（苏）</h1><p>苏A 南京，苏B 无锡，苏C 徐州，苏D 常州，苏E 苏州，苏F 南通，苏G 连云港，苏H 淮安，苏J 盐城，苏K 扬州，苏L 镇江，苏M 泰州，苏N 宿迁</p>
-<h1 id="山东省（鲁）"><a href="#山东省（鲁）" class="headerlink" title="山东省（鲁）"></a>山东省（鲁）</h1><p>鲁A 济南，鲁B 青岛，鲁C 淄博，鲁D 枣庄，鲁E 东营，鲁F 烟台，鲁G 潍坊，鲁H 济宁，鲁J 泰安，鲁K 威海，鲁L 日照，鲁M 莱芜，鲁N 德州，鲁P 聊城，鲁Q 临沂，鲁R 菏泽，鲁U 青岛开发区</p>
-<h1 id="安徽省（皖）"><a href="#安徽省（皖）" class="headerlink" title="安徽省（皖）"></a>安徽省（皖）</h1><p>皖A 合肥，皖B 芜湖，皖C 蚌埠，皖D 淮南，皖E 马鞍山，皖F 淮北，皖G 铜陵，皖E 安庆，皖J 黄山，皖K 阜阳，皖L 宿州，皖M 滁州，皖N 六安，皖P 宣城，皖Q 巢湖，皖R 池州，皖S 亳州</p>
-<h1 id="福建省（闽）"><a href="#福建省（闽）" class="headerlink" title="福建省（闽）"></a>福建省（闽）</h1><p>闽A 福州，闽B 莆田，闽C 泉州，闽D 厦门，闽E 漳州，闽F 龙岩，闽G 三明，闽H 南平，闽J 宁德，闽K 省直机关</p>
-<h1 id="广西壮族（桂）"><a href="#广西壮族（桂）" class="headerlink" title="广西壮族（桂）"></a>广西壮族（桂）</h1><p>桂A 南宁，桂B 柳州，桂C 桂林，桂D 梧州，桂E 北海，桂F 南宁，桂G 柳州，桂H 桂林，桂J 贺州(属梧州)，桂K 玉林，桂M 河池，桂L 百色，桂N 钦州，桂P 防城</p>
-<h1 id="甘肃省（甘）"><a href="#甘肃省（甘）" class="headerlink" title="甘肃省（甘）"></a>甘肃省（甘）</h1><p>甘A 兰州，甘B 嘉峪关，甘C 金昌，甘D 白银，甘E 天水，甘F 酒泉，甘G 张掖，甘H 武威，甘J 定西，甘K 陇南，甘L 平凉，甘M 庆阳，甘N 临夏回族，甘P 甘南藏族</p>
-<h1 id="山西省（晋）"><a href="#山西省（晋）" class="headerlink" title="山西省（晋）"></a>山西省（晋）</h1><p>晋A 太原，晋B 大同，晋C 阳泉，晋D 长治，晋E 晋城，晋F 朔州，晋H 忻州，晋J 吕梁，晋K 晋中，晋L 临汾，晋M 运城</p>
-<h1 id="内蒙古（蒙）"><a href="#内蒙古（蒙）" class="headerlink" title="内蒙古（蒙）"></a>内蒙古（蒙）</h1><p>蒙A 呼和浩特，蒙B 包头，蒙C 乌海，蒙D 赤峰，蒙E 呼伦贝尔盟，蒙F 兴安盟，蒙G 锡林郭勒盟，蒙H 乌兰察布盟，蒙J 伊克昭盟，蒙K 巴彦淖尔盟，蒙L 阿拉善盟</p>
-<h1 id="陕西省（陕）"><a href="#陕西省（陕）" class="headerlink" title="陕西省（陕）"></a>陕西省（陕）</h1><p>陕A 西安，陕B 铜川，陕C 宝鸡，陕D 威阳，陕E 渭南，陕F 汉中，陕G 安康，陕H 商洛，陕J 延安，陕K 榆林，陕U 省直机关</p>
-<h1 id="吉林省（吉）"><a href="#吉林省（吉）" class="headerlink" title="吉林省（吉）"></a>吉林省（吉）</h1><p>吉A 长春，吉B 吉林，吉C 四平，吉D 辽源，吉E 通化，吉F 白山，吉G 白城，吉H 延边朝鲜族</p>
-<h1 id="贵州省（贵）"><a href="#贵州省（贵）" class="headerlink" title="贵州省（贵）"></a>贵州省（贵）</h1><p>贵A 贵阳，贵B 六盘水，贵C 遵义，贵D 铜仁，贵E 黔西南州，贵F 毕节，贵G 安顺，贵H 黔东南州，贵J 黔南州</p>
-<h1 id="青海省（青）"><a href="#青海省（青）" class="headerlink" title="青海省（青）"></a>青海省（青）</h1><p>青A 西宁，青B 海东，青C 海北，青D 黄南，青E 海南州，青F 果洛州，青G 玉树州，青H 海西州</p>
-<h1 id="西藏（藏）"><a href="#西藏（藏）" class="headerlink" title="西藏（藏）"></a>西藏（藏）</h1><p>藏A 拉萨，藏B 昌都，藏C 山南，藏D <strong>**</strong>，藏E ****，藏F 阿里，藏G 林芝</p>
-<h1 id="四川省（川）"><a href="#四川省（川）" class="headerlink" title="四川省（川）"></a>四川省（川）</h1><p>川A 成都，川B 绵阳，川C 自贡，川D 攀枝花，川E 泸州，川F 德阳，川H 广元，川J 遂宁，川K 内江，川L 乐山，川Q 宜宾，川R 南充，川S 达县，川T 雅安，川U 阿坝藏族，川V ****藏族，川W 凉山彝族，川Z 眉山</p>
-]]></content>
-      <tags>
-        <tag>车牌</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2019年深圳百公里前行</title>
-    <url>/2019/03/23/2019%E5%B9%B4%E6%B7%B1%E5%9C%B3%E7%99%BE%E5%85%AC%E9%87%8C%E5%89%8D%E8%A1%8C/</url>
-    <content><![CDATA[<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><p>我们今年还是走的磨坊 2016 年的徒步路线，此路线是非常金典的，路线经过南山 -&gt; 福田 -&gt; 罗湖 -&gt; 龙岗 -&gt; 盐田。<br>沿途风景有深圳湾、红树林、市内公园、笔架山公园、东湖公园、梧桐山、大梅沙…等。<br>废话不多说了，先上路线图吧。<br><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-map.jpg" alt="2019-100km-map"></p>
-<a id="more"></a>
-
-<h1 id="2-前行"><a href="#2-前行" class="headerlink" title="2. 前行"></a>2. 前行</h1><h2 id="0KM，深圳湾公园集合出发"><a href="#0KM，深圳湾公园集合出发" class="headerlink" title="0KM，深圳湾公园集合出发"></a>0KM，深圳湾公园集合出发</h2><p>2019年3月16日早上10点，深圳湾公园集合出发。今天的天气很不错，不热也不冷，非常适合徒步。（为了这活动还专门请了两天假，哈哈）</p>
-<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-1.jpg" alt="2019-100km-1"></p>
-<p><em>拍了这张图，然后我发到朋友圈，很多朋友都说我长胖了，其实只是胖了一点，这个是拍照角度有问题，目前体重在 62-65KG 之间浮动。哈哈。</em></p>
-<h2 id="15KM，上沙附近吃午饭"><a href="#15KM，上沙附近吃午饭" class="headerlink" title="15KM，上沙附近吃午饭"></a>15KM，上沙附近吃午饭</h2><p>中途休息，这次先用的 KEEP 这个垃圾轨迹记录软件，刚开始还挺好的，走着走着软件交互就没有反应了。然后换了个软件叫#两步路(户外助手)#，这个软件感觉还是挺好用的，还可以导入路线轨迹。</p>
-<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-2.jpg" alt="2019-100km-2"></p>
-<h2 id="35KM，东湖公园打卡"><a href="#35KM，东湖公园打卡" class="headerlink" title="35KM，东湖公园打卡"></a>35KM，东湖公园打卡</h2><p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-3.jpg" alt="2019-100km-3"></p>
-<h2 id="48KM，梧桐山脚下打卡"><a href="#48KM，梧桐山脚下打卡" class="headerlink" title="48KM，梧桐山脚下打卡"></a>48KM，梧桐山脚下打卡</h2><p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-4.jpg" alt="2019-100km-4"></p>
-<h2 id="65KM，盐田港打卡"><a href="#65KM，盐田港打卡" class="headerlink" title="65KM，盐田港打卡"></a>65KM，盐田港打卡</h2><p>凌晨5点的盐田港</p>
-<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-5.jpg" alt="2019-100km-5"></p>
-<h2 id="71KM，大梅沙滨海公园打卡"><a href="#71KM，大梅沙滨海公园打卡" class="headerlink" title="71KM，大梅沙滨海公园打卡"></a>71KM，大梅沙滨海公园打卡</h2><p>2019年3月17日早上7点20时的大梅沙公园</p>
-<p><img src="https://file.infonet.io/blog-files/SZ-2019-100km/2019-100km-6.jpg" alt="2019-100km-6"></p>
-<p>今年的状态不好，脚受伤了，实在前进不了了，在永和大王吃了油条豆浆早餐，回家明年再战！</p>
-<h1 id="3-总结"><a href="#3-总结" class="headerlink" title="3. 总结"></a>3. 总结</h1><p>深圳百公算上今年的一共参加3次，2016年（15KM）、2018年（大概75KM）、2019年（大概71KM）。<br>今年的百公里还没有去年走的多，2018 年至 2019 年平时基本上没怎么运动，这次大动作之后身体有些不适，如脚疼，腰酸。<br>生命在于运动，以后要加强锻炼。</p>
-]]></content>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>部署Hexo</title>
-    <url>/2020/03/21/%E9%83%A8%E7%BD%B2Hexo/</url>
-    <content><![CDATA[<blockquote>
-<p><strong>Linux 用户</strong></p>
-</blockquote>
-<h1 id="1-安装-Git"><a href="#1-安装-Git" class="headerlink" title="1. 安装 Git"></a>1. 安装 <a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a></h1><blockquote>
-<p>此处省略。</p>
-</blockquote>
-<h1 id="2-安装-Node-js-和-npm"><a href="#2-安装-Node-js-和-npm" class="headerlink" title="2. 安装 Node.js 和 npm"></a>2. 安装 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a> 和 <a href="https://www.npmjs.com/" target="_blank" rel="noopener">npm</a></h1><blockquote>
-<p><strong>这里推荐从 <a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">nvm</a> 安装。</strong></p>
-</blockquote>
-<ol>
-<li><p>安装或者更新 nvm(v0.35.2):</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">$ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改环境变量：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 第一步：</span></span><br><span class="line">$ <span class="built_in">export</span> NVM_DIR=<span class="string">"<span class="variable">$([ -z "$&#123;XDG_CONFIG_HOME-&#125;" ] &amp;&amp; printf %s "$&#123;HOME&#125;/.nvm" || printf %s "$&#123;XDG_CONFIG_HOME&#125;/nvm")</span>"</span></span><br><span class="line"><span class="comment"># 第二步：</span></span><br><span class="line">[ -s <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span> ] &amp;&amp; \. <span class="string">"<span class="variable">$NVM_DIR</span>/nvm.sh"</span>    <span class="comment"># This loads nvm</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>验证是否已经安装 nvm 输入：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">command</span> -v nvm</span><br><span class="line">nvm</span><br><span class="line"><span class="comment"># 若输出 nvm 代表安装成功。请注意 which nvm 将不起作用。Since nvm is a sourced shell function, not an executable binary.</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>安装 Node.js 和 npm</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ nvm install node</span><br><span class="line"><span class="comment"># 安装 Node.js 时会一起安装 npm.</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>更多请查看 nvm GitHub 主页。</p>
-<p><a href="https://github.com/nvm-sh/nvm" target="_blank" rel="noopener">https://github.com/nvm-sh/nvm</a></p>
-</li>
-</ol>
-<h1 id="3-安装-Hexo"><a href="#3-安装-Hexo" class="headerlink" title="3. 安装 Hexo"></a>3. 安装 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br><span class="line">$ hexo init &lt;folder&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;folder&gt;</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
-
-<h1 id="4-使用-Hexo"><a href="#4-使用-Hexo" class="headerlink" title="4. 使用 Hexo"></a>4. 使用 <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a></h1><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;    <span class="comment"># 新建一篇文章</span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s    <span class="comment"># 生成静态文件并启动本地服务器</span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d    <span class="comment"># 生成静态文件并本地部署</span></span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>更多请看 Hexo 基础命令章节或者请看官网教程: <a href="https://hexo.io/" target="_blank" rel="noopener">https://hexo.io/</a></p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
