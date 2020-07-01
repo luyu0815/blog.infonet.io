@@ -581,13 +581,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="1、特性"><a href="#1、特性" class="headerlink" title="1、特性"></a>1、特性</h1><ul>
-<li>1、RS-485的电气特性：逻辑“1”以两线间的电压差为 +(2-6)V 表示；逻辑“0”以两线间的电压差为 -(2-6)V 表示。</li>
-<li>2、RS-485的数据最高传输速率为10Mbps。</li>
-<li>3、RS-485接口是采用平衡驱动器和差分接收器的组合，抗共模干能力增强，即抗噪声干扰性好。</li>
-<li>4、“使能”端是用于控制发送驱动器与传输线的切断与连接。当“使能”端起作用时，发送驱动器处于高阻状态，称作“第三态”，即它是有别于逻辑“1”与“0”的第三态。</li>
-<li>5、接收器也作与发送端相对的规定，收、发端通过平衡双绞线将AA与BB对应相连，当在收端AB之间有大于+200mV的电平时，输出正逻辑电平，小于-200mV时，输出负逻辑电平。接收器接收平衡线上的电平范围通常在200mV至6V之间。</li>
-</ul>
+          <h1 id="1-特性"><a href="#1-特性" class="headerlink" title="1. 特性"></a>1. 特性</h1><ol>
+<li>RS-485的电气特性：逻辑“1”以两线间的电压差为 +(2-6)V 表示；逻辑“0”以两线间的电压差为 -(2-6)V 表示。</li>
+<li>RS-485的数据最高传输速率一般为10Mbps。当然也有特殊的。</li>
+<li>RS-485接口是采用平衡驱动器和差分接收器的组合，抗共模干能力增强，即抗噪声干扰性好。</li>
+<li>“使能”端是用于控制发送驱动器与传输线的切断与连接。当“使能”端起作用时，发送驱动器处于高阻状态，称作“第三态”，即它是有别于逻辑“1”与“0”的第三态。</li>
+<li>接收器也作与发送端相对的规定，收、发端通过平衡双绞线将AA与BB对应相连，当在收端AB之间有大于+200mV的电平时，输出正逻辑电平，小于-200mV时，输出负逻辑电平。接收器接收平衡线上的电平范围通常在200mV至6V之间。</li>
+<li>特殊的RS485通信，比如一个大佬做的<a href="https://github.com/dukelec/cdbus_doc" target="_blank" rel="noopener"><strong>CDBUS</strong></a>最高传输速率可达50Mbps。还有很多特性：自带仲裁机制、挂接设备多、可自动分配地址、支持多主机、并发读写、组播、广播等。</li>
+<li><a href="https://github.com/dukelec/cdbus_doc" target="_blank" rel="noopener"><strong>CDBUS</strong></a>相关地址：<ol>
+<li><a href="https://github.com/dukelec/cdbus_doc" target="_blank" rel="noopener">https://github.com/dukelec/cdbus_doc</a></li>
+<li><a href="https://github.com/dukelec/cdbus_ip" target="_blank" rel="noopener">https://github.com/dukelec/cdbus_ip</a></li>
+<li><a href="https://github.com/dukelec/cdbus_tools" target="_blank" rel="noopener">https://github.com/dukelec/cdbus_tools</a></li>
+<li><a href="https://github.com/dukelec/cdbus_bridge" target="_blank" rel="noopener">https://github.com/dukelec/cdbus_bridge</a></li>
+<li><a href="https://dukelec.com/" target="_blank" rel="noopener">https://dukelec.com/</a></li>
+<li><a href="https://blog.dukelec.com/rs485-auto-addressing-zh" target="_blank" rel="noopener">https://blog.dukelec.com/rs485-auto-addressing-zh</a></li>
+</ol>
+</li>
+</ol>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/11/13/RS485%E7%AE%80%E4%BB%8B/#more" rel="contents">
@@ -760,6 +770,78 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Hexo 基础命令</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-09-22 13:38:50" itemprop="dateCreated datePublished" datetime="2019-09-22T13:38:50+08:00">2019-09-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-21 00:00:00" itemprop="dateModified" datetime="2020-03-21T00:00:00+08:00">2020-03-21</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-常用命令"><a href="#1-常用命令" class="headerlink" title="1. 常用命令"></a>1. 常用命令</h1><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2019/09/22/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -819,78 +901,6 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="陆宇">
-      <meta itemprop="description" content="陆宇的博客。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="陆宇的博客">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">Hexo 基础命令</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-09-22 13:38:50" itemprop="dateCreated datePublished" datetime="2019-09-22T13:38:50+08:00">2019-09-22</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-21 00:00:00" itemprop="dateModified" datetime="2020-03-21T00:00:00+08:00">2020-03-21</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="1-常用命令"><a href="#1-常用命令" class="headerlink" title="1. 常用命令"></a>1. 常用命令</h1><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="xml"><span class="tag">&lt;<span class="name">title</span>&gt;</span></span></span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2019/09/22/Hexo-%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
     </div>
 
