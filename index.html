@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.infonet.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="陆宇的个人博客。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="陆宇的个人博客">
+<meta property="og:url" content="http://blog.infonet.io/index.html">
+<meta property="og:site_name" content="陆宇的个人博客">
+<meta property="og:description" content="陆宇的个人博客。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="陆宇">
+<meta property="article:tag" content="陆宇 luyu0815 博客 infonet infonet.io">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://blog.infonet.io/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>陆宇的个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">陆宇的个人博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">41</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2021/06/08/%E5%BE%AE%E5%B8%A6%E7%BA%BF%E4%B8%8E%E5%B8%A6%E7%8A%B6%E7%BA%BF%E5%8C%BA%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/08/%E5%BE%AE%E5%B8%A6%E7%BA%BF%E4%B8%8E%E5%B8%A6%E7%8A%B6%E7%BA%BF%E5%8C%BA%E5%88%AB/" class="post-title-link" itemprop="url">微带线与带状线区别</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-08 16:22:00" itemprop="dateCreated datePublished" datetime="2021-06-08T16:22:00+08:00">2021-06-08</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="微带线与带状线区别"><a href="#微带线与带状线区别" class="headerlink" title="微带线与带状线区别"></a>微带线与带状线区别</h1><h1 id="1、带状线"><a href="#1、带状线" class="headerlink" title="1、带状线"></a>1、带状线</h1><p>走在内层 (stripline/double stripline)，埋在 PCB 内部的带状走线。如下图</p>
+<img src="/2021/06/08/%E5%BE%AE%E5%B8%A6%E7%BA%BF%E4%B8%8E%E5%B8%A6%E7%8A%B6%E7%BA%BF%E5%8C%BA%E5%88%AB/%E5%B8%A6%E7%8A%B6%E7%BA%BF.png" class="" title="带状线">
+
+<p>蓝色部分是导体，绿色部分是PCB的绝缘电介质，stripline 是嵌在两层导体之间的带状导线。</p>
+<p>因为 stripline 是嵌在两层导体之间，所以它的电场分布都在两个包它的导体（平面）之间，不会辐射出去能量，也不会受到外部的辐射干扰。但是由于它的周围全是电介质（介电常数比1大），所以信号在 stripline 中的传输速度比在 microstrip line 中慢！</p>
+<h1 id="2、微带线"><a href="#2、微带线" class="headerlink" title="2、微带线"></a>2、微带线</h1><p>是走在表面层 (microstrip)，附在PCB表面的带状走线。如下图</p>
+<img src="/2021/06/08/%E5%BE%AE%E5%B8%A6%E7%BA%BF%E4%B8%8E%E5%B8%A6%E7%8A%B6%E7%BA%BF%E5%8C%BA%E5%88%AB/%E5%BE%AE%E5%B8%A6%E7%BA%BF1.png" class="" title="微带线1">
+
+<img src="/2021/06/08/%E5%BE%AE%E5%B8%A6%E7%BA%BF%E4%B8%8E%E5%B8%A6%E7%8A%B6%E7%BA%BF%E5%8C%BA%E5%88%AB/%E5%BE%AE%E5%B8%A6%E7%BA%BF2.png" class="" title="微带线2">
+
+<p>蓝色部分是导体，绿色部分是 PCB 的绝缘电介质，上面的蓝色小块儿是 microstrip line，黄色部分是环氧有机材料。</p>
+<p>由于 microstrip line（微带线）的一面裸露在空气里面（可以向周围形成辐射或受到周围的辐射干扰），而另一面附在PCB的绝缘电介质上，所以它形成的电场一部分分布在空中，另一部分分布在PCB的绝缘介质中。但是 microstrip line 中的信号传输速度要比 stripline 中的信号传输速度快，这是其突出的优点！</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2021/06/03/dB-dBm-dBd-dBi-%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/03/dB-dBm-dBd-dBi-%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/" class="post-title-link" itemprop="url">dB dBm dBd dBi 相关知识</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-06-03 14:52:00" itemprop="dateCreated datePublished" datetime="2021-06-03T14:52:00+08:00">2021-06-03</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="dB-dBm-dBd-dBi-相关知识"><a href="#dB-dBm-dBd-dBi-相关知识" class="headerlink" title="dB dBm dBd dBi 相关知识"></a>dB dBm dBd dBi 相关知识</h1><blockquote>
+<p>dB 就是把一个很大（后面跟一长串0的）或者很小（前面有一长串0的）的数比较简短地表示出来，它们都是功率增益的单位。</p>
+</blockquote>
+<h2 id="1、公式"><a href="#1、公式" class="headerlink" title="1、公式"></a>1、公式</h2><ul>
+<li><p><strong>3dB ≈ 10lg2</strong>，即功率放大两倍（lg2 ≈ 0.30103）</p>
+</li>
+<li><p>dB = 10lg(功率A/功率B)，注：功率A/功率B就是放大倍数</p>
+</li>
+<li><p>dBm = 10log(功率/1mw)</p>
+</li>
+<li><p>dBd = 10log(天线输出功率/天线偶极子功率)，d 代表dipole（偶极子），dBd 为无单位的相对值</p>
+</li>
+<li><p>dBi = 10log(天线输出功率/全向天线功率)，i 代表 isotropic antenna（全向天线），dBi 为无单位的相对值</p>
+</li>
+</ul>
+<h2 id="2、dB"><a href="#2、dB" class="headerlink" title="2、dB"></a>2、dB</h2><p>dB 表示一个<strong>相对值</strong>，纯粹的比值，只表示两个量的相对大小关系，没有单位。</p>
+<p>当计算 A 的功率相比于 B 的功率大或小多少个 dB 时，按公式 10log(A/B) 计算。</p>
+<p>如果采用两者的电压比计算，按公式 20log(A/B) 计算。</p>
+<ul>
+<li>A 功率比 B 功率大一倍，那么 10log(A/B) = 10lg(A/B) = 10lg2 ≈ (10×0.30103)dB = 3dB</li>
+<li>A 功率是 B 功率的一半，那么 10log(A/B) = 10lg(A/B) = 10lg(1/2) ≈ (10×-0.30103)dB = -3dB</li>
+</ul>
+<h2 id="3、dBm"><a href="#3、dBm" class="headerlink" title="3、dBm"></a>3、dBm</h2><ul>
+<li><p>dBm 表示<strong>功率跟 1mW 比</strong>，10log(P/1mW) = 10lg(P/1mW)</p>
+</li>
+<li><p>dBw 表示功率跟 1W 比，10log(P/1W) = 10lg(P/1W)</p>
+</li>
+</ul>
+<p>A 的功率 P = 1mW，折算为 dBm 后为：10lg(1mW/1mW) = 0dBm</p>
+<p>A 的功率 P = 40W，折算为 dBm 后为：10lg(40W/1mW) = 10lg(40000) = 10lg4 + 10lg(10000) = 2×10lg2 + 40lg(10)  = 46dBm</p>
+<h2 id="4、dB-与-dBm-的运算"><a href="#4、dB-与-dBm-的运算" class="headerlink" title="4、dB 与 dBm 的运算"></a>4、dB 与 dBm 的运算</h2><p>总之，dB 是两个量之间的比值，表示两个量间的相对大小，而 dBm 表示功率绝对大小的值。</p>
+<p>在计算中，需要注意 dBm 减另外一个 dBm 时，得到的结果是 dB。</p>
+<ul>
+<li><p>dBm 与 dBm 之间只有加减，没有乘除。而用得最多的是减法：dBm 减 dBm 实际上是两个功率相除，信号功率和噪声功率相除就是信噪比(SNR)。</p>
+</li>
+<li><p>dBm 与 dB 之间可加可减。</p>
+</li>
+<li><p>dB 与 dB 之间一般只是做加法。例：A 到 B 增益 20dB，B 到 C 衰减 35dB，则 A 到 C 就是 20-35=-15dB。</p>
+</li>
+</ul>
+<h2 id="5、通信功率"><a href="#5、通信功率" class="headerlink" title="5、通信功率"></a>5、通信功率</h2><blockquote>
+<p>简单来说，dB就是功率放大倍数的另一种表达方法，也就是说dB和放大倍数是一一对应的关系。</p>
+</blockquote>
+<h3 id="1、查表"><a href="#1、查表" class="headerlink" title="1、查表"></a>1、查表</h3><table>
+<thead>
+<tr>
+<th align="center">放大倍数</th>
+<th align="center">增益（dB）</th>
+<th>放大倍数</th>
+<th align="center">增益（dB）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td>19.95</td>
+<td align="center">13</td>
+</tr>
+<tr>
+<td align="center">1.26</td>
+<td align="center">1</td>
+<td>39.81</td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="center">1.58</td>
+<td align="center">2</td>
+<td>100</td>
+<td align="center">20</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">3</td>
+<td>1,000</td>
+<td align="center">30</td>
+</tr>
+<tr>
+<td align="center">2.51</td>
+<td align="center">4</td>
+<td>10,000</td>
+<td align="center">40</td>
+</tr>
+<tr>
+<td align="center">3.16</td>
+<td align="center">5</td>
+<td>100,000</td>
+<td align="center">50</td>
+</tr>
+<tr>
+<td align="center">3.98</td>
+<td align="center">6</td>
+<td>1,000,000</td>
+<td align="center">60</td>
+</tr>
+<tr>
+<td align="center">5.01</td>
+<td align="center">7</td>
+<td>10,000,000</td>
+<td align="center">70</td>
+</tr>
+<tr>
+<td align="center">6.31</td>
+<td align="center">8</td>
+<td>100,000,000</td>
+<td align="center">80</td>
+</tr>
+<tr>
+<td align="center">7.94</td>
+<td align="center">9</td>
+<td>1,000,000,000</td>
+<td align="center">90</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">10</td>
+<td>10,000,000,000</td>
+<td align="center">100</td>
+</tr>
+</tbody></table>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/06/03/dB-dBm-dBd-dBi-%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2021/04/04/%E7%94%B5%E7%A3%81%E5%85%BC%E5%AE%B9%E4%BB%8B%E7%BB%8D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/04/%E7%94%B5%E7%A3%81%E5%85%BC%E5%AE%B9%E4%BB%8B%E7%BB%8D/" class="post-title-link" itemprop="url">电磁兼容介绍</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-04 23:10:55" itemprop="dateCreated datePublished" datetime="2021-04-04T23:10:55+08:00">2021-04-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-分类"><a href="#1-分类" class="headerlink" title="1.分类"></a>1.分类</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>EMC 电磁兼容</td>
+<td>EMI 电磁干扰</td>
+<td>CE 传到干扰</td>
+<td>电源线、控制线、天线端口</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>RE 辐射干扰</td>
+<td>电场、磁场</td>
+</tr>
+<tr>
+<td></td>
+<td>EMS 电磁抗扰度</td>
+<td>CS 传导抗扰</td>
+<td>电源线/信号线（射频、瞬态）、天线端口</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>RS 辐射抗扰</td>
+<td>电场、磁场</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>ESD 静电放电</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="2-名词介绍"><a href="#2-名词介绍" class="headerlink" title="2.名词介绍"></a>2.名词介绍</h1><p>EMC：即电磁兼容，指电气及电子设备在共同的电磁环境中能够执行各自功能的共存状态，即要求在同一电磁环境中各种设备都能正常工作又互不干扰，达到“兼容”的状态。<br>EMI：即电磁干扰，指电磁波与电子元器件作用后而产生的干扰现象，有传导干扰和辐射干扰两种。<br>EMS：即电磁敏感度，指电子设备受到电磁干扰的敏感程度。<br>ESD：即静电释放，用于静电防护的器材统称为ESD，中文名称静电阻抗器。</p>
+<h1 id="3-三要素三规律"><a href="#3-三要素三规律" class="headerlink" title="3.三要素三规律"></a>3.三要素三规律</h1><p>产生EMC问题的三个要素是：<strong>电磁干扰源</strong>、<strong>耦合途径</strong>、<strong>敏感设备</strong>。</p>
+<p>规律一、EMC费效比关系规律： EMC问题越早考虑、越早解决，费用越小、效果越好。<br>规律二、高频电流环路面积S越大, EMI辐射越严重。<br>规律三、环路电流频率f越高，引起的EMI辐射越严重，电磁辐射场强随电流频率f的平方成正比增大。</p>
+<h1 id="4-措施"><a href="#4-措施" class="headerlink" title="4.措施"></a>4.措施</h1><p>1、传输通道抑制：具体的方法有滤波、屏蔽、接地、搭接、合理的布线；<br>2、空间分离：即通过加大骚扰源和敏感电路间的距离，抑制空间辐射骚扰和感应耦合骚扰的有效方法；<br>3、时间分离：有用信号在干扰信号发射时短暂关闭，而在干扰信号停止的时间内传输；<br>4、频谱处理：频谱改变、展频技术；<br>5、电气隔离：光电隔离、继电器隔离、变压器隔离、DC/DC变换。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2021/04/04/RAM-ROM-Flash-%E5%8C%BA%E5%88%AB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/04/RAM-ROM-Flash-%E5%8C%BA%E5%88%AB/" class="post-title-link" itemprop="url">RAM ROM Flash UFS 区别</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-04 19:06:11" itemprop="dateCreated datePublished" datetime="2021-04-04T19:06:11+08:00">2021-04-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-RAM分类"><a href="#1-RAM分类" class="headerlink" title="1.RAM分类"></a>1.RAM分类</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>RAM</td>
+<td>DRAM</td>
+<td>SDRAM</td>
+<td>同步动态随机存取存储器，需要刷新，速度快，容量大</td>
+</tr>
+<tr>
+<td>掉电丢失数据</td>
+<td>动态随机存取存储器</td>
+<td>DDR SDRAM</td>
+<td>双倍速率SDRAM（内存条），工作电压2.5V/2.6V</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>DDR2 SDRAM</td>
+<td>内存时钟 200~533MHz，工作电压1.8V</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>DDR3 SDRAM</td>
+<td>内存时钟 400~1066MHz，工作电压1.5V/1.35</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>DDR4 SDRAM</td>
+<td>16bit预取机制（DDR3为8bit），工作电压1.2V</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>DDR5 SDRAM</td>
+<td>工作电压1.1V</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>GDDR SDRA</td>
+<td>图形DDR，目前有GDDR2~6</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>LPDDR SDRAM</td>
+<td>低功率DDR,时钟166MHz，LPDDR2其工作电压1.2V，时钟100~533MHz</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>RDRAM</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>SRAM</td>
+<td></td>
+<td>静态随机存取存储器，不用刷新，速度可以非常快，价格高，容量小，一种置于CPU的高速缓存（Cache)</td>
+</tr>
+<tr>
+<td></td>
+<td>DARAM</td>
+<td></td>
+<td>双口RAM，一个时钟周期可访问两次</td>
+</tr>
+<tr>
+<td></td>
+<td>SARAM</td>
+<td></td>
+<td>单口RAM，一个时钟周期访问一次</td>
+</tr>
+<tr>
+<td></td>
+<td>PSRAM</td>
+<td></td>
+<td>伪静态存储器，内部自带刷新机制</td>
+</tr>
+</tbody></table>
+<h1 id="2-ROM分类"><a href="#2-ROM分类" class="headerlink" title="2.ROM分类"></a>2.ROM分类</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ROM</td>
+<td>ROM</td>
+<td>只能写入一次，如CD-ROM、DVD-ROM</td>
+</tr>
+<tr>
+<td></td>
+<td>PROM</td>
+<td>可编程ROM，内部是行列式熔断丝</td>
+</tr>
+<tr>
+<td></td>
+<td>EPROM</td>
+<td>紫外线可擦除，写入时需要用编程器产生高压脉冲信号</td>
+</tr>
+<tr>
+<td></td>
+<td>OTP-ROM</td>
+<td>一次可编程ROM，写入原理与EPROM相同</td>
+</tr>
+<tr>
+<td></td>
+<td>EEPROM</td>
+<td>电可擦除</td>
+</tr>
+</tbody></table>
+<h1 id="3-Flash分类"><a href="#3-Flash分类" class="headerlink" title="3.Flash分类"></a>3.Flash分类</h1><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Flash</td>
+<td>NOR Flash</td>
+<td>以扇区为单位写，可随机读取，程序可直接运行，容量小</td>
+<td>Parallel NOR Flash</td>
+</tr>
+<tr>
+<td>闪存</td>
+<td></td>
+<td></td>
+<td>Serial NOR Flash</td>
+</tr>
+<tr>
+<td></td>
+<td>Nand Flash</td>
+<td>以块为单位读写，不能直接运行程序，容量大</td>
+<td>SLC、MLC、TLC、QLC</td>
+</tr>
+<tr>
+<td></td>
+<td>MMC</td>
+<td>MMC接口、NAND Flash、主控制器</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>eMMC Flash</td>
+<td>嵌入式存储解决方案，带有MMC接口（并行数据总线）、NAND Flash、主控制器</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UFS</td>
+<td>串行数据总线、Nand Flash、主控制器</td>
+<td></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>eMMC的最新 5.1标准理论最高值最高可以达到400MB/s，UFS的最大优势就是双通道双向读写，UFS3.0接口带宽最高23.2Gbps，也就是2.9GB/s。</p>
+</blockquote>
+<blockquote>
+<p>eMMC的电路接口与SD卡是一样的，SD卡只是焊接在PCB上，然后做上金手指和外壳。eMMC支持8位和4位数据总线，SD卡标准是4位数据总线。</p>
+</blockquote>
+<blockquote>
+<p>eMMC有两条总线，分别传输指令数据输入和输出，而且因为是并行总线还要有额外的data strobe。而UFS则是有两条差分的数据lane，指令和数据都是以packet的形式发送的。</p>
+</blockquote>
+<blockquote>
+<p>SSD = 主控 + DRAM缓存 + Nand Flash</p>
+</blockquote>
+<blockquote>
+<p>eMMC = 主控 + Nand Flash + 标准封装接口</p>
+</blockquote>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2021/04/04/%E9%AB%98%E9%80%9F%E4%BF%A1%E5%8F%B7PCB%E8%AE%BE%E8%AE%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/04/04/%E9%AB%98%E9%80%9F%E4%BF%A1%E5%8F%B7PCB%E8%AE%BE%E8%AE%A1/" class="post-title-link" itemprop="url">高速信号PCB设计</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-04-04 18:50:23" itemprop="dateCreated datePublished" datetime="2021-04-04T18:50:23+08:00">2021-04-04</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>高速信号PCB阻抗设计要求</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="center">高速信号</th>
+<th align="center">阻抗要求</th>
+<th align="center">误差</th>
+<th align="center">走线</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">DDR</td>
+<td align="center">100Ω</td>
+<td align="center">±10%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">eMMC</td>
+<td align="center">50Ω</td>
+<td align="center">±10%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">PCIe</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">USB</td>
+<td align="center">90Ω</td>
+<td align="center">±10%</td>
+<td align="center">差分</td>
+</tr>
+<tr>
+<td align="center">HDMI</td>
+<td align="center">100Ω</td>
+<td align="center">±10%</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td align="center">eDP</td>
+<td align="center">90Ω</td>
+<td align="center">±10%</td>
+<td align="center">差分</td>
+</tr>
+<tr>
+<td align="center">MIPI</td>
+<td align="center">100Ω</td>
+<td align="center">±10%</td>
+<td align="center">差分</td>
+</tr>
+<tr>
+<td align="center">SDIO/SDMMC</td>
+<td align="center">50Ω</td>
+<td align="center">±10%</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2020/06/13/USB-Type-C%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/06/13/USB-Type-C%E8%AF%A6%E7%BB%86%E4%BB%8B%E7%BB%8D/" class="post-title-link" itemprop="url">USB-Type-C详细介绍</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-06-13 21:32:52" itemprop="dateCreated datePublished" datetime="2020-06-13T21:32:52+08:00">2020-06-13</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-USB-Type-C接口包括"><a href="#1-USB-Type-C接口包括" class="headerlink" title="1. USB-Type-C接口包括"></a>1. USB-Type-C接口包括</h1><ul>
+<li>支持DisplayPort, PCIe等alternate mode的两组Superspeed USB线路(RX1/TX1和RX2/TX2)</li>
+<li>用于Alternate Mode的两条Sideband Use(SBU)线路</li>
+<li>用于Hi-Speed USB 2.0的Dp和Dn线路</li>
+<li>用于总线供电的VBUS线路</li>
+<li>用于为线缆控制器供电的VCONN 线路(只位于Type-C插头接口上)</li>
+<li>用于PD通信的配置信道(CC)。</li>
+</ul>
+<h1 id="2-插头反转"><a href="#2-插头反转" class="headerlink" title="2. 插头反转"></a>2. 插头反转</h1><p>Type-C插座可处理线缆插头的任意方向。USB-Type-C插座完全对称。所有的供电、接地和信号引脚两边对称，从而让USB-Type-C插头能够在Type-C接口中任意翻转。</p>
+<ul>
+<li>GND、USB 2.0和VBUS 信号保持连接。USB 2.0信号被复制到Type-C插座的上下两层，以保持任意方向的连接。</li>
+<li>插头上的VCONN 或CC引脚可以连接插座中的任意一个配置信道引脚-CC1或CC2 (取决于插入方向)。</li>
+<li>两条Superspeed线路的其中一条保持正确连接，USB-Type-C 插座必须使用SuperSpeed mux合理地进行连接</li>
+</ul>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E6%AD%A3%E5%8F%8D%E6%8F%92.png" alt="USB-Type-C正反插"></p>
+<!---more--->
+
+<h1 id="3-USB-Type-C设备基本概念"><a href="#3-USB-Type-C设备基本概念" class="headerlink" title="3. USB-Type-C设备基本概念"></a>3. USB-Type-C设备基本概念</h1><ol>
+<li><p>DFP(Downstream Facing Port)</p>
+<p>下行端口，可以理解为Host，DFP提供VBUS，也可以提供数据。典型的DFP设备是电源适配器，因为它永远都只是提供电源。</p>
+</li>
+<li><p>UFP(Upstream Facing Port)</p>
+<p>上行端口，可以理解为Device，UFP从VBUS中取电，并可提供数据。典型设备是U盘，移动硬盘，因为它们永远都是被读取数据和从VBUS取电，当然不排除未来可能出现可以作为主机的U盘。</p>
+</li>
+<li><p>DRP(Dual Role Port)</p>
+<p>双角色端口，DRP既可以做DFP(Host)，也可以做UFP(Device)，也可以在DFP与UFP间动态切换。典型的DRP设备是电脑(电脑可以作为USB的主机，也可以作为被充电的设备（苹果新推出的MAC Book Air）)，具OTG功能的手机(手机可以作为被充电和被读数据的设备，也可以作为主机为其他设备提供电源或者读取U盘数据)，移动电源(放电和充电可通过一个USB-Type-C，即此口可以放电也可以充电)。</p>
+</li>
+<li><p>CC（Configuration Channel）</p>
+<p>配置通道，这是USB-Type-C里新增的关键通道，它的作用有检测USB连接，检测正反插，USB设备间数据与VBUS的连接建立与管理等。</p>
+</li>
+<li><p>USB PD(USB Power Delivery)</p>
+<p>PD是一种通信协议，它是一种新的电源和通讯连接方式，它允许USB设备间传输最高至100W（20V/5A）的功率，同时它可以改变端口的属性，也可以使端口在DFP与UFP之间切换，它还可以与电缆通信，获取电缆的属性。</p>
+</li>
+<li><p>Electronically Marked Cable</p>
+<p>封装有E-Marker芯片的USB-Type-C有源电缆，DFP和UFP利用PD协议可以读取该电缆的属性：电源传输能力，数据传输能力，ID等信息。所有全功能的Type-C电缆都应该封装有E-Marker，但USB2.0 Type-C电缆可以不封装E-Marker。</p>
+</li>
+</ol>
+<h1 id="4-USB-Type-C设备是否需要CC逻辑芯片"><a href="#4-USB-Type-C设备是否需要CC逻辑芯片" class="headerlink" title="4. USB-Type-C设备是否需要CC逻辑芯片"></a>4. USB-Type-C设备是否需要CC逻辑芯片</h1><h2 id="1-USB-Type-C设备DFP-to-UFP配置流程与VBUS管理有如下主要流程："><a href="#1-USB-Type-C设备DFP-to-UFP配置流程与VBUS管理有如下主要流程：" class="headerlink" title="1. USB-Type-C设备DFP-to-UFP配置流程与VBUS管理有如下主要流程："></a>1. USB-Type-C设备DFP-to-UFP配置流程与VBUS管理有如下主要流程：</h2><h3 id="1-设备连接与分开检测"><a href="#1-设备连接与分开检测" class="headerlink" title="1. 设备连接与分开检测"></a>1. 设备连接与分开检测</h3><p>DFP需要检测到CC管脚上有某个电压时，判断UFP设备已插入或拔出，来提供和管理VBUS。当没有UFP设备插入时，必须关闭VBUS。因此所有的DFP设备需要CC逻辑检测与控制芯片。</p>
+<h3 id="2-插入方向检测"><a href="#2-插入方向检测" class="headerlink" title="2. 插入方向检测"></a>2. 插入方向检测</h3><h4 id="1-解释1"><a href="#1-解释1" class="headerlink" title="1. 解释1"></a>1. 解释1</h4><p>   如图下图，虽然USB-Type-C插座和插头的两排管脚上下对称，USB数据信号都有两组重复的通道，但主控芯片通常只有一组TX/RX和D+/-通道。由于USB2.0的数据率最高只有480Mbps, 可以不考虑信号走线的阻抗连续性而得到较好地数据传输质量，因此USB2.0的D+/-信号可以不被MUX控制而直接从主控芯片一分二连接至USB-Type-C插座的两组D+/-管脚上。但USB3.0或者USB3.1的数据率高达5Gbps或者10Gbps，如果信号线还是被简单地一分二的话，不连续的信号线阻抗将严重破坏数据传输质量，因此必须由MUX切换来保证信号路径阻抗的一致性，以确保信号传输质量。下图中右侧所示的MUX从TX1/RX1和TX2/RX2中选择一路连接至主控芯片，而这个MUX就必须被CC Logic控制。</p>
+<p>   <img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E6%95%B0%E6%8D%AE%E8%B5%B0%E7%BA%BF%E9%80%BB%E8%BE%91%E6%A8%A1%E5%9E%8B.jpg" alt="USB-Type-C数据走线逻辑模型"></p>
+<p>   但必须注意的是在USB3.0/USB3.1的应用中，有一种情况也可以不需要MUX，即不需要方向检测，如下图所示，不管是正插还是反插，左侧主机都可以根据CC管脚上的状态来切换MUX来连通USB3.0/USB3.1信号。此场景发生在右侧设备永远是UFP的情况下，比如U盘，移动硬盘等。</p>
+<p>   因此，在USB2.0应用中，无需考虑方向检测问题，但USB3.0或者USB3.1应用中，必须考虑方向检测问题。USB3.0/USB3.1应用中，除UFP设备以外的所有设备都需要CC逻辑检测与控制芯片。</p>
+<p>   <img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E7%9B%B4%E6%8E%A5%E8%BF%9E%E6%8E%A5%E6%95%B0%E6%8D%AE%E8%B5%B0%E7%BA%BF%E9%80%BB%E8%BE%91%E6%A8%A1%E5%9E%8B.jpg" alt="USB-Type-C直接连接数据走线逻辑模型"></p>
+<h4 id="2-解释2"><a href="#2-解释2" class="headerlink" title="2. 解释2"></a>2. 解释2</h4><p>   USB-Type-C规范解释了上行面端口(UFP)如何利用CC引脚CC1和CC2上的下拉电阻(Rd)申报成为一个外设。下行面端口(DFP)需要在CC1和CC2上配备上拉电阻(Rp)。所构成的电阻分压器用于确定Type-C外设是连接还是分离状态;以及Type-C插头的方向，因为线缆中只连接了一个CC引脚 (如下图所示)。</p>
+<p>   DFP，尤其扮演USB 数据主机的DFP，通常是指PC等主机上的端口或者设备连接的集线器上的下行端口。在其初始状态，DFP为VBUS 和VCONN供电。UFP是指设备上的端口或者连接DFP的集线器上的上行端口。</p>
+<p>   Type-C电子标记线缆组件(EMCA)需要使用VCONN 向线缆内部的标记电子元件供电。这些EMCA在Type-C 插头的VCONN 引脚上配有Ra终结电阻器。没有电子标记的Type-C线缆不含电子元件，因此不需要VCONN 供电。这些非EMCA线缆 中的 VCONN 引脚没有固定在Type-C插头。</p>
+<p>   <img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E8%BF%9E%E6%8E%A5%E6%96%B9%E5%90%91%E6%A3%80%E6%B5%8B.png" alt="USB-Type-C连接方向检测"></p>
+<p>   Type-C插座CC引脚上的Rp和Rd终结电阻器能够检测连接事件，并识别插座中Type-C插头的方向。DFP和UFP监测Type-C插座中两个CC引脚的电压相对于无端接电压的电压变化，以此监测连接事件。UFP还监测VBUS，是检测DFP连接的另一个指标。DFP和UFP都能从各自连接端识别Type-C插头方向，这是因为线缆中只连接了一个CC引脚。确定连接和方向后，如果检测到一个Ra终结电阻器，DFP将把另一个CC引脚更改为VCONN，以便向USB-Type-C EMCA插头中的电子元件供电。</p>
+<h3 id="3-建立DFP-to-UFP和VBUS管理与检测"><a href="#3-建立DFP-to-UFP和VBUS管理与检测" class="headerlink" title="3. 建立DFP-to-UFP和VBUS管理与检测"></a>3. 建立DFP-to-UFP和VBUS管理与检测</h3><p>   DRP在待机模式下每50ms在DFP和UFP间切换一次。当切换至DFP时，CC管脚上必须有一个上拉至VBUS的电阻Rp或者输出一个电流源，当切换至UFP时，CC管脚上必须有一个下拉至GND的电阻Rd。此切换动作必须由CC Logic芯片来完成。当DFP检测到UFP插入之后才可以输出VBUS，当UFP拔出以后必须关闭VBUS。此动作必须由CC Logic芯片来完成。</p>
+<p>   电阻和充电电流Rp和Rd具体值，如下表（以上拉电压5V为例）</p>
+<table>
+<thead>
+<tr>
+<th align="center">DFP Rp</th>
+<th align="center">UFP Rd</th>
+<th align="center">CC Voltage</th>
+<th align="center">VBUS Current Limit</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">56K</td>
+<td align="center">5.1K</td>
+<td align="center">0.42V</td>
+<td align="center">Default USB Current</td>
+</tr>
+<tr>
+<td align="center">22K</td>
+<td align="center">5.1K</td>
+<td align="center">0.94V</td>
+<td align="center">1.5A@5V</td>
+</tr>
+<tr>
+<td align="center">10K</td>
+<td align="center">5.1K</td>
+<td align="center">1.67V</td>
+<td align="center">3.0A@5V</td>
+</tr>
+</tbody></table>
+<h3 id="4-USB-Type-C-VBUS电流检测与使用"><a href="#4-USB-Type-C-VBUS电流检测与使用" class="headerlink" title="4. USB-Type-C VBUS电流检测与使用"></a>4. USB-Type-C VBUS电流检测与使用</h3><p>   USB-Type-C中新增了电流检测与使用功能，新增三种电流模式：默认的USB电源模式(500mA/900mA)，1.5A，3.0A。三种电流模式由CC管脚来传输和检测，对于需要广播电流输出能力的DFP而言，需要通过不同值的CC上拉电阻Rp来实现；对于UFP而言，需要检测CC管脚上的电压值来获取对方DFP的电流输出能力。</p>
+<h3 id="5-USB-PD通信"><a href="#5-USB-PD通信" class="headerlink" title="5. USB PD通信"></a>5. USB PD通信</h3><p>   USB PD看似只是电源传输与管理的协议，实际上它可改变端口角色，可与有源电缆通讯，允许DFP成为受电设备等诸多高级功能，因此支持PD的设备必须采用CC Logic芯片。</p>
+<h3 id="6-发现与配置扩展其他外设-Audio，Debug"><a href="#6-发现与配置扩展其他外设-Audio，Debug" class="headerlink" title="6. 发现与配置扩展其他外设(Audio，Debug)"></a>6. 发现与配置扩展其他外设(Audio，Debug)</h3><p>   USB-Type-C支持语音附件以及Debug模式，USB-Type-C接口的耳机如果只作为UFP且因为其功耗较小而无需检测DFP的供电能力时，无需CC Logic芯片。</p>
+<h2 id="2-小结"><a href="#2-小结" class="headerlink" title="2. 小结"></a>2. 小结</h2><p>   综上，所有的DFP(如电源适配器)，所有的DRP(如电脑，手机，平板，移动电源), 所有需要检测DFP电流输出能力的UFP，所有支持PD的设备，都需要CC逻辑检测与端口控制芯片。换句话说，只有因为功耗较低而不需要检测电流能力的UFP(U盘，耳机，鼠标等)才不需要CC逻辑检测端口控制芯片。</p>
+<h1 id="5-Type-C电力传输"><a href="#5-Type-C电力传输" class="headerlink" title="5. Type-C电力传输"></a>5. Type-C电力传输</h1><p>USB-Type-C规范允许通过VBUS和接地信号，从DFP 到UFP最多可以传递15W电能。当使用 “纯Type-C”解决方案时，只能使用5V电压传送这15W电能。如果 您为“纯Type-C”系统增加了USB PD规范，您就创建了一个“Type-C PD”系统，可将VBUS电压提至5V以上，最高提至20V，并将VBUS电流最大升至5A。在“纯Type-C”系统中，由DFP和UFP分别供电的Rp和Rd电阻器构成的分压器决定了VBUS电源的电流上限。UFP必须检测这个Rp/Rd 电压分压器电压，并用它来决定从VBUS电源获得的最大电流。这个Rp/Rd 电压分压器电压不是静态的;随着充电生态系统的环境变量不断改变，DFP可以动态改变其电流上限。UFP必须始终监测这个电压，并遵守DFP指示的新的VBUS电流上限。</p>
+<p>纯Type-C”解决方案的这个行为-即“DFP指示，UFP遵守”的行为-揭示了“纯Type-C”系统的一个弱点。 “纯Type-C”系统中不存在协商，而Type-C PD系统可双向协商VBUS 电压和电流。通过向一个“纯Type-C”系统增添USB-PD，从而创建一个“Type-C PD”系统，您就能够为VBUS功率协商提供必要的灵活性。</p>
+<p>实现USB-PD时，CC导线上承载的USB-PD双相标记编码(BMC)用于实现USB-Type-C端口之间的USB-PD通信。图7显示了USB-PD控制器如何连接CC导线，并向其引入BMC信令。图中只显示了一条CC线路(通过线缆连接的线路)。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C-PD%E7%B3%BB%E7%BB%9F.png" alt="USB-Type-C-PD系统"></p>
+<h1 id="6-标记芯片如何以电子方式标记线缆组件"><a href="#6-标记芯片如何以电子方式标记线缆组件" class="headerlink" title="6. 标记芯片如何以电子方式标记线缆组件"></a>6. 标记芯片如何以电子方式标记线缆组件</h1><p>一个电子标记线缆组件(EMCA)就是一条USB-Type-C线缆，它使用标记芯片向DFP提供线缆的特性。线缆标记是通过将一个USB PD控制器芯片嵌入到线缆的一端或两端实现的 。这些标记芯片由VCONN 供电(或VBUS 供电，取决于具体设计)。VCONN是一个工作于2.7V和5.5V之间的低压轨，但功率被限制在1W。 VBUS 可以是一个高达20V的高压轨。虽然由VBUS 供电的标记芯片具备更大功率的优势，但电压较高的标记芯片也更贵。因此，大多数标记芯片由VCONN供电。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E7%94%B5%E5%AD%90%E6%A0%87%E8%AE%B0%E7%BA%BF%E7%BC%86%E7%BB%84%E4%BB%B6.png" alt="USB-Type-C电子标记线缆组件"></p>
+<h2 id="1-标记芯片的配置"><a href="#1-标记芯片的配置" class="headerlink" title="1. 标记芯片的配置"></a>1. 标记芯片的配置</h2><p>某些EMCA在其中一个桨片卡上配备一个标记芯片，另一些则在两个桨片卡上分别配备一个标记芯片。如果使用了一个标记芯片，则必须在连接两个桨片卡的线缆中增加一根VCONN 导线。此外，必须在桨片卡上进行隔离，以防止两个VCONN同时由电压驱动，在VCONN 导线上发生冲突。设计一个或两个标记芯片的决定应考虑以下成本和收益：</p>
+<ul>
+<li>如果线缆是一条光缆，两个桨片卡之间没有铜线，您必须将两个标记芯片设计到线缆中。这样，无论插入DFP中的是哪一端，DFP都可以与线缆通信。</li>
+<li>如果增加一条与线缆同长的VCONN导线以及增加一个用于安全整合两条VCONN导线的隔离电路的总成本高于增加两个标记芯片的成本，您应该考虑增加两个标记芯片。</li>
+<li>有时候，为了简化制造和库存，在线缆中配备两个相同的桨片卡要比配备两个不同的桨片卡更简单。</li>
+</ul>
+<p>从DFP的角度而言，EMCA配备一个或两个标记芯片没有成本或收益问题。DFP以此只能为一个芯片供电，而且只与一个标记芯片通信。</p>
+<h2 id="2-配置特性"><a href="#2-配置特性" class="headerlink" title="2. 配置特性"></a>2. 配置特性</h2><p>线缆控制器存储与线缆ID和能力有关的配置数据。这些特性包括：</p>
+<ul>
+<li>VBUS 导线的额定电流</li>
+<li>线缆长度</li>
+<li>EMCA的类型：被动或主动</li>
+<li>线缆两端连接器的类型：Type-C to Type-C、Type-C to Type-A等</li>
+<li>线缆中控制器的数量: 一个或两个</li>
+<li>信令类型： USB 2.0、USB 3.1 Gen 1或USB 3.1 Gen 2</li>
+<li>厂商ID：用于标识EMCA制造商的16位ID</li>
+<li>用于标识EMCA产品的16位ID</li>
+<li>对Alternate Modes(如DisplayPort、PCIe)的支持</li>
+<li>对厂商专有协议(如厂商专有的对接协议)的支持</li>
+</ul>
+<p>DFP必须利用USB PD或 SOP* 枚举发现线缆的特性和UFP的功率要求。SOP是一个通配符ID，代表SOP、SOP’和SOP”。这些SOP ID可被视为Type-C多分支连接中的地址。SOP’代表距离DFP最近的EMCA标记芯片。SOP”代表距离DFP最远的EMCA标记芯片。SOP*枚举是建立PD联系的第一步，电子标记只能通过USB PD BMC实现。</p>
+<h2 id="3-何时需要电子标记"><a href="#3-何时需要电子标记" class="headerlink" title="3. 何时需要电子标记"></a>3. 何时需要电子标记</h2><p>出现以下任意情况时，Type-C线缆需要电子标记：</p>
+<ul>
+<li>VBUS电流需要超过3A</li>
+<li>需要USB 3.1 Gen2或10GHz USB</li>
+<li>需要Alternate Mode</li>
+</ul>
+<h2 id="4-EMCA的类型"><a href="#4-EMCA的类型" class="headerlink" title="4. EMCA的类型"></a>4. EMCA的类型</h2><p>USB-Type-C 中有两种电子标记线缆组件(EMCA)：即被动EMCA和主动EMCA。其中的主要区别是：主动EMCA为SuperSpeed USB提供信号调节功能，如转接驱动器和重定时器功能。</p>
+<p>以下是每种配置的一些例子。</p>
+<h3 id="1-被动EMCA"><a href="#1-被动EMCA" class="headerlink" title="1. 被动EMCA"></a>1. 被动EMCA</h3><p>不改变USB数据信号的EMCA就是被动EMCA，可采用两种方式设计：配备或不配备贯穿整条线缆的VCONN 导线。</p>
+<ul>
+<li>每个插头配备一个线缆控制器的被动EMCA(即每条线缆配备两个线缆控制器)。此时， VCONN 导线不需要贯穿整条线缆(如下图所示)。</li>
+</ul>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E6%AF%8F%E4%B8%AA%E6%8F%92%E5%A4%B4%E9%85%8D%E5%A4%87%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%BC%86%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84%E8%A2%AB%E5%8A%A8EMCA.png" alt="每个插头配备一个线缆控制器的被动EMCA"></p>
+<ul>
+<li>被动EMCA ,每条线缆只配备一个线缆控制器。此时，VCONN 导线将贯穿整条线缆。需要使用隔离元件以便于从线缆的一端的引入VCONN用于向线缆控制器供电(如下图所示)。</li>
+</ul>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%BC%86%E9%85%8D%E5%A4%87%E4%B8%80%E4%B8%AA%E7%BA%BF%E7%BC%86%E6%8E%A7%E5%88%B6%E5%99%A8%E7%9A%84%E8%A2%AB%E5%8A%A8EMCA.png" alt="每条线缆配备一个线缆控制器的被动EMCA"></p>
+<h3 id="2-主动EMCA"><a href="#2-主动EMCA" class="headerlink" title="2. 主动EMCA"></a>2. 主动EMCA</h3><p>加了一些额外器件比如信号驱动芯片等用于调节USB数据信号的EMCA。这可以实现更长的线缆或光缆。</p>
+<p>很多人认为被动EMCA就是不需要电能的线缆，但是实际情况并非如此。被动和主动EMCA都需要某种形式的电能来驱动标记电路。</p>
+<h2 id="5-设计考量"><a href="#5-设计考量" class="headerlink" title="5. 设计考量"></a>5. 设计考量</h2><p>探讨设计EMCA时应该考虑的USB-Type-C规范中的不同功率要求。</p>
+<h3 id="1-通过USB-Type-C线缆提供的VBUS电能"><a href="#1-通过USB-Type-C线缆提供的VBUS电能" class="headerlink" title="1. 通过USB-Type-C线缆提供的VBUS电能"></a>1. 通过USB-Type-C线缆提供的VBUS电能</h3><p>对通过USB-Type-C 线缆提供的VBUS 电能的最低要求与现有USB线缆相同。EMCA可以使用VBUS -而不是VCONN -来驱动线缆电路，因为VBUS 贯穿了整条线缆。配有PD的VBUS支持更高的电压(最高20V)。因此，任何一条含有由VBUS 供电的电子元件的USB-Type-C线缆都必须能够承受20V电压。</p>
+<p>所有VBUS引脚必须在USB-Type-C插头中互连。 全功能线缆每一端的VBUS引脚需要一个10毫微法的旁路电容器(30V的最小额定电压)。该旁路电容器应尽量靠近电源垫。所有GND引脚必须在USB-Type-C插头中互连。</p>
+<h3 id="2-对VCONN的要求"><a href="#2-对VCONN的要求" class="headerlink" title="2. 对VCONN的要求"></a>2. 对VCONN的要求</h3><p>VCONN的功能不同于VBUS，因为VCONN 与线缆另一端相互隔离。VCONN独立于VBUS，而且与能够使用USB PD支持更高电压的VBUS 不同，VCONN 的固定为5V。表1显示了所支持的VCONN 范围，以及VCONN源应满足的其它功率要求。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C-VCONN%E6%BA%90%E7%9A%84%E7%89%B9%E6%80%A7.png" alt="VCONN源的特性"></p>
+<p>为了降低VCONN上的功率 ，DFP可以在以下任意情况发生时关闭VCONN ：</p>
+<ul>
+<li>在一个CC引脚上检测到有效电压后(Rd在该引脚上)，未在另一个CC引脚上检测到Ra ;</li>
+<li>完成线缆发现过程后，确定不再需要 VCONN ;</li>
+<li>线缆发现消息未被线缆响应</li>
+</ul>
+<p>EMCA必须向VCONN引脚上的Ra接地层提供一个最大DC阻抗。电容器允许出现±20% 的公差，以便通过EMCA标记芯片中未经调整的片上电容器得到实现。表2列出了对EMCA中VCONN引脚上接地层的阻抗值。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C-EMCA%E7%BB%88%E7%BB%93%E8%A6%81%E6%B1%82.jpg" alt="EMCA终结要求"></p>
+<p>如果没有VCONN，供电线缆不应妨碍CC的正常工作，其中包括UFP检测、电流宣称和USB PD运行。表3列出了使用VCONN电能的线缆应满足的要求。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C-VCONN%E7%89%B9%E6%80%A7.jpg" alt="VCONN特性"></p>
+<ul>
+<li>USB挂起模式下，电子标记线缆从VCONN 获取的电流不应超过7.5mA。</li>
+<li>被动EMCA(不含数据总线信号调节电路)从VCONN 获取的功率不应超过70 mW。</li>
+<li>主动EMCA(含数据总线信号调节电路)从VCONN 获取的功率不应超过1W。</li>
+</ul>
+<h3 id="3-VCONN供电配件"><a href="#3-VCONN供电配件" class="headerlink" title="3. VCONN供电配件"></a>3. VCONN供电配件</h3><p>VCONN供电配件是一个直接附着式UFP，它实现了Alternate Mode，而且能够只使用VCONN进行工作。VCONN供电配件向VCONN引脚上的Ra接地层提供一个最大阻抗。VCONN供电配件应能在2.7V-5.5V VCONN电压范围内工作。</p>
+<h2 id="6-其它设计考量"><a href="#6-其它设计考量" class="headerlink" title="6. 其它设计考量"></a>6. 其它设计考量</h2><p>借助Type-C，一条线缆将具备多个功能，其中包括VBUS配电、USB数据和 alternate mode。alternate mode的一个常见例子是在一个或两个USB SuperSpeed 线路上传输的DisplayPort。电力、数据和图像的这种三合一打造了一个高电力、单线缆、超薄、易用的对接解决方案。为了使这条Type-C线缆同时支持Type-C和USB-PD功能，我们还需要采用其它技术。由于并非所有线缆都具备相同的能力或性能，需要一项USB-IF认证来表明某条线缆满足规范中的所有要求。谷歌、亚马逊等公司已公开表明，USB-Type-C线缆必须通过认证，任何未经认证的线缆都会给DFP和UFP带来安全风险。 在发起任何USB-PD供电确认之前，DFP将通过SOP*枚举来确认线缆是否获得了USB-IF认证。</p>
+<p>与OEM线缆成品必须通过认证一样，Type-C线缆中的标记芯片也必须通过认证。赛普拉斯半导体公司的CCG2 EZ-PD PD控制器是市场上在首个认证测试日中首款通过认证的标记芯片。</p>
+<p>赛普拉斯CCG2 EZ-PD标记芯片的可编程性可让用户轻松编程线缆特性。因为现在不同的线缆中的标记芯片内都植入了不同的厂商自定义信息，这一点变得越来越重要。此外，当最终用户的要求或参数发生变更时，或当USB-IF修改USB-Type-C或USB-PD规范时，这个特性也是必不可少的。用户可以使用赛普拉斯的CC引导装载程序技术，轻松地将这些变更重新编程到线缆成品中。</p>
+<p>对EMCA应用中的线缆控制器的主要应用级要求包括：</p>
+<ul>
+<li>支持最新PD规范中定义的USB-PD协议;</li>
+<li>支持BMC编码的物理层;</li>
+<li>支持VCONN导线上内置的Ra电阻器;</li>
+<li>能够使用VCONN电源向芯片供电;</li>
+<li>支持用于实现每条线缆只配备一个线缆控制器的被动EMCA的内置隔离元件(图10);</li>
+<li>支持通过断开Ra电阻器达到节能目的;</li>
+<li>支持CC 和VCONN 引脚上内置的系统级防护;</li>
+<li>支持引导装载程序，以便随着USB-Type-C和USB PD的演进，支持通过CC进行固件升级。</li>
+</ul>
+<h3 id="1-每条线缆配备一个CCG2的被动EMCA"><a href="#1-每条线缆配备一个CCG2的被动EMCA" class="headerlink" title="1. 每条线缆配备一个CCG2的被动EMCA"></a>1. 每条线缆配备一个CCG2的被动EMCA</h3><p>在这种EMCA架构中，其中一个插头中包含一个CCG2标记芯片。这种方法要求一条VCONN 导线贯穿整条线缆，这样一来，无论哪一头连接主机(DFP)，芯片都能获得供电。所需的隔离元件内置于CCG2中。有关这种方法和其它方法的详情，请参阅：设计USB 3.1 Type-C线缆。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%BC%86%E9%85%8D%E5%A4%87%E4%B8%80%E4%B8%AACCG2%E7%9A%84%E8%A2%AB%E5%8A%A8EMCA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.png" alt="每条线缆配备一个CCG2的被动EMCA解决方案"></p>
+<p>上图描述的是配备CCG2的被动EMCA，这种EMCA架构包含两个CCG2，一个插头包含一个。VCONN信号不贯穿整条线缆，而是终结于每个插头的CCG2。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E6%AF%8F%E4%B8%AA%E7%BA%BF%E7%BC%86%E6%8F%92%E5%A4%B4%E9%85%8D%E5%A4%87%E4%B8%80%E4%B8%AACCG2%E7%9A%84%E8%A2%AB%E5%8A%A8EMCA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.png" alt="每个线缆插头配备一个CCG2的被动EMCA解决方案"></p>
+<p>上图描述的是配备CCG2的被动EMCA ，该EMCA支持PD。在线缆的两端各嵌入一个CCG2，分别由两端的USB-Type-C端口供电。第二个CCG2的存在，使得VCONN不需要贯穿整个线缆。</p>
+<h3 id="2-每条线缆配备一个CCG2的主动EMCA"><a href="#2-每条线缆配备一个CCG2的主动EMCA" class="headerlink" title="2. 每条线缆配备一个CCG2的主动EMCA"></a>2. 每条线缆配备一个CCG2的主动EMCA</h3><p>主动EMCA的主要功能是通过在数据路径上添加一个信号驱动器提供信号调节功能。主动EMCA如需要配置/信号调节功能，可使用USB Power Delivery厂商自定义消息来寻找和枚举线缆属性。该方案需要从 VCONN电源获取连续电能，因此DFP不能关闭线缆的VCONN 供电。</p>
+<p><img src="https://file.infonet.io/blog-files/USB/USB-Type-C%E6%AF%8F%E6%9D%A1%E7%BA%BF%E7%BC%86%E9%85%8D%E5%A4%87%E4%B8%80%E4%B8%AACCG2%E7%9A%84%E4%B8%BB%E5%8A%A8EMCA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.png" alt="每条线缆配备一个CCG2的主动EMCA解决方案"></p>
+<p>上图描述的是配备CCG2的主动EMCA，其内嵌一个用于延长线缆长度的再驱动。</p>
+<h2 id="7-小结"><a href="#7-小结" class="headerlink" title="7. 小结"></a>7. 小结</h2><p>“设计USB 3.1 Type-C线缆”详细阐述了制造商如何使用CCG2轻松设计被动电子标记线缆组件(EMCA)。“硬件设计指南”提供EZ-PD CCG2的硬件设计和PCB版图指南。这些指南有助确保最佳的信号完整性，以及对USB Power Delivery和Type-C规范的全面遵从。赛普拉斯拥有一个广泛的Type-C控制器产品组合(从单Type-C端口控制器EZ-PD CCG1, EZ-PD CCG2, EZ-PD CCG3到双端口控制器EZ-PD, CCG4)，此外还提供产品手册、开发套件、应用说明、软件下载、示例项目、演示视频等有用工具。</p>
+<h1 id="7-其他介绍连接"><a href="#7-其他介绍连接" class="headerlink" title="7. 其他介绍连接"></a>7. 其他介绍连接</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/zoosenpin/article/details/49963031">https://blog.csdn.net/zoosenpin/article/details/49963031</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.itread01.com/content/1495119613.html">https://www.itread01.com/content/1495119613.html</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.via-ic.com/news_show.php?id=132">http://www.via-ic.com/news_show.php?id=132</a></li>
+</ul>
+<h1 id="8-版权"><a href="#8-版权" class="headerlink" title="8. 版权"></a>8. 版权</h1><ul>
+<li><p>本文摘自电子工程世界：<a target="_blank" rel="noopener" href="http://news.eeworld.com.cn/xfdz/2015/0323/article_40868.html">http://news.eeworld.com.cn/xfdz/2015/0323/article_40868.html</a></p>
+</li>
+<li><p>dzsc.com: <a target="_blank" rel="noopener" href="http://www.dzsc.com/data/2016-8-11/110409.html">http://www.dzsc.com/data/2016-8-11/110409.html</a></p>
+</li>
+</ul>
+<p>如有侵权烦请联系博主删除。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2020/05/05/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/05/05/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB/" class="post-title-link" itemprop="url">频率与周期对应关系</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-05 08:19:15" itemprop="dateCreated datePublished" datetime="2020-05-05T08:19:15+08:00">2020-05-05</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://file.infonet.io/blog-files/Elec/%E9%A2%91%E7%8E%87%E4%B8%8E%E5%91%A8%E6%9C%9F%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB.png" alt="频率与周期对应关系"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2020/04/20/%E5%B8%B8%E7%94%A8%E7%99%BE5%E4%B8%8E%E7%99%BE1%E7%94%B5%E9%98%BB%E5%80%BC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/04/20/%E5%B8%B8%E7%94%A8%E7%99%BE5%E4%B8%8E%E7%99%BE1%E7%94%B5%E9%98%BB%E5%80%BC/" class="post-title-link" itemprop="url">常用百5与百1电阻值</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-04-20 21:39:16" itemprop="dateCreated datePublished" datetime="2020-04-20T21:39:16+08:00">2020-04-20</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>许多刚进行电路设计的人员会在设计电路中将电阻任意取值，这会导致该电阻无法购买到。<br>实际上国家标准规定了电阻的阻值按其精度分为两大系列，分别为 E-24 系列和 E-96 系列，E-24 系列精度为 5%，E-96 系列为 1%。<br>在这两种系列之外的电阻为非标电阻，较难采购。<br>下面列出了常用的 5% 和 1% 精度电阻的标称值，供大家设计时参考。</p>
+</blockquote>
+<h1 id="1-常用-5-的电阻值"><a href="#1-常用-5-的电阻值" class="headerlink" title="1. 常用 5% 的电阻值"></a>1. 常用 5% 的电阻值</h1><p><img src="https://file.infonet.io/blog-files/Elec/%E5%B8%B8%E7%94%A8%E7%94%B5%E9%98%BB%E5%80%BC-5%25.png" alt="常用电阻值-5%"></p>
+<h1 id="2-pdf-文档下载连接"><a href="#2-pdf-文档下载连接" class="headerlink" title="2. pdf 文档下载连接"></a>2. pdf 文档下载连接</h1><p><a target="_blank" rel="noopener" href="https://file.infonet.io/blog-files/Elec/%E7%94%B5%E9%98%BB%E7%B2%BE%E5%BA%A6%E4%B8%8E%E5%B8%B8%E7%94%A8%E9%98%BB%E5%80%BC.pdf">电阻精度与常用阻值.pdf</a></p>
+<p><a target="_blank" rel="noopener" href="https://file.infonet.io/blog-files/Elec/%E7%94%B5%E9%98%BB%E5%80%BC%E5%AF%B9%E7%85%A7%E8%A1%A8.pdf">电阻值对照表.pdf</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2020/03/25/%E7%94%B5%E5%AD%90%E7%BA%BF%E8%B7%AF%E7%84%8A%E6%8E%A5%E5%8A%A9%E7%84%8A%E5%89%82/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/25/%E7%94%B5%E5%AD%90%E7%BA%BF%E8%B7%AF%E7%84%8A%E6%8E%A5%E5%8A%A9%E7%84%8A%E5%89%82/" class="post-title-link" itemprop="url">电子线路焊接助焊剂</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-25 14:28:45" itemprop="dateCreated datePublished" datetime="2020-03-25T14:28:45+08:00">2020-03-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-助焊剂-flux-分类"><a href="#1-助焊剂-flux-分类" class="headerlink" title="1. 助焊剂(flux)分类"></a>1. 助焊剂(flux)分类</h1><p><img src="https://file.infonet.io/blog-files/Elec/%E5%8A%A9%E7%84%8A%E5%89%82.png" alt="助焊剂(flux)"></p>
+<h1 id="2-助焊剂作用"><a href="#2-助焊剂作用" class="headerlink" title="2. 助焊剂作用"></a>2. 助焊剂作用</h1><ul>
+<li>在焊接工艺中能帮助和促进焊接过程</li>
+<li>清除焊料和被焊母材表面的氧化物，使金属表面达到必要的清洁度（去除氧化物）</li>
+<li>去除被焊接材质表面油污、增大焊接面积</li>
+<li>防止焊接时表面的再次氧化</li>
+<li>降低被焊接材质表面张力</li>
+<li>提高焊接性能</li>
+<li>辅助热传导</li>
+</ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/03/25/%E7%94%B5%E5%AD%90%E7%BA%BF%E8%B7%AF%E7%84%8A%E6%8E%A5%E5%8A%A9%E7%84%8A%E5%89%82/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://blog.infonet.io/2020/03/24/Hexo%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="陆宇">
+      <meta itemprop="description" content="陆宇的个人博客。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="陆宇的个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/24/Hexo%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" class="post-title-link" itemprop="url">Hexo使用总结</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-24 19:22:31" itemprop="dateCreated datePublished" datetime="2020-03-24T19:22:31+08:00">2020-03-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-10-24 17:53:00" itemprop="dateModified" datetime="2021-10-24T17:53:00+08:00">2021-10-24</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="1-开启站点地图"><a href="#1-开启站点地图" class="headerlink" title="1. 开启站点地图"></a>1. 开启站点地图</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开启站点地图，需要安装 hexo-generator-sitemap 扩展包</span></span><br><span class="line">npm install hexo-generator-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<h1 id="2-开启本地搜索"><a href="#2-开启本地搜索" class="headerlink" title="2. 开启本地搜索"></a>2. 开启本地搜索</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 开启本地搜索，需要安装 hexo-generator-searchdb 扩展包</span></span><br><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+
+<h1 id="3-部署到服务器"><a href="#3-部署到服务器" class="headerlink" title="3. 部署到服务器"></a>3. 部署到服务器</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 部署到服务器，需要安装 npm install hexo-deployer-git --save 扩展包</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-查看-Hexo-运行所需要的依赖"><a href="#4-查看-Hexo-运行所需要的依赖" class="headerlink" title="4. 查看 Hexo 运行所需要的依赖"></a>4. 查看 Hexo 运行所需要的依赖</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm ls --depth 0</span><br><span class="line"><span class="comment"># 如果还想展开一层看看这些模块各自又依赖了哪些模块，那就运行下面的命令</span></span><br><span class="line">npm ls --depth 1</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-卸载-Hexo-category-和-tag-模块"><a href="#5-卸载-Hexo-category-和-tag-模块" class="headerlink" title="5. 卸载 Hexo category 和 tag 模块"></a>5. 卸载 Hexo category 和 tag 模块</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-category</span><br><span class="line">npm uninstall hexo-generator-tag</span><br><span class="line"><span class="comment"># 卸载 category 和 tag 模块</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">陆宇</p>
+  <div class="site-description" itemprop="description">陆宇的个人博客。</div>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/luyu0815" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;luyu0815" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:luyu0815@gmail.com" title="E-Mail → mailto:luyu0815@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/3190657817" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;3190657817" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/MicroLu" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;MicroLu" rel="noopener" target="_blank"><i class="fab fa-telegram fa-fw"></i>Telegram</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://infonet.io/" title="https:&#x2F;&#x2F;infonet.io" rel="noopener" target="_blank">Micro Station</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://spec.infonet.io/" title="https:&#x2F;&#x2F;spec.infonet.io" rel="noopener" target="_blank">Spec Station</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fab fa-usb"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">陆宇</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+</body>
+</html>
